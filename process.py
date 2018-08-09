@@ -80,7 +80,7 @@ for i in range(len(starts)):
 
 rows=[x[0] for x in sparse_coords]
 cols=[x[1] for x in sparse_coords]
-vals=[x[2] for x in sparse_coords]
+vals=[float(x[2]) for x in sparse_coords]
 num=math.floor(len(rows)/10)
 
 #-------Now write the coordinates into a datafile-------
@@ -116,7 +116,7 @@ for k in range(num+1):
     output_file.write(ap)
 
 #--- save cols---
-line='  INTEGER, PARAMETER, DIMENSION('+str(len(vals))+') :: Jac_vals = (/ &\n'
+line='  REAL, PARAMETER, DIMENSION('+str(len(vals))+') :: Jac_vals = (/ &\n'
 output_file.write(line)
 for k in range(num+1):
     ind1=k*10+0
