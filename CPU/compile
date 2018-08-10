@@ -1,0 +1,3 @@
+rm *.mod
+rm main
+gfortran -o main Jacobian_para.F90 initialize.F90 gckpp_Jacobian.F90  test.F90

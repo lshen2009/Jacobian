@@ -8,13 +8,13 @@ CONTAINS
 
 SUBROUTINE Jac_SP ( V, F, RCT, JVS )
 
-  REAL(kind=dp) :: V(206)
-  REAL(kind=dp) :: F(5)
-  REAL(kind=dp) :: RCT(622)
-  REAL(kind=dp) :: JVS(3043)
+  REAL(4) :: V(234)
+  REAL(4) :: F(5)
+  REAL(4) :: RCT(724)
+  REAL(4) :: JVS(3043)
 
 
-  REAL(kind=dp) :: B(1231)
+  REAL(4) :: B(1231)
 
   B(1) = RCT(1)*V(222)
   B(2) = RCT(1)*V(221)
@@ -1237,3 +1237,5 @@ SUBROUTINE Jac_SP ( V, F, RCT, JVS )
   B(1231) = RCT(724)
 
 END SUBROUTINE Jac_SP
+
+END MODULE gckpp_Jacobian
