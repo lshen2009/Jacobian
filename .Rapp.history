@@ -1,0 +1,13 @@
+rm(list=ls())#
+num= 1000000#
+x=rnorm(10)
+y=0#
+		y+=x[1]
+rm(list=ls())#
+setwd("~/Documents/GC_speedup/CPU/Test_jacobian/code/Jacobian")
+ss=readLines("logges.normal")
+ss=readLines("gckpp_Jacobian.F90")
+ss
+ss=readLines("gckpp_Jacobian.F90")
+0.06*7000+0.54*400-379
+0.06*7000-379
