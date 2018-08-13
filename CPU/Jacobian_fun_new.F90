@@ -1,4 +1,4 @@
-MODULE gckpp_Jacobian
+MODULE Jacobian_fun_new
 
   USE Jacobian_para
 
@@ -6,13 +6,13 @@ MODULE gckpp_Jacobian
 
 CONTAINS
 
-SUBROUTINE Jac_SP ( V, F, RCT, JVS )
-
+SUBROUTINE Jac_SP_new ( V, F, RCT, JVS )
+  USE Jacobian_para
   REAL(4) :: V(234)
   REAL(4) :: F(5)
   REAL(4) :: RCT(724)
-  REAL(4) :: JVS(3043)
-
+  REAL(4) :: JVS(3413)
+  INTEGER :: I,J,k
 
   REAL(4) :: B(1231)
 
@@ -1236,6 +1236,11 @@ SUBROUTINE Jac_SP ( V, F, RCT, JVS )
   B(1230) = RCT(723)
   B(1231) = RCT(724)
 
-END SUBROUTINE Jac_SP
+  !print *, 'This is results from new method'
+  DO I=1,size(Jac_rows)
+     k=Jac_rows(I)
+     JVS(k)=JVS(k)+B(Jac_cols(I))*Jac_vals(I)
+  END DO
+END SUBROUTINE Jac_SP_new
 
-END MODULE gckpp_Jacobian
+END MODULE Jacobian_fun_new

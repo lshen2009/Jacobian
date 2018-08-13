@@ -11,6 +11,15 @@ contains
      end do
   end subroutine initialize_1D
 
+  subroutine zero_1D(x)
+  implicit none
+     real:: x(:)
+     integer :: i
+     do i=1,size(x)
+       x(i)=0
+     end do
+  end subroutine zero_1D
+
   subroutine initialize_2D(x) 
   implicit none
      real:: x(:,:)

@@ -1,3 +1,8 @@
+rm ./main
+#gfortran -o main Jacobian_para.F90 initialize.F90 Jacobian_fun_new.F90 Jacobian_fun_old.F90  test.F90
+#gfortran -O3 -march=native -funroll-loops -ffast-math -o main Jacobian_para.F90 initialize.F90 Jacobian_fun_new.F90 Jacobian_fun_old.F90  test.F90
+#gfortran -O3 -funroll-loops -o main Jacobian_para.F90 initialize.F90 Jacobian_fun_new.F90 Jacobian_fun_old.F90  test.F90
+gfortran -O3 -funroll-loops  -o main Jacobian_para.F90 initialize.F90 Jacobian_fun_new.F90 Jacobian_fun_old.F90  test.F90
 rm *.mod
-rm main
-gfortran -o main Jacobian_para.F90 initialize.F90 gckpp_Jacobian.F90  test.F90
+echo '----------------------------------------'
+./main
