@@ -11,6 +11,15 @@ contains
      end do
   end subroutine initialize_1D
 
+  subroutine initialize_1D_logical(x)
+  implicit none
+     logical:: x(:)
+     integer :: i
+     do i=1,size(x)
+       x(i)=.true.
+     end do
+  end subroutine initialize_1D_logical
+
   subroutine zero_1D(x)
   implicit none
      real:: x(:)

@@ -11,12 +11,13 @@ PROGRAM test
   REAL(4) :: RCT(724)
   REAL(4) :: JVS(3413)
   REAL(4) :: TimeStart,TimeEnd
-  Integer :: I
+  LOGICAL :: ind(3413)
   ! Initialize these vectors
   CALL initialize_1D(V)
   CALL initialize_1D(F)
   CALL initialize_1D(RCT)
   CALL zero_1D(JVS)
+  CALL initialize_1D_logical(ind)
   
   !print *, 'this is F: ', F
   
@@ -41,7 +42,7 @@ PROGRAM test
   CALL zero_1D(JVS)
   DO I=1,100000
     !CALL zero_1D(JVS)
-    CALL Jac_SP_new ( V, F, RCT, JVS )
+    CALL Jac_SP_new ( V, F, RCT, JVS,ind)
   END DO
   CALL CPU_TIME(time=TimeEnd)
   PRINT *,'New method time is ',TimeEnd-TimeStart  
