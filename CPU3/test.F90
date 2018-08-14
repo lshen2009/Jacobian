@@ -10,7 +10,7 @@ PROGRAM test
   REAL(4) :: F(5)
   REAL(4) :: RCT(724)
   REAL(4) :: JVS(3413)
-  REAL(4) :: TimeStart,TimeEnd
+  REAL(4) :: TimeStart,TimeEnd,time1,time2
   LOGICAL :: ind(3413)
   INTEGER :: I
   ! Initialize these vectors
@@ -28,28 +28,19 @@ PROGRAM test
     CALL Jac_SP_old ( V, F, RCT, JVS )
   END DO
   CALL CPU_TIME(time=TimeEnd)
-  PRINT *,'Old method time is ',TimeEnd-TimeStart
-
-  ! Calculate the empty loops
-  CALL CPU_TIME(time=TimeStart)
-  DO I=1,100000
-    CALL test_empty_loop()
-  END DO
-  CALL CPU_TIME(time=TimeEnd)
-  PRINT *,'Empty loop time is ',TimeEnd-TimeStart
+  time1=TimeEnd-TimeStart
 
   ! Calculate the generated jacobin matrix using new algorithm
-  CALL CPU_TIME(time=TimeStart)
   CALL zero_1D(JVS)
+  CALL CPU_TIME(time=TimeStart)
   DO I=1,100000
     !CALL zero_1D(JVS)
     CALL Jac_SP_new ( V, F, RCT, JVS,ind)
   END DO
   CALL CPU_TIME(time=TimeEnd)
-  PRINT *,'New method time is ',TimeEnd-TimeStart  
+  time2=TimeEnd-TimeStart  
 
-  !Now I add timers to test the time used
-  
+  print *,time1,time2 
 END PROGRAM test
 
 

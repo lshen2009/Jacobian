@@ -16,7 +16,11 @@ contains
      logical:: x(:)
      integer :: i
      do i=1,size(x)
-       x(i)=.true.
+       if (rand()>0.5) then
+          x(i)=.true.
+       else 
+          x(i)=.true.
+       endif
      end do
   end subroutine initialize_1D_logical
 
