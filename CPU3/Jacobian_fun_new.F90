@@ -10,7 +10,7 @@ SUBROUTINE Jac_SP_new ( V, F, RCT, JVS, ind )
   REAL(4) :: F(5)
   REAL(4) :: RCT(724)
   REAL(4) :: JVS(3413)
-  Logical :: ind(3413)
+  INTEGER :: ind(3413)
   INTEGER :: I,J,k
   REAL(4) :: B(1231)
 
@@ -1234,9819 +1234,9819 @@ SUBROUTINE Jac_SP_new ( V, F, RCT, JVS, ind )
   B(1230) = RCT(723)
   B(1231) = RCT(724)
 
-  IF (1>0) THEN
+  IF (ind(1)>0) THEN
   JVS(1) = -B(1207)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2)>0) THEN
   JVS(2) = -B(1208)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3)>0) THEN
   JVS(3) = -B(1209)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(4)>0) THEN
   JVS(4) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(5)>0) THEN
   JVS(5) = 2*B(1083)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(6)>0) THEN
   JVS(6) = 2*B(1077)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(7)>0) THEN
   JVS(7) = 2*B(1080)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(8)>0) THEN
   JVS(8) = B(1072)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(9)>0) THEN
   JVS(9) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(10)>0) THEN
   JVS(10) = B(542)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(11)>0) THEN
   JVS(11) = B(919)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(12)>0) THEN
   JVS(12) = 0.085*B(1013)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(13)>0) THEN
   JVS(13) = B(829)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(14)>0) THEN
   JVS(14) = B(362)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(15)>0) THEN
   JVS(15) = B(831)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(16)>0) THEN
   JVS(16) = B(823)+0.5*B(827)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(17)>0) THEN
   JVS(17) = 0.4*B(1224)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(18)>0) THEN
   JVS(18) = 0.93*B(806)+0.93*B(808)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(19)>0) THEN
   JVS(19) = 0.36*B(452)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(20)>0) THEN
   JVS(20) = 1.172*B(352)+0.858*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(21)>0) THEN
   JVS(21) = B(410)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(22)>0) THEN
   JVS(22) = 2*B(368)+0.7*B(372)+2*B(374)+B(375)+B(377)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(23)>0) THEN
   JVS(23) = B(62)+B(698)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(24)>0) THEN
   JVS(24) = 0.63*B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(25)>0) THEN
   JVS(25) = 0.361*B(262)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(26)>0) THEN
   JVS(26) = B(169)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(27)>0) THEN
   JVS(27) = B(154)+B(712)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(28)>0) THEN
   JVS(28) = B(398)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(29)>0) THEN
   JVS(29) = 0.5*B(284)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(30)>0) THEN
   JVS(30) = B(77)+2*B(369)+B(399)+B(411)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(31)>0) THEN
   JVS(31) = 0.7*B(373)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(32)>0) THEN
   JVS(32) = B(20)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(33)>0) THEN
   JVS(33) = 0.36*B(453)+0.63*B(455)+B(830)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(34)>0) THEN
   JVS(34) = B(78)+B(170)+0.858*B(355)+B(378)+0.93*B(807)+B(824)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(35)>0) THEN
   JVS(35) = 1.172*B(353)+B(376)+0.93*B(809)+0.5*B(828)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(36)>0) THEN
   JVS(36) = B(699)+B(713)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(37)>0) THEN
   JVS(37) = B(920)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(38)>0) THEN
   JVS(38) = B(21)+B(63)+B(155)+0.361*B(263)+0.5*B(285)+B(363)+B(543)+B(832)+0.085*B(1014)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(39)>0) THEN
   JVS(39) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(40)>0) THEN
   JVS(40) = B(1008)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(41)>0) THEN
   JVS(41) = B(1007)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(42)>0) THEN
   JVS(42) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(43)>0) THEN
   JVS(43) = 2*B(1084)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(44)>0) THEN
   JVS(44) = 2*B(1078)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(45)>0) THEN
   JVS(45) = 2*B(1081)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(46)>0) THEN
   JVS(46) = B(1073)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(47)>0) THEN
   JVS(47) = B(1086)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(48)>0) THEN
   JVS(48) = B(1075)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(49)>0) THEN
   JVS(49) = B(1088)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(50)>0) THEN
   JVS(50) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(51)>0) THEN
   JVS(51) = 2*B(1085)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(52)>0) THEN
   JVS(52) = 2*B(1079)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(53)>0) THEN
   JVS(53) = 2*B(1082)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(54)>0) THEN
   JVS(54) = B(1074)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(55)>0) THEN
   JVS(55) = B(1087)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(56)>0) THEN
   JVS(56) = B(1076)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(57)>0) THEN
   JVS(57) = B(1089)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(58)>0) THEN
   JVS(58) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(59)>0) THEN
   JVS(59) = B(1100)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(60)>0) THEN
   JVS(60) = -B(1100)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(61)>0) THEN
   JVS(61) = 0.04*B(141)+0.04*B(143)+0.04*B(145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(62)>0) THEN
   JVS(62) = 0.04*B(129)+0.04*B(131)+0.04*B(133)+0.04*B(135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(63)>0) THEN
   JVS(63) = 0.04*B(121)+0.04*B(123)+0.04*B(125)+0.04*B(127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(64)>0) THEN
   JVS(64) = 0.04*B(136)+0.04*B(146)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(65)>0) THEN
   JVS(65) = 0.04*B(124)+0.04*B(132)+0.04*B(142)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(66)>0) THEN
   JVS(66) = 0.04*B(128)+0.04*B(134)+0.04*B(144)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(67)>0) THEN
   JVS(67) = 0.04*B(122)+0.04*B(130)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(68)>0) THEN
   JVS(68) = 0.04*B(126)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(69)>0) THEN
   JVS(69) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(70)>0) THEN
   JVS(70) = B(921)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(71)>0) THEN
   JVS(71) = B(922)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(72)>0) THEN
   JVS(72) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(73)>0) THEN
   JVS(73) = B(923)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(74)>0) THEN
   JVS(74) = B(924)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(75)>0) THEN
   JVS(75) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(76)>0) THEN
   JVS(76) = B(276)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(77)>0) THEN
   JVS(77) = B(277)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(78)>0) THEN
   JVS(78) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(79)>0) THEN
   JVS(79) = B(300)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(80)>0) THEN
   JVS(80) = B(301)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(81)>0) THEN
   JVS(81) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(82)>0) THEN
   JVS(82) = B(925)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(83)>0) THEN
   JVS(83) = B(926)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(84)>0) THEN
   JVS(84) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(85)>0) THEN
   JVS(85) = B(927)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(86)>0) THEN
   JVS(86) = B(928)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(87)>0) THEN
   JVS(87) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(88)>0) THEN
   JVS(88) = B(1099)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(89)>0) THEN
   JVS(89) = -B(344)-B(1099)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(90)>0) THEN
   JVS(90) = 0.007*B(334)+0.005*B(1151)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(91)>0) THEN
   JVS(91) = 0.007*B(332)+0.007*B(338)+0.005*B(1150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(92)>0) THEN
   JVS(92) = 0.007*B(336)+0.007*B(342)+0.005*B(1152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(93)>0) THEN
   JVS(93) = 0.007*B(333)+0.007*B(335)+0.007*B(337)+0.007*B(339)+0.007*B(343)-B(345)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(94)>0) THEN
   JVS(94) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(95)>0) THEN
   JVS(95) = B(929)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(96)>0) THEN
   JVS(96) = B(930)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(97)>0) THEN
   JVS(97) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(98)>0) THEN
   JVS(98) = B(931)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(99)>0) THEN
   JVS(99) = B(932)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(100)>0) THEN
   JVS(100) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(101)>0) THEN
   JVS(101) = 0.25*B(458)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(102)>0) THEN
   JVS(102) = 0.25*B(459)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(103)>0) THEN
   JVS(103) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(104)>0) THEN
   JVS(104) = 0.35*B(802)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(105)>0) THEN
   JVS(105) = 0.35*B(803)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(106)>0) THEN
   JVS(106) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(107)>0) THEN
   JVS(107) = B(1060)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(108)>0) THEN
   JVS(108) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(109)>0) THEN
   JVS(109) = B(1061)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(110)>0) THEN
   JVS(110) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(111)>0) THEN
   JVS(111) = B(1093)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(112)>0) THEN
   JVS(112) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(113)>0) THEN
   JVS(113) = B(1097)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(114)>0) THEN
   JVS(114) = B(1095)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(115)>0) THEN
   JVS(115) = B(1096)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(116)>0) THEN
   JVS(116) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(117)>0) THEN
   JVS(117) = B(1098)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(118)>0) THEN
   JVS(118) = -B(260)-B(1098)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(119)>0) THEN
   JVS(119) = 0.781*B(256)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(120)>0) THEN
   JVS(120) = 0.781*B(257)-B(261)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(121)>0) THEN
   JVS(121) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(122)>0) THEN
   JVS(122) = B(1094)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(123)>0) THEN
   JVS(123) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(124)>0) THEN
   JVS(124) = B(1008)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(125)>0) THEN
   JVS(125) = B(812)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(126)>0) THEN
   JVS(126) = B(1219)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(127)>0) THEN
   JVS(127) = B(1007)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(128)>0) THEN
   JVS(128) = B(564)+B(566)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(129)>0) THEN
   JVS(129) = B(1214)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(130)>0) THEN
   JVS(130) = B(628)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(131)>0) THEN
   JVS(131) = B(1120)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(132)>0) THEN
   JVS(132) = 2*B(680)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(133)>0) THEN
   JVS(133) = B(46)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(134)>0) THEN
   JVS(134) = 0.3*B(1127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(135)>0) THEN
   JVS(135) = B(1015)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(136)>0) THEN
   JVS(136) = B(1017)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(137)>0) THEN
   JVS(137) = B(478)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(138)>0) THEN
   JVS(138) = 2*B(1009)+B(1231)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(139)>0) THEN
   JVS(139) = B(823)+B(825)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(140)>0) THEN
   JVS(140) = B(815)+B(817)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(141)>0) THEN
   JVS(141) = 0.81*B(256)+0.4*B(1224)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(142)>0) THEN
   JVS(142) = 1.78*B(131)+0.36*B(135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(143)>0) THEN
   JVS(143) = B(560)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(144)>0) THEN
   JVS(144) = 1.15*B(806)+0.15*B(808)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(145)>0) THEN
   JVS(145) = B(764)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(146)>0) THEN
   JVS(146) = B(1229)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(147)>0) THEN
   JVS(147) = B(612)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(148)>0) THEN
   JVS(148) = B(859)+B(861)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(149)>0) THEN
   JVS(149) = B(903)+B(905)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(150)>0) THEN
   JVS(150) = B(891)+B(893)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(151)>0) THEN
   JVS(151) = B(869)+B(871)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(152)>0) THEN
   JVS(152) = B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(153)>0) THEN
   JVS(153) = B(802)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(154)>0) THEN
   JVS(154) = B(148)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(155)>0) THEN
   JVS(155) = B(879)+B(881)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(156)>0) THEN
   JVS(156) = B(1230)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(157)>0) THEN
   JVS(157) = B(87)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(158)>0) THEN
   JVS(158) = B(835)+B(837)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(159)>0) THEN
   JVS(159) = B(111)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(160)>0) THEN
   JVS(160) = 0.96*B(123)+0.21*B(127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(161)>0) THEN
   JVS(161) = B(89)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(162)>0) THEN
   JVS(162) = 1.394*B(792)+B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(163)>0) THEN
   JVS(163) = B(113)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(164)>0) THEN
   JVS(164) = B(847)+B(849)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(165)>0) THEN
   JVS(165) = B(97)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(166)>0) THEN
   JVS(166) = B(377)+B(379)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(167)>0) THEN
   JVS(167) = B(99)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(168)>0) THEN
   JVS(168) = B(167)+0.15*B(246)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(169)>0) THEN
   JVS(169) = 2*B(975)+0.5*B(983)+B(987)+0.5*B(994)+B(996)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(170)>0) THEN
   JVS(170) = B(973)+0.5*B(995)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(171)>0) THEN
   JVS(171) = 0.78*B(961)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(172)>0) THEN
   JVS(172) = B(101)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(173)>0) THEN
   JVS(173) = 1.58*B(796)+1.01*B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(174)>0) THEN
   JVS(174) = 0.82*B(937)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(175)>0) THEN
   JVS(175) = B(782)+B(784)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(176)>0) THEN
   JVS(176) = B(42)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(177)>0) THEN
   JVS(177) = B(169)+0.15*B(248)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(178)>0) THEN
   JVS(178) = B(106)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(179)>0) THEN
   JVS(179) = B(630)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(180)>0) THEN
   JVS(180) = B(103)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(181)>0) THEN
   JVS(181) = B(81)+B(706)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(182)>0) THEN
   JVS(182) = B(115)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(183)>0) THEN
   JVS(183) = B(93)+B(95)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(184)>0) THEN
   JVS(184) = B(108)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(185)>0) THEN
   JVS(185) = B(77)+0.15*B(244)+B(988)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(186)>0) THEN
   JVS(186) = B(24)+0.36*B(136)+B(700)+0.5*B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(187)>0) THEN
   JVS(187) = B(17)+B(25)+B(78)+B(82)+B(88)+B(90)+B(94)+B(96)+B(98)+B(100)+B(102)+B(104)+B(107)+B(109)+B(112)+B(114)&
                &+B(116)+0.96*B(124)+1.78*B(132)+B(149)+B(168)+B(170)+B(355)+B(378)+B(380)+B(567)+B(783)+B(785)+1.394*B(793)&
                &+1.58*B(797)+1.15*B(807)+B(816)+B(818)+B(824)+B(826)+B(836)+B(848)+B(860)+B(870)+B(880)+B(892)+B(904)+0.82&
                &*B(938)+0.78*B(962)+B(974)+2*B(976)+B(1016)+B(1018)+B(1222)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(188)>0) THEN
   JVS(188) = B(18)+0.21*B(128)+0.15*B(245)+0.15*B(247)+0.15*B(249)+B(561)+B(660)+B(795)+1.01*B(799)+0.15*B(809)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(189)>0) THEN
   JVS(189) = B(661)+2*B(681)+B(701)+B(707)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(190)>0) THEN
   JVS(190) = B(838)+B(850)+B(862)+B(872)+B(882)+B(894)+B(906)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(191)>0) THEN
   JVS(191) = B(11)+B(43)+B(47)+0.81*B(257)+B(479)+B(613)+B(629)+B(631)+B(765)+B(803)+2*B(1010)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(192)>0) THEN
   JVS(192) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(193)>0) THEN
   JVS(193) = 4*B(1083)+4*B(1084)+4*B(1085)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(194)>0) THEN
   JVS(194) = 2*B(1077)+2*B(1078)+2*B(1079)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(195)>0) THEN
   JVS(195) = 3*B(1080)+3*B(1081)+3*B(1082)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(196)>0) THEN
   JVS(196) = B(516)+B(518)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(197)>0) THEN
   JVS(197) = B(540)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(198)>0) THEN
   JVS(198) = B(622)+2*B(1178)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(199)>0) THEN
   JVS(199) = B(1086)+B(1087)+B(1090)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(200)>0) THEN
   JVS(200) = 0.17*B(588)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(201)>0) THEN
   JVS(201) = 2*B(1201)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(202)>0) THEN
   JVS(202) = 2*B(919)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(203)>0) THEN
   JVS(203) = B(460)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(204)>0) THEN
   JVS(204) = 0.56*B(582)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(205)>0) THEN
   JVS(205) = B(620)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(206)>0) THEN
   JVS(206) = B(150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(207)>0) THEN
   JVS(207) = B(1075)+B(1076)+B(1092)+B(1199)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(208)>0) THEN
   JVS(208) = B(829)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(209)>0) THEN
   JVS(209) = B(1045)+B(1058)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(210)>0) THEN
   JVS(210) = 0.388*B(800)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(211)>0) THEN
   JVS(211) = B(1043)+B(1056)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(212)>0) THEN
   JVS(212) = B(1028)+B(1030)+B(1032)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(213)>0) THEN
   JVS(213) = 0.106*B(141)+0.04*B(143)+0.34*B(145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(214)>0) THEN
   JVS(214) = B(947)+2*B(951)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(215)>0) THEN
   JVS(215) = B(949)+2*B(953)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(216)>0) THEN
   JVS(216) = B(383)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(217)>0) THEN
   JVS(217) = 2*B(1088)+2*B(1089)+B(1091)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(218)>0) THEN
   JVS(218) = B(957)+2*B(959)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(219)>0) THEN
   JVS(219) = 0.06*B(129)+0.04*B(133)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(220)>0) THEN
   JVS(220) = B(556)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(221)>0) THEN
   JVS(221) = B(1035)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(222)>0) THEN
   JVS(222) = B(810)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(223)>0) THEN
   JVS(223) = 2*B(1005)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(224)>0) THEN
   JVS(224) = 0.64*B(452)+0.9*B(790)+B(1102)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(225)>0) THEN
   JVS(225) = B(520)+B(522)+B(524)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(226)>0) THEN
   JVS(226) = B(272)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(227)>0) THEN
   JVS(227) = B(1104)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(228)>0) THEN
   JVS(228) = B(1001)+2*B(1003)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(229)>0) THEN
   JVS(229) = 1.04*B(121)+1.04*B(125)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(230)>0) THEN
   JVS(230) = B(552)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(231)>0) THEN
   JVS(231) = B(1103)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(232)>0) THEN
   JVS(232) = B(294)+B(300)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(233)>0) THEN
   JVS(233) = B(989)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(234)>0) THEN
   JVS(234) = 2*B(744)+2*B(756)+2*B(758)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(235)>0) THEN
   JVS(235) = B(969)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(236)>0) THEN
   JVS(236) = B(480)+B(1051)+B(1053)+B(1055)+B(1057)+B(1059)+B(1060)+B(1061)+B(1165)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(237)>0) THEN
   JVS(237) = B(945)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(238)>0) THEN
   JVS(238) = B(454)+0.9*B(788)+B(1101)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(239)>0) THEN
   JVS(239) = B(1047)+B(1049)+B(1182)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(240)>0) THEN
   JVS(240) = 1.4*B(119)+B(137)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(241)>0) THEN
   JVS(241) = B(1039)+B(1041)+B(1044)+B(1046)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(242)>0) THEN
   JVS(242) = B(274)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(243)>0) THEN
   JVS(243) = B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(244)>0) THEN
   JVS(244) = B(117)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(245)>0) THEN
   JVS(245) = B(1105)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(246)>0) THEN
   JVS(246) = 2*B(472)+2*B(473)+B(484)+2*B(570)+2*B(684)+2*B(686)+2*B(745)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(247)>0) THEN
   JVS(247) = B(252)+B(266)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(248)>0) THEN
   JVS(248) = B(171)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(249)>0) THEN
   JVS(249) = B(205)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(250)>0) THEN
   JVS(250) = B(298)+B(302)+1.5*B(304)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(251)>0) THEN
   JVS(251) = B(68)+B(572)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(252)>0) THEN
   JVS(252) = B(72)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(253)>0) THEN
   JVS(253) = B(296)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(254)>0) THEN
   JVS(254) = B(9)+0.34*B(146)+B(614)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(255)>0) THEN
   JVS(255) = B(3)+B(5)+B(10)+B(138)+B(253)+B(295)+B(297)+B(299)+B(386)+0.64*B(453)+B(455)+2*B(528)+2*B(536)+B(557)&
                &+B(830)+B(948)+B(950)+B(958)+B(1002)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(256)>0) THEN
   JVS(256) = 0.106*B(142)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(257)>0) THEN
   JVS(257) = B(6)+B(53)+0.04*B(134)+0.04*B(144)+B(534)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(258)>0) THEN
   JVS(258) = B(54)+B(57)+2*B(66)+B(69)+B(73)+B(118)+1.4*B(120)+1.04*B(122)+0.06*B(130)+B(151)+B(172)+B(206)+B(267)&
                &+B(273)+B(275)+B(301)+B(303)+1.5*B(305)+B(384)+2*B(448)+B(461)+2*B(546)+2*B(920)+B(946)+2*B(952)+2*B(954)+2&
                &*B(960)+B(970)+B(990)+2*B(1004)+2*B(1006)+B(1027)+2*B(1123)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(259)>0) THEN
   JVS(259) = B(482)+0.65*B(576)+B(1042)+B(1050)+B(1052)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(260)>0) THEN
   JVS(260) = 2*B(67)+1.04*B(126)+2*B(544)+B(811)+0.5*B(1026)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(261)>0) THEN
   JVS(261) = B(508)+B(514)+B(517)+B(519)+B(521)+B(523)+B(525)+2*B(537)+0.67*B(574)+0.65*B(577)+0.56*B(583)+0.17*B(589)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(262)>0) THEN
   JVS(262) = B(509)+B(1029)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(263)>0) THEN
   JVS(263) = B(4)+B(58)+B(485)+B(532)+B(616)+B(618)+B(621)+B(623)+0.9*B(789)+0.9*B(791)+0.388*B(801)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(264)>0) THEN
   JVS(264) = B(481)+B(483)+2*B(529)+B(533)+B(535)+B(541)+2*B(545)+2*B(547)+B(553)+2*B(571)+B(573)+2*B(662)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(265)>0) THEN
   JVS(265) = B(615)+B(617)+B(619)+2*B(663)+2*B(670)+2*B(671)+2*B(685)+2*B(687)+2*B(757)+2*B(759)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(266)>0) THEN
   JVS(266) = 0.67*B(575)+B(1031)+B(1036)+B(1040)+B(1048)+B(1054)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(267)>0) THEN
   JVS(267) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(268)>0) THEN
   JVS(268) = B(540)+B(1220)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(269)>0) THEN
   JVS(269) = B(694)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(270)>0) THEN
   JVS(270) = B(696)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(271)>0) THEN
   JVS(271) = B(692)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(272)>0) THEN
   JVS(272) = 0.55*B(1013)+1.89*B(1227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(273)>0) THEN
   JVS(273) = B(1023)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(274)>0) THEN
   JVS(274) = 0.5*B(1011)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(275)>0) THEN
   JVS(275) = 0.67*B(1153)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(276)>0) THEN
   JVS(276) = 1.5*B(813)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(277)>0) THEN
   JVS(277) = 0.5*B(1156)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(278)>0) THEN
   JVS(278) = B(1225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(279)>0) THEN
   JVS(279) = 0.14*B(947)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(280)>0) THEN
   JVS(280) = 0.14*B(949)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(281)>0) THEN
   JVS(281) = B(254)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(282)>0) THEN
   JVS(282) = 0.14*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(283)>0) THEN
   JVS(283) = 0.03*B(256)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(284)>0) THEN
   JVS(284) = 0.21*B(452)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(285)>0) THEN
   JVS(285) = 0.6*B(352)+0.678*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(286)>0) THEN
   JVS(286) = 2*B(268)+2*B(272)+2*B(1133)+2*B(1134)+B(1135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(287)>0) THEN
   JVS(287) = B(1217)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(288)>0) THEN
   JVS(288) = 0.5*B(111)+0.075*B(193)+0.375*B(224)+0.5*B(410)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(289)>0) THEN
   JVS(289) = B(121)+B(123)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(290)>0) THEN
   JVS(290) = 0.5*B(1160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(291)>0) THEN
   JVS(291) = 0.495*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(292)>0) THEN
   JVS(292) = 0.33*B(218)+0.09*B(400)+0.09*B(782)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(293)>0) THEN
   JVS(293) = 0.505*B(262)+B(264)+B(1132)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(294)>0) THEN
   JVS(294) = 0.5*B(169)+0.39*B(248)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(295)>0) THEN
   JVS(295) = B(270)+B(274)+B(1136)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(296)>0) THEN
   JVS(296) = B(1130)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(297)>0) THEN
   JVS(297) = 0.89*B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(298)>0) THEN
   JVS(298) = 0.29*B(217)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(299)>0) THEN
   JVS(299) = 0.5*B(284)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(300)>0) THEN
   JVS(300) = 0.728*B(108)+B(110)+0.595*B(222)+0.857*B(404)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(301)>0) THEN
   JVS(301) = 0.56*B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(302)>0) THEN
   JVS(302) = B(1128)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(303)>0) THEN
   JVS(303) = 0.625*B(298)+0.5*B(304)+B(1140)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(304)>0) THEN
   JVS(304) = B(38)+B(68)+B(488)+B(572)+B(650)+B(1116)+B(1117)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(305)>0) THEN
   JVS(305) = 0.05*B(70)+0.88*B(1125)+B(1126)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(306)>0) THEN
   JVS(306) = 0.56*B(296)+B(1137)+B(1138)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(307)>0) THEN
   JVS(307) = 0.09*B(401)+0.857*B(405)+0.5*B(411)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(308)>0) THEN
   JVS(308) = 0.33*B(219)+0.595*B(223)+0.375*B(225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(309)>0) THEN
   JVS(309) = 0.56*B(253)+0.495*B(295)+0.56*B(297)+0.625*B(299)+0.89*B(386)+0.21*B(453)+0.14*B(948)+0.14*B(950)+0.14&
                &*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(310)>0) THEN
   JVS(310) = 0.728*B(109)+0.5*B(112)+B(124)+0.5*B(170)+0.678*B(355)+0.09*B(783)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(311)>0) THEN
   JVS(311) = 0.075*B(194)+0.39*B(249)+0.6*B(353)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(312)>0) THEN
   JVS(312) = B(489)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(313)>0) THEN
   JVS(313) = B(651)+B(693)+B(695)+B(697)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(314)>0) THEN
   JVS(314) = B(69)+B(122)+2*B(273)+B(275)+0.5*B(305)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(315)>0) THEN
   JVS(315) = B(39)+0.05*B(71)+B(255)+0.03*B(257)+0.505*B(263)+B(265)+2*B(269)+B(271)+0.5*B(285)+1.5*B(814)+0.5*B(1012)&
                &+0.55*B(1014)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(316)>0) THEN
   JVS(316) = B(541)+B(573)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(317)>0) THEN
   JVS(317) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(318)>0) THEN
   JVS(318) = B(857)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(319)>0) THEN
   JVS(319) = B(901)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(320)>0) THEN
   JVS(320) = B(889)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(321)>0) THEN
   JVS(321) = B(867)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(322)>0) THEN
   JVS(322) = B(877)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(323)>0) THEN
   JVS(323) = B(845)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(324)>0) THEN
   JVS(324) = B(20)+B(846)+B(858)+B(868)+B(878)+B(890)+B(902)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(325)>0) THEN
   JVS(325) = B(21)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(326)>0) THEN
   JVS(326) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(327)>0) THEN
   JVS(327) = B(863)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(328)>0) THEN
   JVS(328) = B(907)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(329)>0) THEN
   JVS(329) = B(895)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(330)>0) THEN
   JVS(330) = B(873)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(331)>0) THEN
   JVS(331) = B(883)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(332)>0) THEN
   JVS(332) = B(839)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(333)>0) THEN
   JVS(333) = B(851)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(334)>0) THEN
   JVS(334) = B(462)+B(840)+B(852)+B(864)+B(874)+B(884)+B(896)+B(908)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(335)>0) THEN
   JVS(335) = B(463)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(336)>0) THEN
   JVS(336) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(337)>0) THEN
   JVS(337) = B(22)+B(520)+B(522)+B(524)+B(648)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(338)>0) THEN
   JVS(338) = B(649)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(339)>0) THEN
   JVS(339) = B(521)+B(523)+B(525)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(340)>0) THEN
   JVS(340) = B(23)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(341)>0) THEN
   JVS(341) = -B(751)-B(1083)-B(1084)-B(1085)-B(1210)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(342)>0) THEN
   JVS(342) = B(750)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(343)>0) THEN
   JVS(343) = -B(1106)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(344)>0) THEN
   JVS(344) = 0.27*B(792)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(345)>0) THEN
   JVS(345) = 0.21*B(796)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(346)>0) THEN
   JVS(346) = 0.27*B(793)+0.21*B(797)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(347)>0) THEN
   JVS(347) = -B(1226)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(348)>0) THEN
   JVS(348) = B(1024)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(349)>0) THEN
   JVS(349) = -B(776)-B(777)-B(1077)-B(1078)-B(1079)-B(1205)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(350)>0) THEN
   JVS(350) = B(775)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(351)>0) THEN
   JVS(351) = -B(638)-B(1183)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(352)>0) THEN
   JVS(352) = -B(639)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(353)>0) THEN
   JVS(353) = -B(1008)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(354)>0) THEN
   JVS(354) = B(1109)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(355)>0) THEN
   JVS(355) = B(1107)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(356)>0) THEN
   JVS(356) = B(1108)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(357)>0) THEN
   JVS(357) = -B(913)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(358)>0) THEN
   JVS(358) = -B(914)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(359)>0) THEN
   JVS(359) = -B(778)-B(1206)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(360)>0) THEN
   JVS(360) = -B(779)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(361)>0) THEN
   JVS(361) = -0.41*B(596)-B(1194)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(362)>0) THEN
   JVS(362) = -0.41*B(597)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(363)>0) THEN
   JVS(363) = -0.75*B(610)-B(1196)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(364)>0) THEN
   JVS(364) = -0.75*B(611)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(365)>0) THEN
   JVS(365) = -B(1080)-B(1081)-B(1082)-B(1211)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(366)>0) THEN
   JVS(366) = B(748)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(367)>0) THEN
   JVS(367) = B(749)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(368)>0) THEN
   JVS(368) = -B(812)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(369)>0) THEN
   JVS(369) = B(810)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(370)>0) THEN
   JVS(370) = B(811)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(371)>0) THEN
   JVS(371) = -B(160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(372)>0) THEN
   JVS(372) = B(158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(373)>0) THEN
   JVS(373) = B(159)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(374)>0) THEN
   JVS(374) = -B(915)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(375)>0) THEN
   JVS(375) = -B(916)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(376)>0) THEN
   JVS(376) = -B(1168)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(377)>0) THEN
   JVS(377) = B(498)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(378)>0) THEN
   JVS(378) = B(499)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(379)>0) THEN
   JVS(379) = -0.86*B(580)-B(1184)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(380)>0) THEN
   JVS(380) = -0.86*B(581)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(381)>0) THEN
   JVS(381) = -0.88*B(590)-B(1185)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(382)>0) THEN
   JVS(382) = -0.88*B(591)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(383)>0) THEN
   JVS(383) = -0.86*B(592)-B(1186)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(384)>0) THEN
   JVS(384) = -0.86*B(593)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(385)>0) THEN
   JVS(385) = -0.75*B(604)-B(1187)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(386)>0) THEN
   JVS(386) = -0.75*B(605)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(387)>0) THEN
   JVS(387) = -0.75*B(606)-B(1188)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(388)>0) THEN
   JVS(388) = -0.75*B(607)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(389)>0) THEN
   JVS(389) = -0.3*B(608)-B(1189)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(390)>0) THEN
   JVS(390) = -0.3*B(609)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(391)>0) THEN
   JVS(391) = -0.64*B(594)-B(1195)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(392)>0) THEN
   JVS(392) = -0.64*B(595)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(393)>0) THEN
   JVS(393) = -B(1212)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(394)>0) THEN
   JVS(394) = 0.15*B(1090)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(395)>0) THEN
   JVS(395) = 0.15*B(1092)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(396)>0) THEN
   JVS(396) = 0.15*B(1091)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(397)>0) THEN
   JVS(397) = -B(350)-B(1097)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(398)>0) THEN
   JVS(398) = 0.5*B(342)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(399)>0) THEN
   JVS(399) = 0.1*B(788)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(400)>0) THEN
   JVS(400) = 0.5*B(343)-B(351)+0.1*B(789)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(401)>0) THEN
   JVS(401) = -2*B(730)-B(1202)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(402)>0) THEN
   JVS(402) = B(728)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(403)>0) THEN
   JVS(403) = B(729)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(404)>0) THEN
   JVS(404) = -B(516)-B(518)-B(1219)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(405)>0) THEN
   JVS(405) = B(568)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(406)>0) THEN
   JVS(406) = B(569)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(407)>0) THEN
   JVS(407) = -B(517)-B(519)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(408)>0) THEN
   JVS(408) = B(915)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(409)>0) THEN
   JVS(409) = -B(925)-B(927)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(410)>0) THEN
   JVS(410) = -B(928)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(411)>0) THEN
   JVS(411) = -B(926)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(412)>0) THEN
   JVS(412) = B(916)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(413)>0) THEN
   JVS(413) = B(913)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(414)>0) THEN
   JVS(414) = -B(921)-B(923)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(415)>0) THEN
   JVS(415) = -B(924)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(416)>0) THEN
   JVS(416) = -B(922)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(417)>0) THEN
   JVS(417) = B(914)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(418)>0) THEN
   JVS(418) = -B(346)-B(1095)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(419)>0) THEN
   JVS(419) = 0.68*B(340)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(420)>0) THEN
   JVS(420) = 0.578*B(338)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(421)>0) THEN
   JVS(421) = 0.067*B(790)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(422)>0) THEN
   JVS(422) = 0.578*B(339)+0.68*B(341)-B(347)+0.067*B(791)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(423)>0) THEN
   JVS(423) = -B(348)-B(1096)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(424)>0) THEN
   JVS(424) = 0.32*B(340)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(425)>0) THEN
   JVS(425) = 0.272*B(338)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(426)>0) THEN
   JVS(426) = 0.033*B(790)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(427)>0) THEN
   JVS(427) = 0.272*B(339)+0.32*B(341)-B(349)+0.033*B(791)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(428)>0) THEN
   JVS(428) = B(1106)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(429)>0) THEN
   JVS(429) = -B(1007)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(430)>0) THEN
   JVS(430) = B(1102)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(431)>0) THEN
   JVS(431) = B(1104)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(432)>0) THEN
   JVS(432) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(433)>0) THEN
   JVS(433) = B(1103)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(434)>0) THEN
   JVS(434) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(435)>0) THEN
   JVS(435) = B(1101)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(436)>0) THEN
   JVS(436) = B(1105)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(437)>0) THEN
   JVS(437) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(438)>0) THEN
   JVS(438) = -B(564)-B(566)-B(568)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(439)>0) THEN
   JVS(439) = -B(567)+B(1222)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(440)>0) THEN
   JVS(440) = -B(569)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(441)>0) THEN
   JVS(441) = -B(540)-B(542)-B(1220)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(442)>0) THEN
   JVS(442) = -B(543)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(443)>0) THEN
   JVS(443) = -B(541)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(444)>0) THEN
   JVS(444) = -B(929)-B(931)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(445)>0) THEN
   JVS(445) = B(917)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(446)>0) THEN
   JVS(446) = -B(932)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(447)>0) THEN
   JVS(447) = -B(930)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(448)>0) THEN
   JVS(448) = B(918)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(449)>0) THEN
   JVS(449) = -B(766)-B(1072)-B(1073)-B(1074)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(450)>0) THEN
   JVS(450) = B(762)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(451)>0) THEN
   JVS(451) = B(763)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(452)>0) THEN
   JVS(452) = -B(767)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(453)>0) THEN
   JVS(453) = -B(381)-B(1159)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(454)>0) THEN
   JVS(454) = 0.41*B(244)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(455)>0) THEN
   JVS(455) = 0.41*B(245)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(456)>0) THEN
   JVS(456) = -B(382)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(457)>0) THEN
   JVS(457) = -B(502)-0.68*B(586)-B(1169)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(458)>0) THEN
   JVS(458) = -0.68*B(587)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(459)>0) THEN
   JVS(459) = -B(503)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(460)>0) THEN
   JVS(460) = -B(1213)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(461)>0) THEN
   JVS(461) = 0.85*B(1090)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(462)>0) THEN
   JVS(462) = 0.85*B(1092)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(463)>0) THEN
   JVS(463) = 0.85*B(1091)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(464)>0) THEN
   JVS(464) = B(758)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(465)>0) THEN
   JVS(465) = B(759)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(466)>0) THEN
   JVS(466) = -B(622)-B(677)-B(1178)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(467)>0) THEN
   JVS(467) = -B(623)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(468)>0) THEN
   JVS(468) = B(676)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(469)>0) THEN
   JVS(469) = -B(634)-B(694)-B(1173)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(470)>0) THEN
   JVS(470) = -B(695)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(471)>0) THEN
   JVS(471) = -B(635)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(472)>0) THEN
   JVS(472) = -B(161)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(473)>0) THEN
   JVS(473) = B(165)+0.6*B(1224)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(474)>0) THEN
   JVS(474) = 0.53*B(280)+0.5*B(304)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(475)>0) THEN
   JVS(475) = 0.5*B(305)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(476)>0) THEN
   JVS(476) = -B(162)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(477)>0) THEN
   JVS(477) = 0.53*B(281)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(478)>0) THEN
   JVS(478) = -B(636)-B(696)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(479)>0) THEN
   JVS(479) = -B(697)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(480)>0) THEN
   JVS(480) = -B(637)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(481)>0) THEN
   JVS(481) = -B(451)-B(1214)-B(1215)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(482)>0) THEN
   JVS(482) = B(449)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(483)>0) THEN
   JVS(483) = B(450)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(484)>0) THEN
   JVS(484) = -B(504)-0.95*B(584)-B(1170)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(485)>0) THEN
   JVS(485) = -0.95*B(585)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(486)>0) THEN
   JVS(486) = -B(505)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(487)>0) THEN
   JVS(487) = -0.79*B(602)-B(646)-B(1190)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(488)>0) THEN
   JVS(488) = -0.79*B(603)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(489)>0) THEN
   JVS(489) = -B(647)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(490)>0) THEN
   JVS(490) = -B(320)-B(1144)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(491)>0) THEN
   JVS(491) = B(238)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(492)>0) THEN
   JVS(492) = B(239)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(493)>0) THEN
   JVS(493) = -B(321)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(494)>0) THEN
   JVS(494) = -0.69*B(598)-B(642)-B(1191)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(495)>0) THEN
   JVS(495) = -0.69*B(599)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(496)>0) THEN
   JVS(496) = -B(643)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(497)>0) THEN
   JVS(497) = -0.74*B(600)-B(644)-B(1192)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(498)>0) THEN
   JVS(498) = -0.74*B(601)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(499)>0) THEN
   JVS(499) = -B(645)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(500)>0) THEN
   JVS(500) = -B(733)-2*B(734)-B(1086)-B(1087)-B(1090)-B(1203)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(501)>0) THEN
   JVS(501) = B(731)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(502)>0) THEN
   JVS(502) = B(732)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(503)>0) THEN
   JVS(503) = -B(628)-B(1179)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(504)>0) THEN
   JVS(504) = B(1030)+B(1032)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(505)>0) THEN
   JVS(505) = -B(629)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(506)>0) THEN
   JVS(506) = B(1031)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(507)>0) THEN
   JVS(507) = -0.72*B(588)-B(640)-B(1193)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(508)>0) THEN
   JVS(508) = -0.72*B(589)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(509)>0) THEN
   JVS(509) = -B(641)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(510)>0) THEN
   JVS(510) = 2*B(751)+2*B(1210)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(511)>0) THEN
   JVS(511) = B(777)+B(1205)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(512)>0) THEN
   JVS(512) = B(1211)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(513)>0) THEN
   JVS(513) = -B(748)-2*B(750)-B(752)-B(1201)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(514)>0) THEN
   JVS(514) = B(746)-B(749)+B(774)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(515)>0) THEN
   JVS(515) = B(747)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(516)>0) THEN
   JVS(516) = -B(753)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(517)>0) THEN
   JVS(517) = -B(322)-B(1145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(518)>0) THEN
   JVS(518) = B(240)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(519)>0) THEN
   JVS(519) = B(241)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(520)>0) THEN
   JVS(520) = -B(323)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(521)>0) THEN
   JVS(521) = -B(324)-B(1146)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(522)>0) THEN
   JVS(522) = B(195)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(523)>0) THEN
   JVS(523) = B(196)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(524)>0) THEN
   JVS(524) = -B(325)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(525)>0) THEN
   JVS(525) = -B(917)-B(919)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(526)>0) THEN
   JVS(526) = -B(920)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(527)>0) THEN
   JVS(527) = -B(918)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(528)>0) THEN
   JVS(528) = -B(456)-B(458)-B(460)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(529)>0) THEN
   JVS(529) = -B(461)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(530)>0) THEN
   JVS(530) = -B(457)-B(459)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(531)>0) THEN
   JVS(531) = -B(632)-B(692)-B(1172)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(532)>0) THEN
   JVS(532) = -B(693)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(533)>0) THEN
   JVS(533) = -B(633)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(534)>0) THEN
   JVS(534) = -B(506)-B(582)-B(1171)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(535)>0) THEN
   JVS(535) = -B(583)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(536)>0) THEN
   JVS(536) = -B(507)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(537)>0) THEN
   JVS(537) = -B(50)-B(51)-B(1120)-B(1121)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(538)>0) THEN
   JVS(538) = B(48)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(539)>0) THEN
   JVS(539) = B(49)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(540)>0) THEN
   JVS(540) = -B(52)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(541)>0) THEN
   JVS(541) = B(622)+B(1178)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(542)>0) THEN
   JVS(542) = -B(675)-B(678)-B(680)-B(1197)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(543)>0) THEN
   JVS(543) = B(684)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(544)>0) THEN
   JVS(544) = B(614)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(545)>0) THEN
   JVS(545) = B(673)-B(679)-B(681)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(546)>0) THEN
   JVS(546) = B(623)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(547)>0) THEN
   JVS(547) = B(615)+B(671)+B(685)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(548)>0) THEN
   JVS(548) = B(1090)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(549)>0) THEN
   JVS(549) = -B(46)-B(1119)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(550)>0) THEN
   JVS(550) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(551)>0) THEN
   JVS(551) = B(44)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(552)>0) THEN
   JVS(552) = 0.5*B(1026)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(553)>0) THEN
   JVS(553) = B(45)-B(47)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(554)>0) THEN
   JVS(554) = -B(620)-B(1177)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(555)>0) THEN
   JVS(555) = B(754)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(556)>0) THEN
   JVS(556) = B(682)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(557)>0) THEN
   JVS(557) = -B(621)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(558)>0) THEN
   JVS(558) = B(672)+B(683)+B(755)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(559)>0) THEN
   JVS(559) = -B(76)-B(1127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(560)>0) THEN
   JVS(560) = 0.19*B(256)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(561)>0) THEN
   JVS(561) = B(74)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(562)>0) THEN
   JVS(562) = B(75)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(563)>0) THEN
   JVS(563) = 0.19*B(257)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(564)>0) THEN
   JVS(564) = -B(328)-B(1149)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(565)>0) THEN
   JVS(565) = 0.75*B(127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(566)>0) THEN
   JVS(566) = 0.41*B(246)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(567)>0) THEN
   JVS(567) = 0.75*B(128)+0.41*B(247)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(568)>0) THEN
   JVS(568) = -B(329)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(569)>0) THEN
   JVS(569) = -B(330)-B(1148)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(570)>0) THEN
   JVS(570) = B(242)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(571)>0) THEN
   JVS(571) = B(243)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(572)>0) THEN
   JVS(572) = -B(331)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(573)>0) THEN
   JVS(573) = -B(318)-B(1143)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(574)>0) THEN
   JVS(574) = B(199)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(575)>0) THEN
   JVS(575) = B(200)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(576)>0) THEN
   JVS(576) = -B(319)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(577)>0) THEN
   JVS(577) = -B(1221)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(578)>0) THEN
   JVS(578) = B(863)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(579)>0) THEN
   JVS(579) = B(907)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(580)>0) THEN
   JVS(580) = B(895)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(581)>0) THEN
   JVS(581) = B(873)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(582)>0) THEN
   JVS(582) = B(883)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(583)>0) THEN
   JVS(583) = B(839)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(584)>0) THEN
   JVS(584) = B(851)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(585)>0) THEN
   JVS(585) = B(462)+B(840)+B(852)+B(864)+B(874)+B(884)+B(896)+B(908)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(586)>0) THEN
   JVS(586) = B(463)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(587)>0) THEN
   JVS(587) = -B(91)-B(150)-B(722)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(588)>0) THEN
   JVS(588) = -B(723)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(589)>0) THEN
   JVS(589) = -B(151)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(590)>0) THEN
   JVS(590) = -B(92)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(591)>0) THEN
   JVS(591) = -B(971)-B(1223)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(592)>0) THEN
   JVS(592) = B(963)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(593)>0) THEN
   JVS(593) = B(939)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(594)>0) THEN
   JVS(594) = B(940)+B(964)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(595)>0) THEN
   JVS(595) = -B(972)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(596)>0) THEN
   JVS(596) = -B(326)-B(1147)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(597)>0) THEN
   JVS(597) = 0.5*B(827)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(598)>0) THEN
   JVS(598) = 0.85*B(819)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(599)>0) THEN
   JVS(599) = B(179)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(600)>0) THEN
   JVS(600) = B(180)+0.85*B(820)+0.5*B(828)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(601)>0) THEN
   JVS(601) = -B(327)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(602)>0) THEN
   JVS(602) = -B(1013)-B(1227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(603)>0) THEN
   JVS(603) = 0.5*B(105)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(604)>0) THEN
   JVS(604) = -B(1014)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(605)>0) THEN
   JVS(605) = -B(1174)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(606)>0) THEN
   JVS(606) = B(1045)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(607)>0) THEN
   JVS(607) = B(1043)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(608)>0) THEN
   JVS(608) = B(1035)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(609)>0) THEN
   JVS(609) = B(1053)+B(1055)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(610)>0) THEN
   JVS(610) = B(1049)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(611)>0) THEN
   JVS(611) = B(1041)+B(1044)+B(1046)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(612)>0) THEN
   JVS(612) = B(686)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(613)>0) THEN
   JVS(613) = B(1042)+B(1050)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(614)>0) THEN
   JVS(614) = B(687)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(615)>0) THEN
   JVS(615) = B(1036)+B(1054)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(616)>0) THEN
   JVS(616) = -B(83)-B(85)-B(496)-B(714)-B(716)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(617)>0) THEN
   JVS(617) = -B(497)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(618)>0) THEN
   JVS(618) = -B(715)-B(717)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(619)>0) THEN
   JVS(619) = -B(84)-B(86)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(620)>0) THEN
   JVS(620) = -B(1015)-B(1019)-B(1023)-B(1024)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(621)>0) THEN
   JVS(621) = 0.5*B(105)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(622)>0) THEN
   JVS(622) = -B(1016)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(623)>0) THEN
   JVS(623) = -B(1020)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(624)>0) THEN
   JVS(624) = -B(1011)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(625)>0) THEN
   JVS(625) = 0.44*B(352)+0.473*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(626)>0) THEN
   JVS(626) = 0.473*B(355)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(627)>0) THEN
   JVS(627) = 0.44*B(353)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(628)>0) THEN
   JVS(628) = -B(1012)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(629)>0) THEN
   JVS(629) = -B(768)-B(1075)-B(1076)-B(1092)-B(1199)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(630)>0) THEN
   JVS(630) = B(764)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(631)>0) THEN
   JVS(631) = B(770)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(632)>0) THEN
   JVS(632) = B(771)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(633)>0) THEN
   JVS(633) = B(765)-B(769)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(634)>0) THEN
   JVS(634) = -B(356)-B(1153)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(635)>0) THEN
   JVS(635) = 0.1*B(786)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(636)>0) THEN
   JVS(636) = 0.1*B(787)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(637)>0) THEN
   JVS(637) = -B(357)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(638)>0) THEN
   JVS(638) = -B(358)-B(1155)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(639)>0) THEN
   JVS(639) = 0.1*B(189)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(640)>0) THEN
   JVS(640) = 0.1*B(190)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(641)>0) THEN
   JVS(641) = -B(359)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(642)>0) THEN
   JVS(642) = 0.365*B(1013)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(643)>0) THEN
   JVS(643) = -B(1017)-B(1021)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(644)>0) THEN
   JVS(644) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(645)>0) THEN
   JVS(645) = -B(1018)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(646)>0) THEN
   JVS(646) = -B(1022)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(647)>0) THEN
   JVS(647) = 0.365*B(1014)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(648)>0) THEN
   JVS(648) = -B(34)-B(36)-B(1218)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(649)>0) THEN
   JVS(649) = 0.85*B(183)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(650)>0) THEN
   JVS(650) = 0.85*B(185)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(651)>0) THEN
   JVS(651) = 0.85*B(184)+0.85*B(186)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(652)>0) THEN
   JVS(652) = -B(35)-B(37)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(653)>0) THEN
   JVS(653) = -B(478)-B(1163)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(654)>0) THEN
   JVS(654) = B(1058)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(655)>0) THEN
   JVS(655) = B(1056)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(656)>0) THEN
   JVS(656) = B(476)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(657)>0) THEN
   JVS(657) = B(1051)+B(1057)+B(1059)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(658)>0) THEN
   JVS(658) = B(473)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(659)>0) THEN
   JVS(659) = B(477)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(660)>0) THEN
   JVS(660) = B(1052)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(661)>0) THEN
   JVS(661) = -B(479)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(662)>0) THEN
   JVS(662) = -B(821)-B(829)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(663)>0) THEN
   JVS(663) = 0.17*B(400)+0.17*B(782)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(664)>0) THEN
   JVS(664) = 0.17*B(401)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(665)>0) THEN
   JVS(665) = -B(830)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(666)>0) THEN
   JVS(666) = 0.17*B(783)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(667)>0) THEN
   JVS(667) = -B(822)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(668)>0) THEN
   JVS(668) = -B(1009)-B(1109)-B(1231)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(669)>0) THEN
   JVS(669) = B(997)+B(1005)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(670)>0) THEN
   JVS(670) = B(999)+B(1001)+B(1003)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(671)>0) THEN
   JVS(671) = B(1002)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(672)>0) THEN
   JVS(672) = B(1004)+B(1006)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(673)>0) THEN
   JVS(673) = B(998)+B(1000)-B(1010)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(674)>0) THEN
   JVS(674) = 0.654*B(356)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(675)>0) THEN
   JVS(675) = -B(813)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(676)>0) THEN
   JVS(676) = 0.29*B(400)+0.29*B(782)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(677)>0) THEN
   JVS(677) = 0.29*B(401)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(678)>0) THEN
   JVS(678) = 0.29*B(783)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(679)>0) THEN
   JVS(679) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(680)>0) THEN
   JVS(680) = 0.654*B(357)-B(814)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(681)>0) THEN
   JVS(681) = -B(334)-B(340)-B(1151)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(682)>0) THEN
   JVS(682) = 0.272*B(187)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(683)>0) THEN
   JVS(683) = 0.272*B(188)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(684)>0) THEN
   JVS(684) = -B(335)-B(341)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(685)>0) THEN
   JVS(685) = -B(1045)-B(1058)-B(1068)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(686)>0) THEN
   JVS(686) = -B(1059)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(687)>0) THEN
   JVS(687) = -B(1046)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(688)>0) THEN
   JVS(688) = -B(1069)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(689)>0) THEN
   JVS(689) = B(1071)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(690)>0) THEN
   JVS(690) = -B(30)-B(32)-B(702)-B(1115)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(691)>0) THEN
   JVS(691) = B(26)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(692)>0) THEN
   JVS(692) = B(27)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(693)>0) THEN
   JVS(693) = -B(703)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(694)>0) THEN
   JVS(694) = -B(31)-B(33)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(695)>0) THEN
   JVS(695) = -B(800)-B(1154)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(696)>0) THEN
   JVS(696) = 0.5*B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(697)>0) THEN
   JVS(697) = 0.51*B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(698)>0) THEN
   JVS(698) = 0.5*B(795)+0.51*B(799)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(699)>0) THEN
   JVS(699) = -B(801)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(700)>0) THEN
   JVS(700) = -B(1043)-B(1056)-B(1066)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(701)>0) THEN
   JVS(701) = -B(1057)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(702)>0) THEN
   JVS(702) = -B(1044)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(703)>0) THEN
   JVS(703) = -B(1067)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(704)>0) THEN
   JVS(704) = B(1070)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(705)>0) THEN
   JVS(705) = -B(364)-B(366)-B(1157)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(706)>0) THEN
   JVS(706) = 0.85*B(193)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(707)>0) THEN
   JVS(707) = 0.41*B(248)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(708)>0) THEN
   JVS(708) = 0.5*B(304)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(709)>0) THEN
   JVS(709) = 0.85*B(194)+0.41*B(249)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(710)>0) THEN
   JVS(710) = 0.5*B(305)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(711)>0) THEN
   JVS(711) = -B(365)-B(367)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(712)>0) THEN
   JVS(712) = -B(360)-B(362)-B(1156)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(713)>0) THEN
   JVS(713) = B(853)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(714)>0) THEN
   JVS(714) = B(191)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(715)>0) THEN
   JVS(715) = B(192)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(716)>0) THEN
   JVS(716) = B(854)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(717)>0) THEN
   JVS(717) = -B(361)-B(363)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(718)>0) THEN
   JVS(718) = -B(332)-B(338)-B(1150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(719)>0) THEN
   JVS(719) = 0.628*B(187)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(720)>0) THEN
   JVS(720) = 0.628*B(188)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(721)>0) THEN
   JVS(721) = -B(333)-B(339)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(722)>0) THEN
   JVS(722) = -B(336)-B(342)-B(1152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(723)>0) THEN
   JVS(723) = 0.037*B(187)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(724)>0) THEN
   JVS(724) = 0.037*B(188)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(725)>0) THEN
   JVS(725) = -B(337)-B(343)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(726)>0) THEN
   JVS(726) = -B(831)-B(1225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(727)>0) THEN
   JVS(727) = 0.21*B(792)+0.2*B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(728)>0) THEN
   JVS(728) = 0.26*B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(729)>0) THEN
   JVS(729) = 0.26*B(455)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(730)>0) THEN
   JVS(730) = 0.21*B(793)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(731)>0) THEN
   JVS(731) = 0.2*B(795)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(732)>0) THEN
   JVS(732) = -B(832)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(733)>0) THEN
   JVS(733) = -B(232)-B(710)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(734)>0) THEN
   JVS(734) = 0.09*B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(735)>0) THEN
   JVS(735) = 0.25*B(203)+B(237)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(736)>0) THEN
   JVS(736) = 0.25*B(204)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(737)>0) THEN
   JVS(737) = 0.09*B(455)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(738)>0) THEN
   JVS(738) = -B(711)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(739)>0) THEN
   JVS(739) = -B(233)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(740)>0) THEN
   JVS(740) = -B(61)-B(1028)-B(1030)-B(1032)-B(1124)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(741)>0) THEN
   JVS(741) = B(59)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(742)>0) THEN
   JVS(742) = B(60)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(743)>0) THEN
   JVS(743) = -B(1029)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(744)>0) THEN
   JVS(744) = -B(1031)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(745)>0) THEN
   JVS(745) = -B(141)-B(143)-B(145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(746)>0) THEN
   JVS(746) = 0.655*B(139)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(747)>0) THEN
   JVS(747) = -B(146)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(748)>0) THEN
   JVS(748) = -B(142)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(749)>0) THEN
   JVS(749) = -B(144)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(750)>0) THEN
   JVS(750) = 0.655*B(140)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(751)>0) THEN
   JVS(751) = -B(933)-B(947)-B(951)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(752)>0) THEN
   JVS(752) = -B(948)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(753)>0) THEN
   JVS(753) = -B(952)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(754)>0) THEN
   JVS(754) = -B(934)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(755)>0) THEN
   JVS(755) = -B(935)-B(949)-B(953)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(756)>0) THEN
   JVS(756) = -B(950)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(757)>0) THEN
   JVS(757) = -B(954)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(758)>0) THEN
   JVS(758) = -B(936)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(759)>0) THEN
   JVS(759) = -B(166)-B(254)-B(258)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(760)>0) THEN
   JVS(760) = B(163)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(761)>0) THEN
   JVS(761) = -B(259)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(762)>0) THEN
   JVS(762) = B(164)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(763)>0) THEN
   JVS(763) = -B(255)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(764)>0) THEN
   JVS(764) = -B(79)-B(383)-B(494)-B(704)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(765)>0) THEN
   JVS(765) = -B(495)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(766)>0) THEN
   JVS(766) = -B(705)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(767)>0) THEN
   JVS(767) = -B(384)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(768)>0) THEN
   JVS(768) = -B(80)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(769)>0) THEN
   JVS(769) = -B(739)-B(740)-B(1088)-B(1089)-B(1091)-B(1204)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(770)>0) THEN
   JVS(770) = B(735)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(771)>0) THEN
   JVS(771) = -B(741)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(772)>0) THEN
   JVS(772) = B(737)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(773)>0) THEN
   JVS(773) = B(736)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(774)>0) THEN
   JVS(774) = B(738)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(775)>0) THEN
   JVS(775) = B(821)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(776)>0) THEN
   JVS(776) = -B(823)-B(825)-B(827)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(777)>0) THEN
   JVS(777) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(778)>0) THEN
   JVS(778) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(779)>0) THEN
   JVS(779) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(780)>0) THEN
   JVS(780) = -B(824)-B(826)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(781)>0) THEN
   JVS(781) = -B(828)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(782)>0) THEN
   JVS(782) = B(822)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(783)>0) THEN
   JVS(783) = -B(815)-B(817)-B(819)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(784)>0) THEN
   JVS(784) = 0.03*B(103)+0.09*B(217)+0.113*B(398)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(785)>0) THEN
   JVS(785) = 0.113*B(399)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(786)>0) THEN
   JVS(786) = 0.03*B(104)-B(816)-B(818)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(787)>0) THEN
   JVS(787) = -B(820)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(788)>0) THEN
   JVS(788) = -B(955)-B(957)-B(959)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(789)>0) THEN
   JVS(789) = -B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(790)>0) THEN
   JVS(790) = -B(960)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(791)>0) THEN
   JVS(791) = -B(956)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(792)>0) THEN
   JVS(792) = B(161)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(793)>0) THEN
   JVS(793) = -B(165)-B(256)-B(1224)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(794)>0) THEN
   JVS(794) = 0.96*B(125)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(795)>0) THEN
   JVS(795) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(796)>0) THEN
   JVS(796) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(797)>0) THEN
   JVS(797) = 0.96*B(126)+B(162)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(798)>0) THEN
   JVS(798) = -B(257)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(799)>0) THEN
   JVS(799) = -B(129)-B(131)-B(133)-B(135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(800)>0) THEN
   JVS(800) = 0.4*B(119)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(801)>0) THEN
   JVS(801) = -B(136)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(802)>0) THEN
   JVS(802) = -B(132)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(803)>0) THEN
   JVS(803) = -B(134)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(804)>0) THEN
   JVS(804) = 0.4*B(120)-B(130)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(805)>0) THEN
   JVS(805) = 0.96*B(143)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(806)>0) THEN
   JVS(806) = 0.96*B(133)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(807)>0) THEN
   JVS(807) = -B(314)-B(316)-B(1142)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(808)>0) THEN
   JVS(808) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(809)>0) THEN
   JVS(809) = B(197)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(810)>0) THEN
   JVS(810) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(811)>0) THEN
   JVS(811) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(812)>0) THEN
   JVS(812) = 0.96*B(134)+0.96*B(144)+B(198)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(813)>0) THEN
   JVS(813) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(814)>0) THEN
   JVS(814) = -B(315)-B(317)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(815)>0) THEN
   JVS(815) = -B(554)-B(556)-B(558)-B(560)-B(562)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(816)>0) THEN
   JVS(816) = B(524)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(817)>0) THEN
   JVS(817) = B(1116)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(818)>0) THEN
   JVS(818) = -B(557)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(819)>0) THEN
   JVS(819) = -B(559)-B(561)-B(563)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(820)>0) THEN
   JVS(820) = B(654)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(821)>0) THEN
   JVS(821) = 0.15*B(576)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(822)>0) THEN
   JVS(822) = B(514)+B(525)+0.24*B(574)+0.15*B(577)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(823)>0) THEN
   JVS(823) = B(530)+B(532)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(824)>0) THEN
   JVS(824) = B(533)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(825)>0) THEN
   JVS(825) = 0.24*B(575)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(826)>0) THEN
   JVS(826) = -B(476)-B(1033)-B(1035)-B(1166)-B(1167)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(827)>0) THEN
   JVS(827) = B(500)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(828)>0) THEN
   JVS(828) = -B(477)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(829)>0) THEN
   JVS(829) = B(501)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(830)>0) THEN
   JVS(830) = -B(1034)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(831)>0) THEN
   JVS(831) = -B(1036)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(832)>0) THEN
   JVS(832) = B(812)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(833)>0) THEN
   JVS(833) = -B(806)-B(808)-B(810)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(834)>0) THEN
   JVS(834) = B(804)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(835)>0) THEN
   JVS(835) = -B(807)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(836)>0) THEN
   JVS(836) = -B(809)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(837)>0) THEN
   JVS(837) = -B(811)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(838)>0) THEN
   JVS(838) = B(805)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(839)>0) THEN
   JVS(839) = -B(234)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(840)>0) THEN
   JVS(840) = 0.25*B(230)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(841)>0) THEN
   JVS(841) = 0.25*B(175)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(842)>0) THEN
   JVS(842) = 0.25*B(177)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(843)>0) THEN
   JVS(843) = 0.25*B(226)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(844)>0) THEN
   JVS(844) = 0.25*B(209)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(845)>0) THEN
   JVS(845) = 0.3*B(372)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(846)>0) THEN
   JVS(846) = 0.25*B(983)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(847)>0) THEN
   JVS(847) = 0.25*B(965)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(848)>0) THEN
   JVS(848) = 0.25*B(213)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(849)>0) THEN
   JVS(849) = 0.25*B(941)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(850)>0) THEN
   JVS(850) = 0.25*B(218)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(851)>0) THEN
   JVS(851) = 0.25*B(220)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(852)>0) THEN
   JVS(852) = 0.24*B(215)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(853)>0) THEN
   JVS(853) = 0.25*B(207)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(854)>0) THEN
   JVS(854) = 0.15*B(222)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(855)>0) THEN
   JVS(855) = 0.25*B(176)+0.25*B(178)+0.25*B(208)+0.25*B(210)+0.25*B(214)+0.24*B(216)+0.25*B(219)+0.25*B(221)+0.15*B(223)&
                &+0.25*B(227)+0.25*B(231)+0.3*B(373)+0.25*B(942)+0.25*B(966)+0.25*B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(856)>0) THEN
   JVS(856) = -B(235)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(857)>0) THEN
   JVS(857) = B(730)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(858)>0) THEN
   JVS(858) = B(734)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(859)>0) THEN
   JVS(859) = B(740)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(860)>0) THEN
   JVS(860) = -B(735)-B(764)-B(1198)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(861)>0) THEN
   JVS(861) = B(741)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(862)>0) THEN
   JVS(862) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(863)>0) THEN
   JVS(863) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(864)>0) THEN
   JVS(864) = -B(736)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(865)>0) THEN
   JVS(865) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(866)>0) THEN
   JVS(866) = -B(765)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(867)>0) THEN
   JVS(867) = -B(997)-B(1005)-B(1107)-B(1229)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(868)>0) THEN
   JVS(868) = 0.7*B(979)+0.35*B(983)+1.05*B(994)+0.7*B(996)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(869)>0) THEN
   JVS(869) = B(973)+0.7*B(977)+0.7*B(981)+0.7*B(985)+0.7*B(989)+1.4*B(993)+1.05*B(995)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(870)>0) THEN
   JVS(870) = 0.12*B(937)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(871)>0) THEN
   JVS(871) = 0.7*B(986)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(872)>0) THEN
   JVS(872) = 0.7*B(982)+0.35*B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(873)>0) THEN
   JVS(873) = 0.12*B(938)+B(974)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(874)>0) THEN
   JVS(874) = 0.7*B(978)+0.7*B(980)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(875)>0) THEN
   JVS(875) = 0.7*B(990)-B(1006)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(876)>0) THEN
   JVS(876) = -B(998)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(877)>0) THEN
   JVS(877) = B(678)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(878)>0) THEN
   JVS(878) = -0.75*B(578)-B(612)-B(1175)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(879)>0) THEN
   JVS(879) = B(1047)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(880)>0) THEN
   JVS(880) = B(690)+B(1039)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(881)>0) THEN
   JVS(881) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(882)>0) THEN
   JVS(882) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(883)>0) THEN
   JVS(883) = B(679)+B(691)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(884)>0) THEN
   JVS(884) = -0.75*B(579)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(885)>0) THEN
   JVS(885) = -B(613)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(886)>0) THEN
   JVS(886) = B(670)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(887)>0) THEN
   JVS(887) = B(1040)+B(1048)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(888)>0) THEN
   JVS(888) = -B(452)-B(790)-B(1102)-B(1162)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(889)>0) THEN
   JVS(889) = 0.081*B(103)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(890)>0) THEN
   JVS(890) = -B(453)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(891)>0) THEN
   JVS(891) = 0.081*B(104)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(892)>0) THEN
   JVS(892) = -B(791)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(893)>0) THEN
   JVS(893) = -B(22)-B(520)-B(522)-B(524)-B(648)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(894)>0) THEN
   JVS(894) = 0.1*B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(895)>0) THEN
   JVS(895) = B(1126)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(896)>0) THEN
   JVS(896) = 0.1*B(253)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(897)>0) THEN
   JVS(897) = -B(649)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(898)>0) THEN
   JVS(898) = -B(521)-B(523)-B(525)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(899)>0) THEN
   JVS(899) = -B(23)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(900)>0) THEN
   JVS(900) = -B(857)-B(859)-B(861)-B(863)-B(865)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(901)>0) THEN
   JVS(901) = 0.044*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(902)>0) THEN
   JVS(902) = -B(864)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(903)>0) THEN
   JVS(903) = -B(858)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(904)>0) THEN
   JVS(904) = 0.044*B(295)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(905)>0) THEN
   JVS(905) = -B(860)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(906)>0) THEN
   JVS(906) = -B(862)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(907)>0) THEN
   JVS(907) = -B(866)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(908)>0) THEN
   JVS(908) = -B(901)-B(903)-B(905)-B(907)-B(909)-B(911)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(909)>0) THEN
   JVS(909) = 0.055*B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(910)>0) THEN
   JVS(910) = -B(908)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(911)>0) THEN
   JVS(911) = -B(902)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(912)>0) THEN
   JVS(912) = 0.055*B(386)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(913)>0) THEN
   JVS(913) = -B(904)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(914)>0) THEN
   JVS(914) = -B(906)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(915)>0) THEN
   JVS(915) = -B(910)-B(912)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(916)>0) THEN
   JVS(916) = -B(889)-B(891)-B(893)-B(895)-B(897)-B(899)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(917)>0) THEN
   JVS(917) = 0.12*B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(918)>0) THEN
   JVS(918) = -B(896)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(919)>0) THEN
   JVS(919) = -B(890)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(920)>0) THEN
   JVS(920) = 0.12*B(253)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(921)>0) THEN
   JVS(921) = -B(892)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(922)>0) THEN
   JVS(922) = -B(894)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(923)>0) THEN
   JVS(923) = -B(898)-B(900)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(924)>0) THEN
   JVS(924) = -B(867)-B(869)-B(871)-B(873)-B(875)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(925)>0) THEN
   JVS(925) = 0.055*B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(926)>0) THEN
   JVS(926) = 0.022*B(298)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(927)>0) THEN
   JVS(927) = -B(874)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(928)>0) THEN
   JVS(928) = -B(868)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(929)>0) THEN
   JVS(929) = 0.022*B(299)+0.055*B(386)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(930)>0) THEN
   JVS(930) = -B(870)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(931)>0) THEN
   JVS(931) = -B(872)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(932)>0) THEN
   JVS(932) = -B(876)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(933)>0) THEN
   JVS(933) = B(350)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(934)>0) THEN
   JVS(934) = B(346)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(935)>0) THEN
   JVS(935) = B(348)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(936)>0) THEN
   JVS(936) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(937)>0) THEN
   JVS(937) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(938)>0) THEN
   JVS(938) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(939)>0) THEN
   JVS(939) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(940)>0) THEN
   JVS(940) = -B(352)-B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(941)>0) THEN
   JVS(941) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(942)>0) THEN
   JVS(942) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(943)>0) THEN
   JVS(943) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(944)>0) THEN
   JVS(944) = -B(355)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(945)>0) THEN
   JVS(945) = -B(353)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(946)>0) THEN
   JVS(946) = B(347)+B(349)+B(351)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(947)>0) THEN
   JVS(947) = B(1226)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(948)>0) THEN
   JVS(948) = 0.252*B(913)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(949)>0) THEN
   JVS(949) = 0.26*B(915)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(950)>0) THEN
   JVS(950) = 0.268*B(917)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(951)>0) THEN
   JVS(951) = 0.085*B(1013)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(952)>0) THEN
   JVS(952) = B(1015)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(953)>0) THEN
   JVS(953) = B(1017)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(954)>0) THEN
   JVS(954) = 0.919*B(141)+0.7*B(145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(955)>0) THEN
   JVS(955) = 0.48*B(815)+0.072*B(819)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(956)>0) THEN
   JVS(956) = B(129)+0.94*B(131)+0.7*B(135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(957)>0) THEN
   JVS(957) = 0.085*B(352)+0.088*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(958)>0) THEN
   JVS(958) = -B(268)-B(272)-B(1093)-B(1133)-B(1134)-B(1135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(959)>0) THEN
   JVS(959) = 0.216*B(400)+0.216*B(782)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(960)>0) THEN
   JVS(960) = 0.06*B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(961)>0) THEN
   JVS(961) = 0.134*B(262)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(962)>0) THEN
   JVS(962) = 0.7*B(137)+0.25*B(1228)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(963)>0) THEN
   JVS(963) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(964)>0) THEN
   JVS(964) = 0.216*B(401)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(965)>0) THEN
   JVS(965) = 0.7*B(136)+0.7*B(146)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(966)>0) THEN
   JVS(966) = 0.7*B(138)+0.06*B(455)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(967)>0) THEN
   JVS(967) = 0.94*B(132)+0.919*B(142)+0.088*B(355)+0.216*B(783)+0.48*B(816)+B(1016)+B(1018)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(968)>0) THEN
   JVS(968) = 0.085*B(353)+0.072*B(820)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(969)>0) THEN
   JVS(969) = B(130)-B(273)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(970)>0) THEN
   JVS(970) = 0.134*B(263)-B(269)+0.252*B(914)+0.26*B(916)+0.268*B(918)+0.085*B(1014)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(971)>0) THEN
   JVS(971) = 0.21*B(452)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(972)>0) THEN
   JVS(972) = -B(802)-B(1104)-B(1161)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(973)>0) THEN
   JVS(973) = 0.075*B(792)+0.06*B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(974)>0) THEN
   JVS(974) = 0.26*B(796)+0.16*B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(975)>0) THEN
   JVS(975) = 0.12*B(106)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(976)>0) THEN
   JVS(976) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(977)>0) THEN
   JVS(977) = 0.21*B(453)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(978)>0) THEN
   JVS(978) = 0.12*B(107)+0.075*B(793)+0.26*B(797)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(979)>0) THEN
   JVS(979) = 0.06*B(795)+0.16*B(799)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(980)>0) THEN
   JVS(980) = -B(803)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(981)>0) THEN
   JVS(981) = 0.209*B(318)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(982)>0) THEN
   JVS(982) = -B(148)-B(199)-B(230)-B(414)-B(436)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(983)>0) THEN
   JVS(983) = B(266)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(984)>0) THEN
   JVS(984) = -B(415)-B(437)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(985)>0) THEN
   JVS(985) = -B(231)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(986)>0) THEN
   JVS(986) = -B(149)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(987)>0) THEN
   JVS(987) = -B(200)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(988)>0) THEN
   JVS(988) = B(267)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(989)>0) THEN
   JVS(989) = 0.209*B(319)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(990)>0) THEN
   JVS(990) = -B(877)-B(879)-B(881)-B(883)-B(885)-B(887)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(991)>0) THEN
   JVS(991) = 0.12*B(296)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(992)>0) THEN
   JVS(992) = -B(884)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(993)>0) THEN
   JVS(993) = -B(878)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(994)>0) THEN
   JVS(994) = 0.12*B(297)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(995)>0) THEN
   JVS(995) = -B(880)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(996)>0) THEN
   JVS(996) = -B(882)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(997)>0) THEN
   JVS(997) = -B(886)-B(888)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(998)>0) THEN
   JVS(998) = -B(999)-B(1001)-B(1003)-B(1108)-B(1230)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(999)>0) THEN
   JVS(999) = 0.3*B(979)+0.15*B(983)+0.45*B(994)+0.3*B(996)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1000)>0) THEN
   JVS(1000) = 0.3*B(977)+0.3*B(981)+0.3*B(985)+0.3*B(989)+0.6*B(993)+0.45*B(995)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1001)>0) THEN
   JVS(1001) = 0.22*B(961)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1002)>0) THEN
   JVS(1002) = 0.06*B(937)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1003)>0) THEN
   JVS(1003) = 0.3*B(986)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1004)>0) THEN
   JVS(1004) = 0.3*B(982)+0.15*B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1005)>0) THEN
   JVS(1005) = -B(1002)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1006)>0) THEN
   JVS(1006) = 0.06*B(938)+0.22*B(962)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1007)>0) THEN
   JVS(1007) = 0.3*B(978)+0.3*B(980)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1008)>0) THEN
   JVS(1008) = 0.3*B(990)-B(1004)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1009)>0) THEN
   JVS(1009) = -B(1000)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1010)>0) THEN
   JVS(1010) = 0.36*B(322)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1011)>0) THEN
   JVS(1011) = B(85)+B(496)+B(716)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1012)>0) THEN
   JVS(1012) = -B(87)-B(175)-B(240)-B(286)-B(290)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1013)>0) THEN
   JVS(1013) = 0.05*B(93)+0.03*B(207)+0.05*B(392)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1014)>0) THEN
   JVS(1014) = 0.05*B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1015)>0) THEN
   JVS(1015) = -B(287)-B(291)+0.05*B(393)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1016)>0) THEN
   JVS(1016) = -B(176)+0.03*B(208)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1017)>0) THEN
   JVS(1017) = -B(88)+0.05*B(94)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1018)>0) THEN
   JVS(1018) = -B(241)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1019)>0) THEN
   JVS(1019) = B(497)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1020)>0) THEN
   JVS(1020) = B(717)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1021)>0) THEN
   JVS(1021) = B(86)+0.36*B(323)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1022)>0) THEN
   JVS(1022) = -B(835)-B(837)-B(839)-B(841)-B(843)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1023)>0) THEN
   JVS(1023) = 0.11*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1024)>0) THEN
   JVS(1024) = 0.12*B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1025)>0) THEN
   JVS(1025) = 0.326*B(298)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1026)>0) THEN
   JVS(1026) = 0.12*B(296)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1027)>0) THEN
   JVS(1027) = -B(840)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1028)>0) THEN
   JVS(1028) = 0.12*B(253)+0.11*B(295)+0.12*B(297)+0.326*B(299)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1029)>0) THEN
   JVS(1029) = -B(836)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1030)>0) THEN
   JVS(1030) = -B(838)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1031)>0) THEN
   JVS(1031) = -B(842)-B(844)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1032)>0) THEN
   JVS(1032) = 0.791*B(318)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1033)>0) THEN
   JVS(1033) = 0.894*B(141)+0.66*B(145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1034)>0) THEN
   JVS(1034) = 0.94*B(129)+0.9*B(131)+0.66*B(135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1035)>0) THEN
   JVS(1035) = 0.42*B(452)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1036)>0) THEN
   JVS(1036) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1037)>0) THEN
   JVS(1037) = -B(833)-B(1217)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1038)>0) THEN
   JVS(1038) = 0.5*B(111)+0.075*B(193)+0.375*B(224)+0.5*B(410)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1039)>0) THEN
   JVS(1039) = 0.96*B(121)+0.96*B(123)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1040)>0) THEN
   JVS(1040) = 0.3*B(792)+0.23*B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1041)>0) THEN
   JVS(1041) = 0.38*B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1042)>0) THEN
   JVS(1042) = 0.3*B(137)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1043)>0) THEN
   JVS(1043) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1044)>0) THEN
   JVS(1044) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1045)>0) THEN
   JVS(1045) = 0.5*B(411)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1046)>0) THEN
   JVS(1046) = 0.66*B(136)+0.66*B(146)+0.375*B(225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1047)>0) THEN
   JVS(1047) = 0.3*B(138)+0.42*B(453)+0.38*B(455)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1048)>0) THEN
   JVS(1048) = 0.5*B(112)+0.96*B(124)+0.9*B(132)+0.894*B(142)+0.3*B(793)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1049)>0) THEN
   JVS(1049) = 0.075*B(194)+0.23*B(795)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1050)>0) THEN
   JVS(1050) = 0.96*B(122)+0.94*B(130)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1051)>0) THEN
   JVS(1051) = 0.791*B(319)-B(834)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1052)>0) THEN
   JVS(1052) = -B(111)-B(193)-B(224)-B(410)-B(432)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1053)>0) THEN
   JVS(1053) = B(302)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1054)>0) THEN
   JVS(1054) = -B(411)-B(433)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1055)>0) THEN
   JVS(1055) = -B(225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1056)>0) THEN
   JVS(1056) = -B(112)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1057)>0) THEN
   JVS(1057) = -B(194)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1058)>0) THEN
   JVS(1058) = B(303)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1059)>0) THEN
   JVS(1059) = -B(121)-B(123)-B(125)-B(127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1060)>0) THEN
   JVS(1060) = 0.6*B(119)+0.345*B(139)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1061)>0) THEN
   JVS(1061) = -B(124)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1062)>0) THEN
   JVS(1062) = -B(128)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1063)>0) THEN
   JVS(1063) = 0.6*B(120)-B(122)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1064)>0) THEN
   JVS(1064) = -B(126)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1065)>0) THEN
   JVS(1065) = 0.345*B(140)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1066)>0) THEN
   JVS(1066) = 0.209*B(330)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1067)>0) THEN
   JVS(1067) = -B(89)-B(177)-B(242)-B(288)-B(292)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1068)>0) THEN
   JVS(1068) = B(250)+B(724)+B(726)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1069)>0) THEN
   JVS(1069) = -B(289)-B(293)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1070)>0) THEN
   JVS(1070) = -B(178)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1071)>0) THEN
   JVS(1071) = -B(90)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1072)>0) THEN
   JVS(1072) = -B(243)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1073)>0) THEN
   JVS(1073) = B(727)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1074)>0) THEN
   JVS(1074) = B(725)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1075)>0) THEN
   JVS(1075) = B(251)+0.209*B(331)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1076)>0) THEN
   JVS(1076) = 0.193*B(800)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1077)>0) THEN
   JVS(1077) = -0.943*B(792)-B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1078)>0) THEN
   JVS(1078) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1079)>0) THEN
   JVS(1079) = 0.9*B(788)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1080)>0) THEN
   JVS(1080) = -0.943*B(793)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1081)>0) THEN
   JVS(1081) = -B(795)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1082)>0) THEN
   JVS(1082) = 0.9*B(789)+0.193*B(801)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1083)>0) THEN
   JVS(1083) = 0.209*B(324)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1084)>0) THEN
   JVS(1084) = B(83)+B(714)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1085)>0) THEN
   JVS(1085) = -B(113)-B(195)-B(226)-B(406)-B(438)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1086)>0) THEN
   JVS(1086) = 0.18*B(93)+0.09*B(207)+0.18*B(392)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1087)>0) THEN
   JVS(1087) = 0.18*B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1088)>0) THEN
   JVS(1088) = 0.18*B(393)-B(407)-B(439)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1089)>0) THEN
   JVS(1089) = 0.09*B(208)-B(227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1090)>0) THEN
   JVS(1090) = 0.18*B(94)-B(114)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1091)>0) THEN
   JVS(1091) = -B(196)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1092)>0) THEN
   JVS(1092) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1093)>0) THEN
   JVS(1093) = B(715)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1094)>0) THEN
   JVS(1094) = B(84)+0.209*B(325)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1095)>0) THEN
   JVS(1095) = -B(845)-B(847)-B(849)-B(851)-B(853)-B(855)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1096)>0) THEN
   JVS(1096) = 0.044*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1097)>0) THEN
   JVS(1097) = -B(852)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1098)>0) THEN
   JVS(1098) = -B(846)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1099)>0) THEN
   JVS(1099) = 0.044*B(295)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1100)>0) THEN
   JVS(1100) = -B(848)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1101)>0) THEN
   JVS(1101) = -B(850)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1102)>0) THEN
   JVS(1102) = -B(854)-B(856)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1103)>0) THEN
   JVS(1103) = 0.02*B(947)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1104)>0) THEN
   JVS(1104) = 0.02*B(949)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1105)>0) THEN
   JVS(1105) = 0.02*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1106)>0) THEN
   JVS(1106) = B(865)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1107)>0) THEN
   JVS(1107) = B(909)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1108)>0) THEN
   JVS(1108) = B(897)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1109)>0) THEN
   JVS(1109) = B(875)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1110)>0) THEN
   JVS(1110) = B(887)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1111)>0) THEN
   JVS(1111) = B(841)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1112)>0) THEN
   JVS(1112) = B(855)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1113)>0) THEN
   JVS(1113) = -B(15)-B(552)-B(656)-B(1114)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1114)>0) THEN
   JVS(1114) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1115)>0) THEN
   JVS(1115) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1116)>0) THEN
   JVS(1116) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1117)>0) THEN
   JVS(1117) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1118)>0) THEN
   JVS(1118) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1119)>0) THEN
   JVS(1119) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1120)>0) THEN
   JVS(1120) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1121)>0) THEN
   JVS(1121) = 0.02*B(948)+0.02*B(950)+0.02*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1122)>0) THEN
   JVS(1122) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1123)>0) THEN
   JVS(1123) = B(19)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1124)>0) THEN
   JVS(1124) = -B(657)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1125)>0) THEN
   JVS(1125) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1126)>0) THEN
   JVS(1126) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1127)>0) THEN
   JVS(1127) = B(842)+B(856)+B(866)+B(876)+B(888)+B(898)+B(910)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1128)>0) THEN
   JVS(1128) = B(12)-B(16)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1129)>0) THEN
   JVS(1129) = -B(553)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1130)>0) THEN
   JVS(1130) = 0.612*B(800)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1131)>0) THEN
   JVS(1131) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1132)>0) THEN
   JVS(1132) = -B(97)-B(181)-B(209)-B(408)-B(430)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1133)>0) THEN
   JVS(1133) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1134)>0) THEN
   JVS(1134) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1135)>0) THEN
   JVS(1135) = B(152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1136)>0) THEN
   JVS(1136) = -B(409)-B(431)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1137)>0) THEN
   JVS(1137) = -B(210)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1138)>0) THEN
   JVS(1138) = -B(98)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1139)>0) THEN
   JVS(1139) = -B(182)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1140)>0) THEN
   JVS(1140) = B(153)+0.612*B(801)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1141)>0) THEN
   JVS(1141) = 0.32*B(452)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1142)>0) THEN
   JVS(1142) = 0.019*B(792)+0.01*B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1143)>0) THEN
   JVS(1143) = -B(804)-B(1103)-B(1160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1144)>0) THEN
   JVS(1144) = 0.44*B(796)+0.28*B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1145)>0) THEN
   JVS(1145) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1146)>0) THEN
   JVS(1146) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1147)>0) THEN
   JVS(1147) = 0.15*B(108)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1148)>0) THEN
   JVS(1148) = 0.32*B(453)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1149)>0) THEN
   JVS(1149) = 0.15*B(109)+0.019*B(793)+0.44*B(797)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1150)>0) THEN
   JVS(1150) = 0.01*B(795)+0.28*B(799)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1151)>0) THEN
   JVS(1151) = -B(805)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1152)>0) THEN
   JVS(1152) = -B(276)-B(294)-B(300)-B(720)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1153)>0) THEN
   JVS(1153) = -B(295)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1154)>0) THEN
   JVS(1154) = -B(721)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1155)>0) THEN
   JVS(1155) = -B(301)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1156)>0) THEN
   JVS(1156) = -B(277)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1157)>0) THEN
   JVS(1157) = B(366)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1158)>0) THEN
   JVS(1158) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1159)>0) THEN
   JVS(1159) = -B(368)-B(370)-B(372)-2*B(374)-B(375)-B(377)-B(379)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1160)>0) THEN
   JVS(1160) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1161)>0) THEN
   JVS(1161) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1162)>0) THEN
   JVS(1162) = -B(369)-B(371)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1163)>0) THEN
   JVS(1163) = -B(373)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1164)>0) THEN
   JVS(1164) = -B(378)-B(380)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1165)>0) THEN
   JVS(1165) = -B(376)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1166)>0) THEN
   JVS(1166) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1167)>0) THEN
   JVS(1167) = B(367)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1168)>0) THEN
   JVS(1168) = B(34)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1169)>0) THEN
   JVS(1169) = -B(99)-B(183)-B(211)-B(394)-B(418)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1170)>0) THEN
   JVS(1170) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1171)>0) THEN
   JVS(1171) = B(173)+B(492)+B(718)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1172)>0) THEN
   JVS(1172) = -B(395)-B(419)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1173)>0) THEN
   JVS(1173) = -B(212)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1174)>0) THEN
   JVS(1174) = -B(100)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1175)>0) THEN
   JVS(1175) = -B(184)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1176)>0) THEN
   JVS(1176) = B(493)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1177)>0) THEN
   JVS(1177) = B(719)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1178)>0) THEN
   JVS(1178) = B(35)+B(174)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1179)>0) THEN
   JVS(1179) = 0.01*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1180)>0) THEN
   JVS(1180) = 0.07*B(806)+0.07*B(808)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1181)>0) THEN
   JVS(1181) = 0.16*B(452)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1182)>0) THEN
   JVS(1182) = 0.278*B(352)+0.142*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1183)>0) THEN
   JVS(1183) = 0.65*B(802)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1184)>0) THEN
   JVS(1184) = B(843)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1185)>0) THEN
   JVS(1185) = 0.057*B(792)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1186)>0) THEN
   JVS(1186) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1187)>0) THEN
   JVS(1187) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1188)>0) THEN
   JVS(1188) = -B(62)-B(698)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1189)>0) THEN
   JVS(1189) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1190)>0) THEN
   JVS(1190) = 0.07*B(937)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1191)>0) THEN
   JVS(1191) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1192)>0) THEN
   JVS(1192) = 0.134*B(262)+B(264)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1193)>0) THEN
   JVS(1193) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1194)>0) THEN
   JVS(1194) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1195)>0) THEN
   JVS(1195) = 0.5*B(284)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1196)>0) THEN
   JVS(1196) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1197)>0) THEN
   JVS(1197) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1198)>0) THEN
   JVS(1198) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1199)>0) THEN
   JVS(1199) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1200)>0) THEN
   JVS(1200) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1201)>0) THEN
   JVS(1201) = 0.16*B(453)+0.01*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1202)>0) THEN
   JVS(1202) = 0.142*B(355)+0.057*B(793)+0.07*B(807)+0.07*B(938)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1203)>0) THEN
   JVS(1203) = 0.278*B(353)+0.07*B(809)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1204)>0) THEN
   JVS(1204) = -B(699)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1205)>0) THEN
   JVS(1205) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1206)>0) THEN
   JVS(1206) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1207)>0) THEN
   JVS(1207) = B(844)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1208)>0) THEN
   JVS(1208) = -B(63)+0.134*B(263)+B(265)+0.5*B(285)+0.65*B(803)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1209)>0) THEN
   JVS(1209) = 2*B(1207)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1210)>0) THEN
   JVS(1210) = B(1208)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1211)>0) THEN
   JVS(1211) = B(1209)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1212)>0) THEN
   JVS(1212) = B(777)+B(1205)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1213)>0) THEN
   JVS(1213) = B(778)+B(1206)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1214)>0) THEN
   JVS(1214) = B(1212)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1215)>0) THEN
   JVS(1215) = B(1202)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1216)>0) THEN
   JVS(1216) = B(766)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1217)>0) THEN
   JVS(1217) = B(1213)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1218)>0) THEN
   JVS(1218) = B(733)+B(1203)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1219)>0) THEN
   JVS(1219) = B(1201)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1220)>0) THEN
   JVS(1220) = B(1199)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1221)>0) THEN
   JVS(1221) = -B(740)+B(1204)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1222)>0) THEN
   JVS(1222) = B(735)+B(764)+2*B(1198)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1223)>0) THEN
   JVS(1223) = -B(728)-B(731)-B(741)-B(742)-B(760)-B(762)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1224)>0) THEN
   JVS(1224) = B(744)+B(754)+B(756)+B(772)+B(774)+B(1200)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1225)>0) THEN
   JVS(1225) = -B(743)+B(745)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1226)>0) THEN
   JVS(1226) = -B(761)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1227)>0) THEN
   JVS(1227) = -B(729)+B(773)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1228)>0) THEN
   JVS(1228) = -B(763)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1229)>0) THEN
   JVS(1229) = B(736)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1230)>0) THEN
   JVS(1230) = -B(732)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1231)>0) THEN
   JVS(1231) = B(765)+B(767)+B(779)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1232)>0) THEN
   JVS(1232) = B(755)+B(757)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1233)>0) THEN
   JVS(1233) = B(160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1234)>0) THEN
   JVS(1234) = B(328)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1235)>0) THEN
   JVS(1235) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1236)>0) THEN
   JVS(1236) = -B(158)-B(167)-B(246)-B(306)-B(310)-B(444)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1237)>0) THEN
   JVS(1237) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1238)>0) THEN
   JVS(1238) = B(156)+B(171)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1239)>0) THEN
   JVS(1239) = 0.15*B(1131)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1240)>0) THEN
   JVS(1240) = B(1139)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1241)>0) THEN
   JVS(1241) = -B(445)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1242)>0) THEN
   JVS(1242) = -B(307)-B(311)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1243)>0) THEN
   JVS(1243) = -B(168)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1244)>0) THEN
   JVS(1244) = -B(247)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1245)>0) THEN
   JVS(1245) = B(172)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1246)>0) THEN
   JVS(1246) = -B(159)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1247)>0) THEN
   JVS(1247) = B(157)+B(329)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1248)>0) THEN
   JVS(1248) = 0.9*B(951)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1249)>0) THEN
   JVS(1249) = 0.9*B(953)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1250)>0) THEN
   JVS(1250) = 0.5*B(959)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1251)>0) THEN
   JVS(1251) = -B(975)-B(979)-B(983)-B(987)-B(991)-B(994)-2*B(996)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1252)>0) THEN
   JVS(1252) = -B(995)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1253)>0) THEN
   JVS(1253) = -B(988)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1254)>0) THEN
   JVS(1254) = -B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1255)>0) THEN
   JVS(1255) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1256)>0) THEN
   JVS(1256) = -B(976)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1257)>0) THEN
   JVS(1257) = -B(980)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1258)>0) THEN
   JVS(1258) = 0.9*B(952)+0.9*B(954)+0.5*B(960)-B(992)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1259)>0) THEN
   JVS(1259) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1260)>0) THEN
   JVS(1260) = 0.1*B(951)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1261)>0) THEN
   JVS(1261) = 0.1*B(953)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1262)>0) THEN
   JVS(1262) = 0.5*B(959)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1263)>0) THEN
   JVS(1263) = -B(994)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1264)>0) THEN
   JVS(1264) = -B(973)-B(977)-B(981)-B(985)-B(989)-2*B(993)-B(995)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1265)>0) THEN
   JVS(1265) = -B(986)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1266)>0) THEN
   JVS(1266) = -B(982)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1267)>0) THEN
   JVS(1267) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1268)>0) THEN
   JVS(1268) = -B(974)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1269)>0) THEN
   JVS(1269) = -B(978)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1270)>0) THEN
   JVS(1270) = 0.1*B(952)+0.1*B(954)+0.5*B(960)-B(990)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1271)>0) THEN
   JVS(1271) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1272)>0) THEN
   JVS(1272) = 2*B(776)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1273)>0) THEN
   JVS(1273) = B(1211)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1274)>0) THEN
   JVS(1274) = -B(748)+B(752)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1275)>0) THEN
   JVS(1275) = B(768)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1276)>0) THEN
   JVS(1276) = B(739)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1277)>0) THEN
   JVS(1277) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1278)>0) THEN
   JVS(1278) = B(742)+B(760)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1279)>0) THEN
   JVS(1279) = -B(737)-B(744)-B(746)-B(749)-B(754)-B(756)-B(758)-B(770)-B(772)-2*B(774)-2*B(775)-B(1200)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1280)>0) THEN
   JVS(1280) = B(743)-B(745)-B(747)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1281)>0) THEN
   JVS(1281) = B(761)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1282)>0) THEN
   JVS(1282) = B(753)-B(773)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1283)>0) THEN
   JVS(1283) = -B(771)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1284)>0) THEN
   JVS(1284) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1285)>0) THEN
   JVS(1285) = -B(738)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1286)>0) THEN
   JVS(1286) = B(769)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1287)>0) THEN
   JVS(1287) = -B(755)-B(757)-B(759)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1288)>0) THEN
   JVS(1288) = B(955)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1289)>0) THEN
   JVS(1289) = -B(961)-B(963)-B(965)-B(967)-B(969)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1290)>0) THEN
   JVS(1290) = -B(968)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1291)>0) THEN
   JVS(1291) = -B(966)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1292)>0) THEN
   JVS(1292) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1293)>0) THEN
   JVS(1293) = -B(962)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1294)>0) THEN
   JVS(1294) = -B(964)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1295)>0) THEN
   JVS(1295) = -B(970)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1296)>0) THEN
   JVS(1296) = B(956)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1297)>0) THEN
   JVS(1297) = 0.62*B(947)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1298)>0) THEN
   JVS(1298) = 0.62*B(949)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1299)>0) THEN
   JVS(1299) = 0.42*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1300)>0) THEN
   JVS(1300) = -B(101)-B(185)-B(213)-B(396)-B(420)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1301)>0) THEN
   JVS(1301) = B(201)+B(205)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1302)>0) THEN
   JVS(1302) = -B(397)-B(421)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1303)>0) THEN
   JVS(1303) = -B(214)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1304)>0) THEN
   JVS(1304) = 0.62*B(948)+0.62*B(950)+0.42*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1305)>0) THEN
   JVS(1305) = -B(102)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1306)>0) THEN
   JVS(1306) = -B(186)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1307)>0) THEN
   JVS(1307) = B(206)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1308)>0) THEN
   JVS(1308) = B(202)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1309)>0) THEN
   JVS(1309) = B(478)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1310)>0) THEN
   JVS(1310) = -B(1058)+B(1068)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1311)>0) THEN
   JVS(1311) = -B(1056)+B(1066)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1312)>0) THEN
   JVS(1312) = B(1033)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1313)>0) THEN
   JVS(1313) = -B(480)-B(1051)-B(1053)-B(1055)-B(1057)-B(1059)-B(1060)-B(1061)-B(1165)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1314)>0) THEN
   JVS(1314) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1315)>0) THEN
   JVS(1315) = B(466)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1316)>0) THEN
   JVS(1316) = B(1064)+B(1067)+B(1069)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1317)>0) THEN
   JVS(1317) = B(467)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1318)>0) THEN
   JVS(1318) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1319)>0) THEN
   JVS(1319) = -B(1052)+B(1065)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1320)>0) THEN
   JVS(1320) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1321)>0) THEN
   JVS(1321) = B(1034)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1322)>0) THEN
   JVS(1322) = B(479)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1323)>0) THEN
   JVS(1323) = -B(481)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1324)>0) THEN
   JVS(1324) = -B(1054)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1325)>0) THEN
   JVS(1325) = 0.193*B(800)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1326)>0) THEN
   JVS(1326) = 0.9*B(790)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1327)>0) THEN
   JVS(1327) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1328)>0) THEN
   JVS(1328) = -B(796)-B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1329)>0) THEN
   JVS(1329) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1330)>0) THEN
   JVS(1330) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1331)>0) THEN
   JVS(1331) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1332)>0) THEN
   JVS(1332) = -B(797)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1333)>0) THEN
   JVS(1333) = -B(799)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1334)>0) THEN
   JVS(1334) = 0.9*B(791)+0.193*B(801)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1335)>0) THEN
   JVS(1335) = B(933)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1336)>0) THEN
   JVS(1336) = B(935)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1337)>0) THEN
   JVS(1337) = -B(937)-B(939)-B(941)-B(943)-B(945)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1338)>0) THEN
   JVS(1338) = -B(944)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1339)>0) THEN
   JVS(1339) = -B(942)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1340)>0) THEN
   JVS(1340) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1341)>0) THEN
   JVS(1341) = -B(938)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1342)>0) THEN
   JVS(1342) = -B(940)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1343)>0) THEN
   JVS(1343) = -B(946)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1344)>0) THEN
   JVS(1344) = B(934)+B(936)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1345)>0) THEN
   JVS(1345) = 0.346*B(356)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1346)>0) THEN
   JVS(1346) = 0.143*B(338)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1347)>0) THEN
   JVS(1347) = 0.493*B(342)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1348)>0) THEN
   JVS(1348) = -B(218)-B(400)-B(424)-B(782)-B(784)-B(786)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1349)>0) THEN
   JVS(1349) = B(780)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1350)>0) THEN
   JVS(1350) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1351)>0) THEN
   JVS(1351) = -B(401)-B(425)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1352)>0) THEN
   JVS(1352) = -B(219)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1353)>0) THEN
   JVS(1353) = -B(783)-B(785)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1354)>0) THEN
   JVS(1354) = -B(787)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1355)>0) THEN
   JVS(1355) = 0.143*B(339)+0.493*B(343)+0.346*B(357)+B(781)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1356)>0) THEN
   JVS(1356) = B(1008)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1357)>0) THEN
   JVS(1357) = B(1007)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1358)>0) THEN
   JVS(1358) = B(460)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1359)>0) THEN
   JVS(1359) = B(150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1360)>0) THEN
   JVS(1360) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1361)>0) THEN
   JVS(1361) = B(1045)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1362)>0) THEN
   JVS(1362) = B(1043)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1363)>0) THEN
   JVS(1363) = 2*B(1028)+B(1030)+B(1032)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1364)>0) THEN
   JVS(1364) = B(383)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1365)>0) THEN
   JVS(1365) = B(1091)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1366)>0) THEN
   JVS(1366) = B(825)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1367)>0) THEN
   JVS(1367) = B(817)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1368)>0) THEN
   JVS(1368) = B(1033)+B(1035)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1369)>0) THEN
   JVS(1369) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1370)>0) THEN
   JVS(1370) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1371)>0) THEN
   JVS(1371) = 0.41*B(452)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1372)>0) THEN
   JVS(1372) = B(272)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1373)>0) THEN
   JVS(1373) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1374)>0) THEN
   JVS(1374) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1375)>0) THEN
   JVS(1375) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1376)>0) THEN
   JVS(1376) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1377)>0) THEN
   JVS(1377) = B(379)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1378)>0) THEN
   JVS(1378) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1379)>0) THEN
   JVS(1379) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1380)>0) THEN
   JVS(1380) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1381)>0) THEN
   JVS(1381) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1382)>0) THEN
   JVS(1382) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1383)>0) THEN
   JVS(1383) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1384)>0) THEN
   JVS(1384) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1385)>0) THEN
   JVS(1385) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1386)>0) THEN
   JVS(1386) = B(784)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1387)>0) THEN
   JVS(1387) = -B(42)-B(1118)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1388)>0) THEN
   JVS(1388) = 0.3*B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1389)>0) THEN
   JVS(1389) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1390)>0) THEN
   JVS(1390) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1391)>0) THEN
   JVS(1391) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1392)>0) THEN
   JVS(1392) = 0.6*B(119)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1393)>0) THEN
   JVS(1393) = B(1037)+B(1039)+B(1041)+B(1044)+B(1046)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1394)>0) THEN
   JVS(1394) = B(274)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1395)>0) THEN
   JVS(1395) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1396)>0) THEN
   JVS(1396) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1397)>0) THEN
   JVS(1397) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1398)>0) THEN
   JVS(1398) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1399)>0) THEN
   JVS(1399) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1400)>0) THEN
   JVS(1400) = B(171)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1401)>0) THEN
   JVS(1401) = B(205)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1402)>0) THEN
   JVS(1402) = 0.5*B(304)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1403)>0) THEN
   JVS(1403) = B(68)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1404)>0) THEN
   JVS(1404) = B(72)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1405)>0) THEN
   JVS(1405) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1406)>0) THEN
   JVS(1406) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1407)>0) THEN
   JVS(1407) = 0.41*B(453)+0.3*B(455)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1408)>0) THEN
   JVS(1408) = B(380)+B(785)+B(818)+B(826)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1409)>0) THEN
   JVS(1409) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1410)>0) THEN
   JVS(1410) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1411)>0) THEN
   JVS(1411) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1412)>0) THEN
   JVS(1412) = B(69)+B(73)+0.6*B(120)+B(151)+B(172)+B(206)+B(273)+B(275)+0.5*B(305)+B(384)+B(461)+B(1027)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1413)>0) THEN
   JVS(1413) = B(1042)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1414)>0) THEN
   JVS(1414) = B(40)+0.5*B(1026)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1415)>0) THEN
   JVS(1415) = 2*B(1029)+B(1034)+B(1038)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1416)>0) THEN
   JVS(1416) = B(41)-B(43)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1417)>0) THEN
   JVS(1417) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1418)>0) THEN
   JVS(1418) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1419)>0) THEN
   JVS(1419) = B(1031)+B(1036)+B(1040)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1420)>0) THEN
   JVS(1420) = -B(454)-B(788)-B(1101)-B(1216)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1421)>0) THEN
   JVS(1421) = 0.009*B(103)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1422)>0) THEN
   JVS(1422) = 0.5*B(147)+0.25*B(228)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1423)>0) THEN
   JVS(1423) = 0.25*B(229)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1424)>0) THEN
   JVS(1424) = -B(455)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1425)>0) THEN
   JVS(1425) = 0.009*B(104)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1426)>0) THEN
   JVS(1426) = -B(789)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1427)>0) THEN
   JVS(1427) = 0.11*B(1227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1428)>0) THEN
   JVS(1428) = 0.26*B(1153)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1429)>0) THEN
   JVS(1429) = 0.7*B(1155)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1430)>0) THEN
   JVS(1430) = 0.52*B(815)+0.078*B(819)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1431)>0) THEN
   JVS(1431) = B(901)+B(903)+B(905)+B(907)+B(909)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1432)>0) THEN
   JVS(1432) = 0.025*B(352)+0.088*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1433)>0) THEN
   JVS(1433) = B(1161)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1434)>0) THEN
   JVS(1434) = 0.3*B(792)+0.23*B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1435)>0) THEN
   JVS(1435) = 0.09*B(796)+0.06*B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1436)>0) THEN
   JVS(1436) = 0.13*B(218)+0.234*B(400)+0.234*B(782)+0.9*B(786)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1437)>0) THEN
   JVS(1437) = 0.24*B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1438)>0) THEN
   JVS(1438) = -B(262)-B(264)-B(1132)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1439)>0) THEN
   JVS(1439) = 0.53*B(106)+0.578*B(189)+0.36*B(220)+0.6*B(402)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1440)>0) THEN
   JVS(1440) = 0.5*B(1228)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1441)>0) THEN
   JVS(1441) = 0.5*B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1442)>0) THEN
   JVS(1442) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1443)>0) THEN
   JVS(1443) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1444)>0) THEN
   JVS(1444) = 0.234*B(401)+0.6*B(403)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1445)>0) THEN
   JVS(1445) = B(908)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1446)>0) THEN
   JVS(1446) = 0.13*B(219)+0.36*B(221)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1447)>0) THEN
   JVS(1447) = B(902)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1448)>0) THEN
   JVS(1448) = 0.5*B(386)+0.24*B(455)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1449)>0) THEN
   JVS(1449) = 0.53*B(107)+0.088*B(355)+0.234*B(783)+0.3*B(793)+0.09*B(797)+0.52*B(816)+B(904)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1450)>0) THEN
   JVS(1450) = 0.578*B(190)+0.025*B(353)+0.9*B(787)+0.23*B(795)+0.06*B(799)+0.078*B(820)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1451)>0) THEN
   JVS(1451) = B(906)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1452)>0) THEN
   JVS(1452) = B(910)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1453)>0) THEN
   JVS(1453) = -B(263)-B(265)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1454)>0) THEN
   JVS(1454) = B(364)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1455)>0) THEN
   JVS(1455) = B(166)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1456)>0) THEN
   JVS(1456) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1457)>0) THEN
   JVS(1457) = -B(163)-B(169)-B(248)-B(308)-B(312)-B(446)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1458)>0) THEN
   JVS(1458) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1459)>0) THEN
   JVS(1459) = -B(447)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1460)>0) THEN
   JVS(1460) = -B(309)-B(313)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1461)>0) THEN
   JVS(1461) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1462)>0) THEN
   JVS(1462) = -B(170)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1463)>0) THEN
   JVS(1463) = -B(249)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1464)>0) THEN
   JVS(1464) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1465)>0) THEN
   JVS(1465) = -B(164)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1466)>0) THEN
   JVS(1466) = B(365)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1467)>0) THEN
   JVS(1467) = 0.08*B(806)+0.08*B(808)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1468)>0) THEN
   JVS(1468) = B(899)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1469)>0) THEN
   JVS(1469) = B(436)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1470)>0) THEN
   JVS(1470) = B(290)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1471)>0) THEN
   JVS(1471) = B(432)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1472)>0) THEN
   JVS(1472) = B(292)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1473)>0) THEN
   JVS(1473) = B(438)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1474)>0) THEN
   JVS(1474) = B(430)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1475)>0) THEN
   JVS(1475) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1476)>0) THEN
   JVS(1476) = B(370)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1477)>0) THEN
   JVS(1477) = B(418)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1478)>0) THEN
   JVS(1478) = B(420)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1479)>0) THEN
   JVS(1479) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1480)>0) THEN
   JVS(1480) = B(424)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1481)>0) THEN
   JVS(1481) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1482)>0) THEN
   JVS(1482) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1483)>0) THEN
   JVS(1483) = -B(154)-B(712)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1484)>0) THEN
   JVS(1484) = B(426)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1485)>0) THEN
   JVS(1485) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1486)>0) THEN
   JVS(1486) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1487)>0) THEN
   JVS(1487) = B(422)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1488)>0) THEN
   JVS(1488) = B(442)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1489)>0) THEN
   JVS(1489) = B(434)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1490)>0) THEN
   JVS(1490) = B(416)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1491)>0) THEN
   JVS(1491) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1492)>0) THEN
   JVS(1492) = 0.5*B(284)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1493)>0) THEN
   JVS(1493) = B(428)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1494)>0) THEN
   JVS(1494) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1495)>0) THEN
   JVS(1495) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1496)>0) THEN
   JVS(1496) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1497)>0) THEN
   JVS(1497) = 0.15*B(244)+B(291)+B(293)+B(371)+B(390)+B(417)+B(419)+B(421)+B(423)+B(425)+B(427)+B(429)+B(431)+B(433)&
                 &+B(435)+B(437)+B(439)+B(443)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1498)>0) THEN
   JVS(1498) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1499)>0) THEN
   JVS(1499) = B(391)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1500)>0) THEN
   JVS(1500) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1501)>0) THEN
   JVS(1501) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1502)>0) THEN
   JVS(1502) = 0.08*B(807)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1503)>0) THEN
   JVS(1503) = 0.15*B(245)+0.08*B(809)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1504)>0) THEN
   JVS(1504) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1505)>0) THEN
   JVS(1505) = -B(713)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1506)>0) THEN
   JVS(1506) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1507)>0) THEN
   JVS(1507) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1508)>0) THEN
   JVS(1508) = B(900)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1509)>0) THEN
   JVS(1509) = -B(155)+0.5*B(285)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1510)>0) THEN
   JVS(1510) = 0.209*B(358)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1511)>0) THEN
   JVS(1511) = 0.054*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1512)>0) THEN
   JVS(1512) = -B(106)-B(189)-B(220)-B(402)-B(426)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1513)>0) THEN
   JVS(1513) = B(278)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1514)>0) THEN
   JVS(1514) = -B(403)-B(427)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1515)>0) THEN
   JVS(1515) = -B(221)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1516)>0) THEN
   JVS(1516) = 0.054*B(295)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1517)>0) THEN
   JVS(1517) = -B(107)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1518)>0) THEN
   JVS(1518) = -B(190)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1519)>0) THEN
   JVS(1519) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1520)>0) THEN
   JVS(1520) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1521)>0) THEN
   JVS(1521) = B(279)+0.209*B(359)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1522)>0) THEN
   JVS(1522) = B(622)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1523)>0) THEN
   JVS(1523) = B(628)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1524)>0) THEN
   JVS(1524) = B(620)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1525)>0) THEN
   JVS(1525) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1526)>0) THEN
   JVS(1526) = B(612)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1527)>0) THEN
   JVS(1527) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1528)>0) THEN
   JVS(1528) = -B(626)-B(1047)-B(1049)-B(1182)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1529)>0) THEN
   JVS(1529) = B(630)+B(1037)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1530)>0) THEN
   JVS(1530) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1531)>0) THEN
   JVS(1531) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1532)>0) THEN
   JVS(1532) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1533)>0) THEN
   JVS(1533) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1534)>0) THEN
   JVS(1534) = B(664)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1535)>0) THEN
   JVS(1535) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1536)>0) THEN
   JVS(1536) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1537)>0) THEN
   JVS(1537) = -B(1050)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1538)>0) THEN
   JVS(1538) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1539)>0) THEN
   JVS(1539) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1540)>0) THEN
   JVS(1540) = B(1038)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1541)>0) THEN
   JVS(1541) = B(613)+B(621)+B(623)-B(627)+B(629)+B(631)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1542)>0) THEN
   JVS(1542) = B(665)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1543)>0) THEN
   JVS(1543) = -B(1048)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1544)>0) THEN
   JVS(1544) = -B(119)-B(137)-B(139)-B(1228)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1545)>0) THEN
   JVS(1545) = 0.7*B(115)+0.7*B(117)+1.2*B(147)+0.6*B(228)+0.7*B(412)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1546)>0) THEN
   JVS(1546) = 0.7*B(413)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1547)>0) THEN
   JVS(1547) = 0.6*B(229)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1548)>0) THEN
   JVS(1548) = -B(138)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1549)>0) THEN
   JVS(1549) = 0.7*B(116)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1550)>0) THEN
   JVS(1550) = 0.7*B(118)-B(120)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1551)>0) THEN
   JVS(1551) = -B(140)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1552)>0) THEN
   JVS(1552) = -B(1045)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1553)>0) THEN
   JVS(1553) = -B(1043)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1554)>0) THEN
   JVS(1554) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1555)>0) THEN
   JVS(1555) = -B(630)-B(688)-B(690)-B(1037)-B(1039)-B(1041)-B(1044)-B(1046)-B(1180)-B(1181)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1556)>0) THEN
   JVS(1556) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1557)>0) THEN
   JVS(1557) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1558)>0) THEN
   JVS(1558) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1559)>0) THEN
   JVS(1559) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1560)>0) THEN
   JVS(1560) = -B(691)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1561)>0) THEN
   JVS(1561) = -B(1042)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1562)>0) THEN
   JVS(1562) = B(668)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1563)>0) THEN
   JVS(1563) = -B(1038)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1564)>0) THEN
   JVS(1564) = -B(631)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1565)>0) THEN
   JVS(1565) = -B(689)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1566)>0) THEN
   JVS(1566) = B(669)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1567)>0) THEN
   JVS(1567) = -B(1040)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1568)>0) THEN
   JVS(1568) = B(1226)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1569)>0) THEN
   JVS(1569) = 0.215*B(915)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1570)>0) THEN
   JVS(1570) = 0.463*B(917)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1571)>0) THEN
   JVS(1571) = 0.55*B(1013)+0.5*B(1227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1572)>0) THEN
   JVS(1572) = B(1015)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1573)>0) THEN
   JVS(1573) = 0.5*B(1011)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1574)>0) THEN
   JVS(1574) = 0.58*B(1153)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1575)>0) THEN
   JVS(1575) = 0.3*B(1155)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1576)>0) THEN
   JVS(1576) = B(1017)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1577)>0) THEN
   JVS(1577) = B(36)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1578)>0) THEN
   JVS(1578) = 0.52*B(815)+0.078*B(819)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1579)>0) THEN
   JVS(1579) = 0.07*B(806)+0.07*B(808)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1580)>0) THEN
   JVS(1580) = B(867)+B(869)+B(871)+B(873)+B(875)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1581)>0) THEN
   JVS(1581) = 0.085*B(352)+0.088*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1582)>0) THEN
   JVS(1582) = 0.65*B(802)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1583)>0) THEN
   JVS(1583) = B(877)+B(879)+B(881)+B(883)+B(887)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1584)>0) THEN
   JVS(1584) = B(833)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1585)>0) THEN
   JVS(1585) = 0.5*B(111)+0.075*B(193)+0.375*B(224)+0.5*B(410)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1586)>0) THEN
   JVS(1586) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1587)>0) THEN
   JVS(1587) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1588)>0) THEN
   JVS(1588) = B(1160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1589)>0) THEN
   JVS(1589) = 0.5*B(211)+B(418)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1590)>0) THEN
   JVS(1590) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1591)>0) THEN
   JVS(1591) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1592)>0) THEN
   JVS(1592) = 0.29*B(218)+0.234*B(400)+0.234*B(782)+0.9*B(786)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1593)>0) THEN
   JVS(1593) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1594)>0) THEN
   JVS(1594) = 0.35*B(106)+0.102*B(189)+0.14*B(220)+0.4*B(402)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1595)>0) THEN
   JVS(1595) = 0.25*B(1228)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1596)>0) THEN
   JVS(1596) = -B(270)-B(274)-B(1094)-B(1136)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1597)>0) THEN
   JVS(1597) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1598)>0) THEN
   JVS(1598) = 0.5*B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1599)>0) THEN
   JVS(1599) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1600)>0) THEN
   JVS(1600) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1601)>0) THEN
   JVS(1601) = B(282)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1602)>0) THEN
   JVS(1602) = 0.122*B(108)+0.255*B(222)+0.143*B(404)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1603)>0) THEN
   JVS(1603) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1604)>0) THEN
   JVS(1604) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1605)>0) THEN
   JVS(1605) = 0.88*B(298)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1606)>0) THEN
   JVS(1606) = 0.5*B(296)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1607)>0) THEN
   JVS(1607) = 0.234*B(401)+0.4*B(403)+0.143*B(405)+0.5*B(411)+B(419)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1608)>0) THEN
   JVS(1608) = B(874)+B(884)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1609)>0) THEN
   JVS(1609) = 0.5*B(212)+0.29*B(219)+0.14*B(221)+0.255*B(223)+0.375*B(225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1610)>0) THEN
   JVS(1610) = B(868)+B(878)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1611)>0) THEN
   JVS(1611) = 0.5*B(297)+0.88*B(299)+0.5*B(386)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1612)>0) THEN
   JVS(1612) = 0.35*B(107)+0.122*B(109)+0.5*B(112)+0.088*B(355)+0.234*B(783)+0.07*B(807)+0.52*B(816)+B(870)+B(880)&
                 &+B(1016)+B(1018)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1613)>0) THEN
   JVS(1613) = 0.102*B(190)+0.075*B(194)+0.085*B(353)+0.9*B(787)+0.07*B(809)+0.078*B(820)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1614)>0) THEN
   JVS(1614) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1615)>0) THEN
   JVS(1615) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1616)>0) THEN
   JVS(1616) = -B(275)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1617)>0) THEN
   JVS(1617) = B(872)+B(882)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1618)>0) THEN
   JVS(1618) = B(876)+B(888)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1619)>0) THEN
   JVS(1619) = B(37)-B(271)+B(283)+0.65*B(803)+B(834)+0.215*B(916)+0.463*B(918)+0.5*B(1012)+0.55*B(1014)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1620)>0) THEN
   JVS(1620) = 0.791*B(324)+B(1146)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1621)>0) THEN
   JVS(1621) = B(113)+0.75*B(226)+B(406)+B(438)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1622)>0) THEN
   JVS(1622) = 0.11*B(937)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1623)>0) THEN
   JVS(1623) = -B(173)-B(492)-B(718)-B(1129)-B(1130)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1624)>0) THEN
   JVS(1624) = 0.32*B(93)+0.16*B(207)+0.32*B(392)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1625)>0) THEN
   JVS(1625) = 0.32*B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1626)>0) THEN
   JVS(1626) = 0.32*B(393)+B(407)+B(439)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1627)>0) THEN
   JVS(1627) = 0.16*B(208)+0.75*B(227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1628)>0) THEN
   JVS(1628) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1629)>0) THEN
   JVS(1629) = 0.32*B(94)+B(114)+0.11*B(938)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1630)>0) THEN
   JVS(1630) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1631)>0) THEN
   JVS(1631) = -B(493)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1632)>0) THEN
   JVS(1632) = -B(719)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1633)>0) THEN
   JVS(1633) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1634)>0) THEN
   JVS(1634) = -B(174)+0.791*B(325)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1635)>0) THEN
   JVS(1635) = 0.513*B(334)+0.275*B(1151)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1636)>0) THEN
   JVS(1636) = 0.243*B(332)+0.275*B(1150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1637)>0) THEN
   JVS(1637) = 0.743*B(336)+0.275*B(1152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1638)>0) THEN
   JVS(1638) = B(1162)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1639)>0) THEN
   JVS(1639) = B(1216)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1640)>0) THEN
   JVS(1640) = -B(385)-B(780)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1641)>0) THEN
   JVS(1641) = 0.058*B(103)+0.3*B(215)+1.11*B(217)+0.14*B(398)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1642)>0) THEN
   JVS(1642) = 0.23*B(115)+0.23*B(117)+0.23*B(147)+0.115*B(228)+0.23*B(412)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1643)>0) THEN
   JVS(1643) = 0.14*B(399)+0.23*B(413)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1644)>0) THEN
   JVS(1644) = 0.3*B(216)+0.115*B(229)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1645)>0) THEN
   JVS(1645) = -B(386)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1646)>0) THEN
   JVS(1646) = 0.058*B(104)+0.23*B(116)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1647)>0) THEN
   JVS(1647) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1648)>0) THEN
   JVS(1648) = 0.23*B(118)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1649)>0) THEN
   JVS(1649) = 0.243*B(333)+0.513*B(335)+0.743*B(337)-B(781)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1650)>0) THEN
   JVS(1650) = 0.48*B(334)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1651)>0) THEN
   JVS(1651) = 0.75*B(332)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1652)>0) THEN
   JVS(1652) = 0.25*B(336)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1653)>0) THEN
   JVS(1653) = B(276)+B(720)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1654)>0) THEN
   JVS(1654) = -B(103)-B(105)-B(187)-B(215)-2*B(217)-B(398)-B(422)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1655)>0) THEN
   JVS(1655) = -B(399)-B(423)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1656)>0) THEN
   JVS(1656) = -B(216)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1657)>0) THEN
   JVS(1657) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1658)>0) THEN
   JVS(1658) = -B(104)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1659)>0) THEN
   JVS(1659) = -B(188)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1660)>0) THEN
   JVS(1660) = B(721)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1661)>0) THEN
   JVS(1661) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1662)>0) THEN
   JVS(1662) = B(277)+0.75*B(333)+0.48*B(335)+0.25*B(337)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1663)>0) THEN
   JVS(1663) = 0.36*B(320)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1664)>0) THEN
   JVS(1664) = B(79)+B(383)+B(494)+B(704)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1665)>0) THEN
   JVS(1665) = 0.16*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1666)>0) THEN
   JVS(1666) = B(167)+0.44*B(246)+B(306)+B(444)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1667)>0) THEN
   JVS(1667) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1668)>0) THEN
   JVS(1668) = -B(81)-B(203)-2*B(236)-2*B(237)-B(238)-B(440)-B(442)-B(706)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1669)>0) THEN
   JVS(1669) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1670)>0) THEN
   JVS(1670) = 0.32*B(93)+0.16*B(207)+0.32*B(392)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1671)>0) THEN
   JVS(1671) = 0.32*B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1672)>0) THEN
   JVS(1672) = B(1128)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1673)>0) THEN
   JVS(1673) = 0.85*B(1131)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1674)>0) THEN
   JVS(1674) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1675)>0) THEN
   JVS(1675) = 0.32*B(393)-B(441)-B(443)+B(445)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1676)>0) THEN
   JVS(1676) = -B(204)+0.16*B(208)+B(307)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1677)>0) THEN
   JVS(1677) = 0.16*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1678)>0) THEN
   JVS(1678) = -B(82)+0.32*B(94)+B(168)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1679)>0) THEN
   JVS(1679) = -B(239)+0.44*B(247)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1680)>0) THEN
   JVS(1680) = B(495)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1681)>0) THEN
   JVS(1681) = B(705)-B(707)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1682)>0) THEN
   JVS(1682) = B(384)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1683)>0) THEN
   JVS(1683) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1684)>0) THEN
   JVS(1684) = B(80)+0.36*B(321)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1685)>0) THEN
   JVS(1685) = 0.36*B(316)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1686)>0) THEN
   JVS(1686) = B(300)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1687)>0) THEN
   JVS(1687) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1688)>0) THEN
   JVS(1688) = -B(115)-B(117)-2*B(147)-B(197)-B(228)-B(412)-B(434)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1689)>0) THEN
   JVS(1689) = -B(413)-B(435)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1690)>0) THEN
   JVS(1690) = -B(229)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1691)>0) THEN
   JVS(1691) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1692)>0) THEN
   JVS(1692) = -B(116)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1693)>0) THEN
   JVS(1693) = -B(198)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1694)>0) THEN
   JVS(1694) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1695)>0) THEN
   JVS(1695) = -B(118)+B(301)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1696)>0) THEN
   JVS(1696) = 0.36*B(317)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1697)>0) THEN
   JVS(1697) = B(91)+B(150)+B(722)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1698)>0) THEN
   JVS(1698) = 0.44*B(971)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1699)>0) THEN
   JVS(1699) = 0.209*B(326)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1700)>0) THEN
   JVS(1700) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1701)>0) THEN
   JVS(1701) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1702)>0) THEN
   JVS(1702) = 0.15*B(209)+0.3*B(408)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1703)>0) THEN
   JVS(1703) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1704)>0) THEN
   JVS(1704) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1705)>0) THEN
   JVS(1705) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1706)>0) THEN
   JVS(1706) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1707)>0) THEN
   JVS(1707) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1708)>0) THEN
   JVS(1708) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1709)>0) THEN
   JVS(1709) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1710)>0) THEN
   JVS(1710) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1711)>0) THEN
   JVS(1711) = -B(93)-B(95)-B(179)-B(207)-B(392)-B(416)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1712)>0) THEN
   JVS(1712) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1713)>0) THEN
   JVS(1713) = -B(393)+0.3*B(409)-B(417)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1714)>0) THEN
   JVS(1714) = -B(208)+0.15*B(210)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1715)>0) THEN
   JVS(1715) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1716)>0) THEN
   JVS(1716) = -B(94)-B(96)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1717)>0) THEN
   JVS(1717) = -B(180)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1718)>0) THEN
   JVS(1718) = B(723)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1719)>0) THEN
   JVS(1719) = B(151)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1720)>0) THEN
   JVS(1720) = B(92)+0.209*B(327)+0.44*B(972)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1721)>0) THEN
   JVS(1721) = 0.64*B(316)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1722)>0) THEN
   JVS(1722) = 0.25*B(224)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1723)>0) THEN
   JVS(1723) = B(181)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1724)>0) THEN
   JVS(1724) = 0.07*B(101)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1725)>0) THEN
   JVS(1725) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1726)>0) THEN
   JVS(1726) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1727)>0) THEN
   JVS(1727) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1728)>0) THEN
   JVS(1728) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1729)>0) THEN
   JVS(1729) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1730)>0) THEN
   JVS(1730) = B(95)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1731)>0) THEN
   JVS(1731) = -B(152)-B(1105)-B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1732)>0) THEN
   JVS(1732) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1733)>0) THEN
   JVS(1733) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1734)>0) THEN
   JVS(1734) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1735)>0) THEN
   JVS(1735) = 0.25*B(225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1736)>0) THEN
   JVS(1736) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1737)>0) THEN
   JVS(1737) = B(96)+0.07*B(102)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1738)>0) THEN
   JVS(1738) = B(182)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1739)>0) THEN
   JVS(1739) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1740)>0) THEN
   JVS(1740) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1741)>0) THEN
   JVS(1741) = -B(153)+0.64*B(317)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1742)>0) THEN
   JVS(1742) = 0.791*B(330)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1743)>0) THEN
   JVS(1743) = 0.39*B(1227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1744)>0) THEN
   JVS(1744) = 0.36*B(1153)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1745)>0) THEN
   JVS(1745) = B(1009)+B(1231)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1746)>0) THEN
   JVS(1746) = 0.5*B(813)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1747)>0) THEN
   JVS(1747) = B(362)+B(1156)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1748)>0) THEN
   JVS(1748) = B(254)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1749)>0) THEN
   JVS(1749) = 0.48*B(815)+0.072*B(819)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1750)>0) THEN
   JVS(1750) = 0.03*B(256)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1751)>0) THEN
   JVS(1751) = 0.85*B(806)+0.85*B(808)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1752)>0) THEN
   JVS(1752) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1753)>0) THEN
   JVS(1753) = B(911)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1754)>0) THEN
   JVS(1754) = 0.085*B(352)+0.117*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1755)>0) THEN
   JVS(1755) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1756)>0) THEN
   JVS(1756) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1757)>0) THEN
   JVS(1757) = 0.16*B(177)+0.65*B(292)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1758)>0) THEN
   JVS(1758) = 0.27*B(792)+0.2*B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1759)>0) THEN
   JVS(1759) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1760)>0) THEN
   JVS(1760) = B(1160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1761)>0) THEN
   JVS(1761) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1762)>0) THEN
   JVS(1762) = B(368)+0.7*B(372)+2*B(374)+B(375)+B(377)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1763)>0) THEN
   JVS(1763) = 0.2*B(211)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1764)>0) THEN
   JVS(1764) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1765)>0) THEN
   JVS(1765) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1766)>0) THEN
   JVS(1766) = 0.058*B(961)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1767)>0) THEN
   JVS(1767) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1768)>0) THEN
   JVS(1768) = 0.09*B(796)+0.06*B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1769)>0) THEN
   JVS(1769) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1770)>0) THEN
   JVS(1770) = 0.18*B(218)+0.216*B(400)+0.216*B(782)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1771)>0) THEN
   JVS(1771) = 0.42*B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1772)>0) THEN
   JVS(1772) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1773)>0) THEN
   JVS(1773) = 0.5*B(1228)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1774)>0) THEN
   JVS(1774) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1775)>0) THEN
   JVS(1775) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1776)>0) THEN
   JVS(1776) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1777)>0) THEN
   JVS(1777) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1778)>0) THEN
   JVS(1778) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1779)>0) THEN
   JVS(1779) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1780)>0) THEN
   JVS(1780) = -B(282)-B(284)-B(1141)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1781)>0) THEN
   JVS(1781) = 0.728*B(108)+B(110)+0.595*B(222)+0.857*B(404)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1782)>0) THEN
   JVS(1782) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1783)>0) THEN
   JVS(1783) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1784)>0) THEN
   JVS(1784) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1785)>0) THEN
   JVS(1785) = 0.65*B(293)+B(369)+0.216*B(401)+0.857*B(405)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1786)>0) THEN
   JVS(1786) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1787)>0) THEN
   JVS(1787) = 0.16*B(178)+0.2*B(212)+0.18*B(219)+0.595*B(223)+0.7*B(373)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1788)>0) THEN
   JVS(1788) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1789)>0) THEN
   JVS(1789) = 0.42*B(455)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1790)>0) THEN
   JVS(1790) = 0.728*B(109)+0.117*B(355)+B(378)+0.216*B(783)+0.27*B(793)+0.09*B(797)+0.85*B(807)+0.48*B(816)+0.058*B(962)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1791)>0) THEN
   JVS(1791) = 0.085*B(353)+B(376)+0.2*B(795)+0.06*B(799)+0.85*B(809)+0.072*B(820)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1792)>0) THEN
   JVS(1792) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1793)>0) THEN
   JVS(1793) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1794)>0) THEN
   JVS(1794) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1795)>0) THEN
   JVS(1795) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1796)>0) THEN
   JVS(1796) = B(912)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1797)>0) THEN
   JVS(1797) = B(255)+0.03*B(257)-B(283)-B(285)+0.791*B(331)+B(363)+0.5*B(814)+B(1010)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1798)>0) THEN
   JVS(1798) = B(360)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1799)>0) THEN
   JVS(1799) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1800)>0) THEN
   JVS(1800) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1801)>0) THEN
   JVS(1801) = -B(108)-B(110)-B(191)-B(222)-B(404)-B(428)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1802)>0) THEN
   JVS(1802) = 0.47*B(280)+0.5*B(304)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1803)>0) THEN
   JVS(1803) = -B(405)-B(429)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1804)>0) THEN
   JVS(1804) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1805)>0) THEN
   JVS(1805) = -B(223)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1806)>0) THEN
   JVS(1806) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1807)>0) THEN
   JVS(1807) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1808)>0) THEN
   JVS(1808) = -B(109)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1809)>0) THEN
   JVS(1809) = -B(192)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1810)>0) THEN
   JVS(1810) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1811)>0) THEN
   JVS(1811) = 0.5*B(305)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1812)>0) THEN
   JVS(1812) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1813)>0) THEN
   JVS(1813) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1814)>0) THEN
   JVS(1814) = 0.47*B(281)+B(361)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1815)>0) THEN
   JVS(1815) = 0.41*B(596)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1816)>0) THEN
   JVS(1816) = 0.75*B(610)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1817)>0) THEN
   JVS(1817) = 0.31*B(594)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1818)>0) THEN
   JVS(1818) = 0.68*B(586)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1819)>0) THEN
   JVS(1819) = 0.95*B(584)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1820)>0) THEN
   JVS(1820) = 0.44*B(582)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1821)>0) THEN
   JVS(1821) = B(1167)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1822)>0) THEN
   JVS(1822) = -B(742)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1823)>0) THEN
   JVS(1823) = -B(744)-B(746)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1824)>0) THEN
   JVS(1824) = B(480)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1825)>0) THEN
   JVS(1825) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1826)>0) THEN
   JVS(1826) = -B(466)-2*B(472)-2*B(473)-B(474)-B(484)-B(500)-B(570)-B(682)-B(684)-B(686)-B(743)-B(745)-B(747)-B(1164)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1827)>0) THEN
   JVS(1827) = B(464)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1828)>0) THEN
   JVS(1828) = -B(475)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1829)>0) THEN
   JVS(1829) = -B(467)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1830)>0) THEN
   JVS(1830) = B(465)+B(486)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1831)>0) THEN
   JVS(1831) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1832)>0) THEN
   JVS(1832) = B(487)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1833)>0) THEN
   JVS(1833) = 0.15*B(576)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1834)>0) THEN
   JVS(1834) = -B(501)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1835)>0) THEN
   JVS(1835) = 0.15*B(577)+0.44*B(583)+0.95*B(585)+0.68*B(587)+0.31*B(595)+0.41*B(597)+0.75*B(611)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1836)>0) THEN
   JVS(1836) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1837)>0) THEN
   JVS(1837) = -B(485)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1838)>0) THEN
   JVS(1838) = B(481)-B(571)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1839)>0) THEN
   JVS(1839) = -B(683)-B(685)-B(687)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1840)>0) THEN
   JVS(1840) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1841)>0) THEN
   JVS(1841) = 0.46*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1842)>0) THEN
   JVS(1842) = 0.102*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1843)>0) THEN
   JVS(1843) = 0.289*B(961)+0.192*B(965)+0.192*B(967)+0.385*B(969)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1844)>0) THEN
   JVS(1844) = -B(250)-B(252)-B(266)-B(724)-B(726)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1845)>0) THEN
   JVS(1845) = B(1137)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1846)>0) THEN
   JVS(1846) = 0.192*B(968)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1847)>0) THEN
   JVS(1847) = 0.192*B(966)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1848)>0) THEN
   JVS(1848) = -B(253)+0.102*B(295)+0.46*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1849)>0) THEN
   JVS(1849) = 0.289*B(962)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1850)>0) THEN
   JVS(1850) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1851)>0) THEN
   JVS(1851) = -B(727)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1852)>0) THEN
   JVS(1852) = -B(725)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1853)>0) THEN
   JVS(1853) = -B(267)+0.385*B(970)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1854)>0) THEN
   JVS(1854) = -B(251)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1855)>0) THEN
   JVS(1855) = 0.64*B(322)+B(1145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1856)>0) THEN
   JVS(1856) = B(1143)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1857)>0) THEN
   JVS(1857) = 0.08*B(971)+B(1223)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1858)>0) THEN
   JVS(1858) = 0.791*B(326)+B(1147)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1859)>0) THEN
   JVS(1859) = B(1154)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1860)>0) THEN
   JVS(1860) = 0.65*B(947)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1861)>0) THEN
   JVS(1861) = 0.65*B(949)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1862)>0) THEN
   JVS(1862) = B(823)+0.5*B(827)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1863)>0) THEN
   JVS(1863) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1864)>0) THEN
   JVS(1864) = B(1142)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1865)>0) THEN
   JVS(1865) = B(234)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1866)>0) THEN
   JVS(1866) = 0.25*B(230)+B(436)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1867)>0) THEN
   JVS(1867) = B(1230)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1868)>0) THEN
   JVS(1868) = B(87)+0.75*B(175)+B(286)+B(290)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1869)>0) THEN
   JVS(1869) = B(432)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1870)>0) THEN
   JVS(1870) = 0.09*B(177)+0.35*B(292)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1871)>0) THEN
   JVS(1871) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1872)>0) THEN
   JVS(1872) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1873)>0) THEN
   JVS(1873) = 0.57*B(97)+0.54*B(209)+0.57*B(408)+B(430)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1874)>0) THEN
   JVS(1874) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1875)>0) THEN
   JVS(1875) = 1.24*B(975)+0.93*B(983)+1.24*B(987)+1.24*B(991)+0.64*B(994)+1.21*B(996)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1876)>0) THEN
   JVS(1876) = 0.64*B(995)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1877)>0) THEN
   JVS(1877) = 0.491*B(961)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1878)>0) THEN
   JVS(1878) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1879)>0) THEN
   JVS(1879) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1880)>0) THEN
   JVS(1880) = 0.43*B(937)+0.75*B(941)+B(943)+B(945)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1881)>0) THEN
   JVS(1881) = 0.09*B(400)+0.09*B(782)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1882)>0) THEN
   JVS(1882) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1883)>0) THEN
   JVS(1883) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1884)>0) THEN
   JVS(1884) = 0.033*B(189)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1885)>0) THEN
   JVS(1885) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1886)>0) THEN
   JVS(1886) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1887)>0) THEN
   JVS(1887) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1888)>0) THEN
   JVS(1888) = B(434)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1889)>0) THEN
   JVS(1889) = 0.14*B(93)+0.07*B(207)+0.13*B(392)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1890)>0) THEN
   JVS(1890) = 0.13*B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1891)>0) THEN
   JVS(1891) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1892)>0) THEN
   JVS(1892) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1893)>0) THEN
   JVS(1893) = -B(156)-B(171)-B(1128)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1894)>0) THEN
   JVS(1894) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1895)>0) THEN
   JVS(1895) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1896)>0) THEN
   JVS(1896) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1897)>0) THEN
   JVS(1897) = B(287)+B(291)+0.35*B(293)+0.13*B(393)+0.09*B(401)+0.57*B(409)+B(431)+B(433)+B(435)+B(437)+B(944)+1.24&
                 &*B(988)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1898)>0) THEN
   JVS(1898) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1899)>0) THEN
   JVS(1899) = 0.75*B(176)+0.09*B(178)+0.07*B(208)+0.54*B(210)+0.25*B(231)+0.75*B(942)+0.93*B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1900)>0) THEN
   JVS(1900) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1901)>0) THEN
   JVS(1901) = 0.65*B(948)+0.65*B(950)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1902)>0) THEN
   JVS(1902) = B(88)+0.14*B(94)+0.57*B(98)+0.09*B(783)+B(824)+0.43*B(938)+0.491*B(962)+1.24*B(976)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1903)>0) THEN
   JVS(1903) = 0.033*B(190)+0.5*B(828)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1904)>0) THEN
   JVS(1904) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1905)>0) THEN
   JVS(1905) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1906)>0) THEN
   JVS(1906) = -B(172)+B(946)+1.24*B(992)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1907)>0) THEN
   JVS(1907) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1908)>0) THEN
   JVS(1908) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1909)>0) THEN
   JVS(1909) = -B(157)+B(235)+0.64*B(323)+0.791*B(327)+0.08*B(972)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1910)>0) THEN
   JVS(1910) = 0.41*B(971)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1911)>0) THEN
   JVS(1911) = 0.791*B(358)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1912)>0) THEN
   JVS(1912) = B(829)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1913)>0) THEN
   JVS(1913) = 0.5*B(813)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1914)>0) THEN
   JVS(1914) = 0.53*B(947)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1915)>0) THEN
   JVS(1915) = 0.53*B(949)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1916)>0) THEN
   JVS(1916) = B(314)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1917)>0) THEN
   JVS(1917) = B(1229)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1918)>0) THEN
   JVS(1918) = B(370)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1919)>0) THEN
   JVS(1919) = 0.464*B(975)+0.348*B(983)+0.464*B(987)+0.464*B(991)+0.149*B(994)+0.285*B(996)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1920)>0) THEN
   JVS(1920) = 0.149*B(995)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1921)>0) THEN
   JVS(1921) = 0.289*B(961)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1922)>0) THEN
   JVS(1922) = 0.25*B(213)+B(420)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1923)>0) THEN
   JVS(1923) = 0.44*B(937)+0.75*B(941)+B(943)+B(945)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1924)>0) THEN
   JVS(1924) = 0.25*B(218)+B(424)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1925)>0) THEN
   JVS(1925) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1926)>0) THEN
   JVS(1926) = 0.187*B(189)+0.25*B(220)+B(426)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1927)>0) THEN
   JVS(1927) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1928)>0) THEN
   JVS(1928) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1929)>0) THEN
   JVS(1929) = B(422)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1930)>0) THEN
   JVS(1930) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1931)>0) THEN
   JVS(1931) = 0.19*B(93)+0.35*B(207)+0.19*B(392)+B(416)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1932)>0) THEN
   JVS(1932) = 0.19*B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1933)>0) THEN
   JVS(1933) = B(428)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1934)>0) THEN
   JVS(1934) = -B(201)-B(205)-B(1131)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1935)>0) THEN
   JVS(1935) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1936)>0) THEN
   JVS(1936) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1937)>0) THEN
   JVS(1937) = B(371)+0.19*B(393)+B(417)+B(421)+B(423)+B(425)+B(427)+B(429)+B(944)+0.464*B(988)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1938)>0) THEN
   JVS(1938) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1939)>0) THEN
   JVS(1939) = 0.35*B(208)+0.25*B(214)+0.25*B(219)+0.25*B(221)+0.75*B(942)+0.348*B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1940)>0) THEN
   JVS(1940) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1941)>0) THEN
   JVS(1941) = B(830)+0.53*B(948)+0.53*B(950)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1942)>0) THEN
   JVS(1942) = 0.19*B(94)+0.44*B(938)+0.289*B(962)+0.464*B(976)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1943)>0) THEN
   JVS(1943) = 0.187*B(190)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1944)>0) THEN
   JVS(1944) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1945)>0) THEN
   JVS(1945) = -B(206)+B(946)+0.464*B(992)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1946)>0) THEN
   JVS(1946) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1947)>0) THEN
   JVS(1947) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1948)>0) THEN
   JVS(1948) = -B(202)+B(315)+0.791*B(359)+0.5*B(814)+0.41*B(972)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1949)>0) THEN
   JVS(1949) = 0.285*B(1151)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1950)>0) THEN
   JVS(1950) = 0.285*B(1150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1951)>0) THEN
   JVS(1951) = 0.285*B(1152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1952)>0) THEN
   JVS(1952) = 0.79*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1953)>0) THEN
   JVS(1953) = B(845)+B(847)+B(849)+B(851)+B(855)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1954)>0) THEN
   JVS(1954) = 0.3*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1955)>0) THEN
   JVS(1955) = 0.308*B(965)+0.308*B(967)+0.615*B(969)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1956)>0) THEN
   JVS(1956) = 0.344*B(103)+0.025*B(187)+0.18*B(215)+0.29*B(217)+0.294*B(398)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1957)>0) THEN
   JVS(1957) = 0.035*B(115)+0.035*B(117)+0.035*B(147)+0.018*B(228)+0.035*B(412)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1958)>0) THEN
   JVS(1958) = -B(280)-B(298)-B(302)-B(304)-B(1140)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1959)>0) THEN
   JVS(1959) = 0.294*B(399)+0.035*B(413)+0.308*B(968)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1960)>0) THEN
   JVS(1960) = B(852)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1961)>0) THEN
   JVS(1961) = 0.18*B(216)+0.018*B(229)+0.308*B(966)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1962)>0) THEN
   JVS(1962) = B(846)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1963)>0) THEN
   JVS(1963) = 0.3*B(295)-B(299)+0.79*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1964)>0) THEN
   JVS(1964) = 0.344*B(104)+0.035*B(116)+B(848)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1965)>0) THEN
   JVS(1965) = 0.025*B(188)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1966)>0) THEN
   JVS(1966) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1967)>0) THEN
   JVS(1967) = 0.035*B(118)-B(303)-B(305)+0.615*B(970)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1968)>0) THEN
   JVS(1968) = B(850)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1969)>0) THEN
   JVS(1969) = B(856)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1970)>0) THEN
   JVS(1970) = -B(281)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1971)>0) THEN
   JVS(1971) = 1.92*B(913)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1972)>0) THEN
   JVS(1972) = 1.92*B(915)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1973)>0) THEN
   JVS(1973) = B(1214)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1974)>0) THEN
   JVS(1974) = 1.92*B(917)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1975)>0) THEN
   JVS(1975) = B(456)+B(460)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1976)>0) THEN
   JVS(1976) = B(1148)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1977)>0) THEN
   JVS(1977) = 0.55*B(1013)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1978)>0) THEN
   JVS(1978) = B(1011)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1979)>0) THEN
   JVS(1979) = 0.3*B(1155)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1980)>0) THEN
   JVS(1980) = B(1218)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1981)>0) THEN
   JVS(1981) = 0.71*B(1151)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1982)>0) THEN
   JVS(1982) = B(32)+B(1115)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1983)>0) THEN
   JVS(1983) = B(1157)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1984)>0) THEN
   JVS(1984) = 0.5*B(1156)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1985)>0) THEN
   JVS(1985) = 0.71*B(1150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1986)>0) THEN
   JVS(1986) = 0.71*B(1152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1987)>0) THEN
   JVS(1987) = B(831)+B(1225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1988)>0) THEN
   JVS(1988) = 0.75*B(145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1989)>0) THEN
   JVS(1989) = B(258)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1990)>0) THEN
   JVS(1990) = 0.04*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1991)>0) THEN
   JVS(1991) = 0.19*B(256)+0.4*B(1224)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1992)>0) THEN
   JVS(1992) = 0.75*B(135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1993)>0) THEN
   JVS(1993) = 0.08*B(806)+0.08*B(808)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1994)>0) THEN
   JVS(1994) = 0.62*B(452)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1995)>0) THEN
   JVS(1995) = B(522)+B(524)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1996)>0) THEN
   JVS(1996) = 0.375*B(352)+0.375*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1997)>0) THEN
   JVS(1997) = B(1135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1998)>0) THEN
   JVS(1998) = 0.35*B(802)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(1999)>0) THEN
   JVS(1999) = B(148)+1.25*B(230)+B(414)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2000)>0) THEN
   JVS(2000) = 0.75*B(175)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2001)>0) THEN
   JVS(2001) = B(835)+B(837)+B(839)+B(841)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2002)>0) THEN
   JVS(2002) = B(1217)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2003)>0) THEN
   JVS(2003) = 0.5*B(111)+0.075*B(193)+0.625*B(224)+0.5*B(410)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2004)>0) THEN
   JVS(2004) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2005)>0) THEN
   JVS(2005) = B(89)+1.25*B(177)+B(288)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2006)>0) THEN
   JVS(2006) = 0.15*B(792)+0.07*B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2007)>0) THEN
   JVS(2007) = 0.75*B(226)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2008)>0) THEN
   JVS(2008) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2009)>0) THEN
   JVS(2009) = 0.57*B(97)+0.95*B(209)+0.39*B(408)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2010)>0) THEN
   JVS(2010) = 0.5*B(1160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2011)>0) THEN
   JVS(2011) = 0.456*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2012)>0) THEN
   JVS(2012) = B(372)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2013)>0) THEN
   JVS(2013) = B(99)+0.15*B(183)+0.5*B(211)+B(394)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2014)>0) THEN
   JVS(2014) = B(306)+B(310)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2015)>0) THEN
   JVS(2015) = 0.287*B(975)+0.965*B(983)+0.287*B(987)+0.287*B(991)+0.202*B(994)+0.504*B(996)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2016)>0) THEN
   JVS(2016) = B(981)+0.202*B(995)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2017)>0) THEN
   JVS(2017) = 0.231*B(961)+1.04*B(965)+0.385*B(967)+0.385*B(969)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2018)>0) THEN
   JVS(2018) = 0.75*B(213)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2019)>0) THEN
   JVS(2019) = 0.7*B(796)+0.44*B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2020)>0) THEN
   JVS(2020) = 0.23*B(937)+0.75*B(941)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2021)>0) THEN
   JVS(2021) = 0.95*B(218)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2022)>0) THEN
   JVS(2022) = 0.2*B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2023)>0) THEN
   JVS(2023) = 0.732*B(262)+0.9*B(1132)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2024)>0) THEN
   JVS(2024) = 0.5*B(169)+0.59*B(248)+2*B(308)+B(312)+B(446)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2025)>0) THEN
   JVS(2025) = 0.35*B(106)+0.102*B(189)+0.89*B(220)+0.4*B(402)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2026)>0) THEN
   JVS(2026) = 0.75*B(137)+B(1228)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2027)>0) THEN
   JVS(2027) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2028)>0) THEN
   JVS(2028) = 0.445*B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2029)>0) THEN
   JVS(2029) = 0.82*B(103)+0.063*B(187)+1.22*B(215)+0.75*B(217)+0.747*B(398)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2030)>0) THEN
   JVS(2030) = 0.75*B(203)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2031)>0) THEN
   JVS(2031) = 0.07*B(115)+0.07*B(117)+0.07*B(147)+0.785*B(228)+0.07*B(412)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2032)>0) THEN
   JVS(2032) = 0.75*B(207)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2033)>0) THEN
   JVS(2033) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2034)>0) THEN
   JVS(2034) = B(1141)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2035)>0) THEN
   JVS(2035) = 0.122*B(108)+1.255*B(222)+0.143*B(404)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2036)>0) THEN
   JVS(2036) = 0.5*B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2037)>0) THEN
   JVS(2037) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2038)>0) THEN
   JVS(2038) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2039)>0) THEN
   JVS(2039) = 0.12*B(298)+B(1140)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2040)>0) THEN
   JVS(2040) = -B(38)-B(68)-B(488)-B(572)-B(650)-B(1116)-B(1117)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2041)>0) THEN
   JVS(2041) = 0.05*B(70)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2042)>0) THEN
   JVS(2042) = 0.6*B(296)+B(1138)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2043)>0) THEN
   JVS(2043) = B(289)+B(388)+B(390)+B(395)+0.747*B(399)+0.4*B(403)+0.143*B(405)+0.39*B(409)+0.5*B(411)+0.07*B(413)+B(415)&
                 &+B(447)+0.385*B(968)+0.287*B(988)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2044)>0) THEN
   JVS(2044) = B(840)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2045)>0) THEN
   JVS(2045) = B(9)+B(24)+B(28)+2*B(29)+0.75*B(136)+0.75*B(146)+0.75*B(176)+1.25*B(178)+0.75*B(204)+0.75*B(208)+0.95&
                 &*B(210)+0.5*B(212)+0.75*B(214)+1.22*B(216)+0.95*B(219)+0.89*B(221)+1.255*B(223)+0.625*B(225)+0.75*B(227)&
                 &+0.785*B(229)+1.25*B(231)+B(307)+2*B(309)+B(311)+B(313)+B(373)+B(389)+B(391)+B(614)+B(700)+0.75*B(942)+1.04&
                 &*B(966)+B(982)+0.965*B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2046)>0) THEN
   JVS(2046) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2047)>0) THEN
   JVS(2047) = B(10)+0.75*B(138)+0.5*B(253)+B(259)+0.456*B(295)+0.6*B(297)+0.12*B(299)+0.445*B(386)+0.62*B(453)+0.2&
                 &*B(455)+0.04*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2048)>0) THEN
   JVS(2048) = B(25)+B(90)+0.57*B(98)+B(100)+0.82*B(104)+0.35*B(107)+0.122*B(109)+0.5*B(112)+0.07*B(116)+B(149)+0.5&
                 &*B(170)+0.375*B(355)+0.15*B(793)+0.7*B(797)+0.08*B(807)+B(836)+0.23*B(938)+0.231*B(962)+0.287*B(976)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2049)>0) THEN
   JVS(2049) = 0.15*B(184)+0.063*B(188)+0.102*B(190)+0.075*B(194)+0.59*B(249)+0.375*B(353)+0.07*B(795)+0.44*B(799)+0.08&
                 &*B(809)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2050)>0) THEN
   JVS(2050) = -B(489)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2051)>0) THEN
   JVS(2051) = -B(651)+B(701)+B(708)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2052)>0) THEN
   JVS(2052) = -B(69)+0.07*B(118)+B(461)+0.385*B(970)+0.287*B(992)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2053)>0) THEN
   JVS(2053) = B(838)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2054)>0) THEN
   JVS(2054) = B(523)+B(525)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2055)>0) THEN
   JVS(2055) = B(842)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2056)>0) THEN
   JVS(2056) = B(33)-B(39)+B(64)+0.05*B(71)+0.19*B(257)+0.732*B(263)+B(457)+0.35*B(803)+B(832)+1.92*B(914)+1.92*B(916)&
                 &+1.92*B(918)+B(1012)+0.55*B(1014)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2057)>0) THEN
   JVS(2057) = -B(573)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2058)>0) THEN
   JVS(2058) = B(615)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2059)>0) THEN
   JVS(2059) = 0.64*B(320)+B(1144)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2060)>0) THEN
   JVS(2060) = B(1149)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2061)>0) THEN
   JVS(2061) = B(1148)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2062)>0) THEN
   JVS(2062) = B(232)+B(710)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2063)>0) THEN
   JVS(2063) = B(889)+B(891)+B(893)+B(895)+B(897)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2064)>0) THEN
   JVS(2064) = B(148)+0.5*B(230)+B(414)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2065)>0) THEN
   JVS(2065) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2066)>0) THEN
   JVS(2066) = B(89)+0.5*B(177)+B(288)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2067)>0) THEN
   JVS(2067) = 0.86*B(97)+0.38*B(209)+0.75*B(408)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2068)>0) THEN
   JVS(2068) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2069)>0) THEN
   JVS(2069) = 0.93*B(101)+0.15*B(185)+0.5*B(213)+B(396)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2070)>0) THEN
   JVS(2070) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2071)>0) THEN
   JVS(2071) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2072)>0) THEN
   JVS(2072) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2073)>0) THEN
   JVS(2073) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2074)>0) THEN
   JVS(2074) = B(81)+0.75*B(203)+2*B(236)+B(237)+B(440)+B(442)+B(706)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2075)>0) THEN
   JVS(2075) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2076)>0) THEN
   JVS(2076) = 0.32*B(93)+0.16*B(207)+0.32*B(392)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2077)>0) THEN
   JVS(2077) = 0.32*B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2078)>0) THEN
   JVS(2078) = 0.5*B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2079)>0) THEN
   JVS(2079) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2080)>0) THEN
   JVS(2080) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2081)>0) THEN
   JVS(2081) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2082)>0) THEN
   JVS(2082) = -B(70)-B(72)-B(490)-B(1125)-B(1126)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2083)>0) THEN
   JVS(2083) = 0.1*B(296)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2084)>0) THEN
   JVS(2084) = B(289)+0.32*B(393)+B(397)+0.75*B(409)+B(415)+B(441)+B(443)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2085)>0) THEN
   JVS(2085) = B(896)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2086)>0) THEN
   JVS(2086) = 0.5*B(178)+0.75*B(204)+0.16*B(208)+0.38*B(210)+0.5*B(214)+0.5*B(231)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2087)>0) THEN
   JVS(2087) = B(890)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2088)>0) THEN
   JVS(2088) = 0.5*B(253)+0.1*B(297)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2089)>0) THEN
   JVS(2089) = B(82)+B(90)+0.32*B(94)+0.86*B(98)+0.93*B(102)+B(149)+B(892)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2090)>0) THEN
   JVS(2090) = 0.15*B(186)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2091)>0) THEN
   JVS(2091) = -B(491)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2092)>0) THEN
   JVS(2092) = B(707)+B(711)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2093)>0) THEN
   JVS(2093) = -B(73)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2094)>0) THEN
   JVS(2094) = B(894)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2095)>0) THEN
   JVS(2095) = B(898)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2096)>0) THEN
   JVS(2096) = -B(71)+B(233)+0.64*B(321)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2097)>0) THEN
   JVS(2097) = 0.425*B(1151)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2098)>0) THEN
   JVS(2098) = 0.425*B(1150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2099)>0) THEN
   JVS(2099) = 0.425*B(1152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2100)>0) THEN
   JVS(2100) = B(857)+B(859)+B(861)+B(863)+B(865)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2101)>0) THEN
   JVS(2101) = 0.2*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2102)>0) THEN
   JVS(2102) = 0.476*B(103)+0.038*B(187)+0.28*B(215)+0.45*B(217)+0.453*B(398)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2103)>0) THEN
   JVS(2103) = 0.035*B(115)+0.035*B(117)+0.035*B(147)+0.018*B(228)+0.035*B(412)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2104)>0) THEN
   JVS(2104) = -B(278)-B(296)-B(1137)-B(1138)-B(1139)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2105)>0) THEN
   JVS(2105) = 0.453*B(399)+0.035*B(413)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2106)>0) THEN
   JVS(2106) = B(864)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2107)>0) THEN
   JVS(2107) = 0.28*B(216)+0.018*B(229)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2108)>0) THEN
   JVS(2108) = B(858)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2109)>0) THEN
   JVS(2109) = 0.2*B(295)-B(297)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2110)>0) THEN
   JVS(2110) = 0.476*B(104)+0.035*B(116)+B(860)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2111)>0) THEN
   JVS(2111) = 0.038*B(188)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2112)>0) THEN
   JVS(2112) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2113)>0) THEN
   JVS(2113) = 0.035*B(118)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2114)>0) THEN
   JVS(2114) = B(862)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2115)>0) THEN
   JVS(2115) = B(866)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2116)>0) THEN
   JVS(2116) = -B(279)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2117)>0) THEN
   JVS(2117) = B(381)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2118)>0) THEN
   JVS(2118) = B(76)+0.7*B(1127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2119)>0) THEN
   JVS(2119) = 0.085*B(1013)+0.11*B(1227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2120)>0) THEN
   JVS(2120) = 0.5*B(1011)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2121)>0) THEN
   JVS(2121) = 0.7*B(1155)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2122)>0) THEN
   JVS(2122) = B(1218)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2123)>0) THEN
   JVS(2123) = B(1157)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2124)>0) THEN
   JVS(2124) = B(258)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2125)>0) THEN
   JVS(2125) = 0.4*B(1224)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2126)>0) THEN
   JVS(2126) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2127)>0) THEN
   JVS(2127) = B(1161)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2128)>0) THEN
   JVS(2128) = -B(414)-B(436)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2129)>0) THEN
   JVS(2129) = B(885)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2130)>0) THEN
   JVS(2130) = -B(286)-B(290)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2131)>0) THEN
   JVS(2131) = -B(410)-B(432)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2132)>0) THEN
   JVS(2132) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2133)>0) THEN
   JVS(2133) = -B(288)-B(292)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2134)>0) THEN
   JVS(2134) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2135)>0) THEN
   JVS(2135) = -B(406)-B(438)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2136)>0) THEN
   JVS(2136) = -B(408)-B(430)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2137)>0) THEN
   JVS(2137) = 0.105*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2138)>0) THEN
   JVS(2138) = -B(368)-B(370)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2139)>0) THEN
   JVS(2139) = B(99)+0.15*B(183)+0.3*B(211)-B(418)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2140)>0) THEN
   JVS(2140) = -B(444)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2141)>0) THEN
   JVS(2141) = -B(987)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2142)>0) THEN
   JVS(2142) = -B(985)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2143)>0) THEN
   JVS(2143) = -B(967)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2144)>0) THEN
   JVS(2144) = 0.93*B(101)+0.15*B(185)+0.5*B(213)-B(420)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2145)>0) THEN
   JVS(2145) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2146)>0) THEN
   JVS(2146) = -B(943)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2147)>0) THEN
   JVS(2147) = -B(400)-B(424)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2148)>0) THEN
   JVS(2148) = 0.1*B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2149)>0) THEN
   JVS(2149) = 0.5*B(169)+B(308)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2150)>0) THEN
   JVS(2150) = 0.53*B(106)+0.578*B(189)+0.36*B(220)-0.4*B(402)-B(426)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2151)>0) THEN
   JVS(2151) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2152)>0) THEN
   JVS(2152) = B(270)+B(274)+B(1136)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2153)>0) THEN
   JVS(2153) = B(1129)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2154)>0) THEN
   JVS(2154) = 0.445*B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2155)>0) THEN
   JVS(2155) = -B(398)-B(422)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2156)>0) THEN
   JVS(2156) = -B(440)-B(442)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2157)>0) THEN
   JVS(2157) = -B(412)-B(434)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2158)>0) THEN
   JVS(2158) = -B(392)-B(416)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2159)>0) THEN
   JVS(2159) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2160)>0) THEN
   JVS(2160) = B(1141)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2161)>0) THEN
   JVS(2161) = -B(404)-B(428)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2162)>0) THEN
   JVS(2162) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2163)>0) THEN
   JVS(2163) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2164)>0) THEN
   JVS(2164) = 0.85*B(1131)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2165)>0) THEN
   JVS(2165) = 0.098*B(298)+B(1140)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2166)>0) THEN
   JVS(2166) = 0.95*B(70)+B(72)+B(490)+0.12*B(1125)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2167)>0) THEN
   JVS(2167) = 0.28*B(296)+B(1138)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2168)>0) THEN
   JVS(2168) = -B(74)-B(77)-B(244)-B(287)-B(289)-B(291)-B(293)-B(369)-B(371)-2*B(387)-B(388)-B(390)-B(393)-B(399)-B(401)&
                 &-0.4*B(403)-B(405)-B(407)-B(409)-B(411)-B(413)-B(415)-B(417)-B(419)-B(421)-B(423)-B(425)-B(427)-B(429)&
                 &-B(431)-B(433)-B(435)-B(437)-B(439)-B(441)-B(443)-B(445)-B(944)-B(968)-B(986)-B(988)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2169)>0) THEN
   JVS(2169) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2170)>0) THEN
   JVS(2170) = 0.3*B(212)+0.5*B(214)+0.36*B(221)+B(309)-B(389)-B(391)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2171)>0) THEN
   JVS(2171) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2172)>0) THEN
   JVS(2172) = B(259)+0.105*B(295)+0.28*B(297)+0.098*B(299)+0.445*B(386)+0.1*B(455)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2173)>0) THEN
   JVS(2173) = -B(78)+B(100)+0.93*B(102)+0.53*B(107)+0.5*B(170)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2174)>0) THEN
   JVS(2174) = 0.15*B(184)+0.15*B(186)+0.578*B(190)-B(245)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2175)>0) THEN
   JVS(2175) = B(491)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2176)>0) THEN
   JVS(2176) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2177)>0) THEN
   JVS(2177) = B(73)+B(275)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2178)>0) THEN
   JVS(2178) = -B(75)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2179)>0) THEN
   JVS(2179) = B(886)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2180)>0) THEN
   JVS(2180) = 0.95*B(71)+B(271)+B(382)+0.5*B(1012)+0.085*B(1014)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2181)>0) THEN
   JVS(2181) = B(540)+B(542)+B(1220)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2182)>0) THEN
   JVS(2182) = B(456)+0.75*B(458)+B(460)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2183)>0) THEN
   JVS(2183) = B(1221)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2184)>0) THEN
   JVS(2184) = -B(863)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2185)>0) THEN
   JVS(2185) = -B(907)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2186)>0) THEN
   JVS(2186) = -B(895)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2187)>0) THEN
   JVS(2187) = -B(873)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2188)>0) THEN
   JVS(2188) = -B(883)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2189)>0) THEN
   JVS(2189) = -B(839)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2190)>0) THEN
   JVS(2190) = -B(851)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2191)>0) THEN
   JVS(2191) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2192)>0) THEN
   JVS(2192) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2193)>0) THEN
   JVS(2193) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2194)>0) THEN
   JVS(2194) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2195)>0) THEN
   JVS(2195) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2196)>0) THEN
   JVS(2196) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2197)>0) THEN
   JVS(2197) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2198)>0) THEN
   JVS(2198) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2199)>0) THEN
   JVS(2199) = -B(462)-B(840)-B(852)-B(864)-B(874)-B(884)-B(896)-B(908)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2200)>0) THEN
   JVS(2200) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2201)>0) THEN
   JVS(2201) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2202)>0) THEN
   JVS(2202) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2203)>0) THEN
   JVS(2203) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2204)>0) THEN
   JVS(2204) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2205)>0) THEN
   JVS(2205) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2206)>0) THEN
   JVS(2206) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2207)>0) THEN
   JVS(2207) = B(461)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2208)>0) THEN
   JVS(2208) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2209)>0) THEN
   JVS(2209) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2210)>0) THEN
   JVS(2210) = B(457)+0.75*B(459)-B(463)+B(543)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2211)>0) THEN
   JVS(2211) = B(541)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2212)>0) THEN
   JVS(2212) = B(778)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2213)>0) THEN
   JVS(2213) = B(1159)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2214)>0) THEN
   JVS(2214) = B(451)+B(1215)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2215)>0) THEN
   JVS(2215) = B(456)+B(458)+B(460)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2216)>0) THEN
   JVS(2216) = B(1172)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2217)>0) THEN
   JVS(2217) = B(582)+B(1171)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2218)>0) THEN
   JVS(2218) = 0.3*B(1127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2219)>0) THEN
   JVS(2219) = B(30)+B(702)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2220)>0) THEN
   JVS(2220) = -B(145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2221)>0) THEN
   JVS(2221) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2222)>0) THEN
   JVS(2222) = -B(135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2223)>0) THEN
   JVS(2223) = B(22)+B(520)+B(648)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2224)>0) THEN
   JVS(2224) = -B(230)+B(414)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2225)>0) THEN
   JVS(2225) = B(885)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2226)>0) THEN
   JVS(2226) = -B(175)+B(286)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2227)>0) THEN
   JVS(2227) = B(1217)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2228)>0) THEN
   JVS(2228) = -B(224)+B(410)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2229)>0) THEN
   JVS(2229) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2230)>0) THEN
   JVS(2230) = -B(177)+B(288)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2231)>0) THEN
   JVS(2231) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2232)>0) THEN
   JVS(2232) = -B(226)+B(406)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2233)>0) THEN
   JVS(2233) = -B(209)+B(408)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2234)>0) THEN
   JVS(2234) = 0.051*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2235)>0) THEN
   JVS(2235) = B(368)-B(372)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2236)>0) THEN
   JVS(2236) = -B(211)+B(394)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2237)>0) THEN
   JVS(2237) = -B(306)-B(310)+B(444)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2238)>0) THEN
   JVS(2238) = -B(983)+0.5*B(987)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2239)>0) THEN
   JVS(2239) = -B(981)+B(985)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2240)>0) THEN
   JVS(2240) = -B(965)+0.5*B(967)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2241)>0) THEN
   JVS(2241) = -B(213)+B(396)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2242)>0) THEN
   JVS(2242) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2243)>0) THEN
   JVS(2243) = -B(941)+0.5*B(943)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2244)>0) THEN
   JVS(2244) = -B(218)+B(400)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2245)>0) THEN
   JVS(2245) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2246)>0) THEN
   JVS(2246) = 0.5*B(169)+0.39*B(248)-B(308)-B(312)+B(446)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2247)>0) THEN
   JVS(2247) = B(154)+B(712)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2248)>0) THEN
   JVS(2248) = -B(220)+B(402)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2249)>0) THEN
   JVS(2249) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2250)>0) THEN
   JVS(2250) = B(1129)+2*B(1130)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2251)>0) THEN
   JVS(2251) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2252)>0) THEN
   JVS(2252) = -B(215)+B(398)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2253)>0) THEN
   JVS(2253) = -B(203)+B(440)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2254)>0) THEN
   JVS(2254) = -B(228)+B(412)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2255)>0) THEN
   JVS(2255) = 0.19*B(93)-0.91*B(207)+B(392)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2256)>0) THEN
   JVS(2256) = 0.18*B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2257)>0) THEN
   JVS(2257) = 0.5*B(284)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2258)>0) THEN
   JVS(2258) = -B(222)+B(404)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2259)>0) THEN
   JVS(2259) = 0.28*B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2260)>0) THEN
   JVS(2260) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2261)>0) THEN
   JVS(2261) = 0.15*B(1131)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2262)>0) THEN
   JVS(2262) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2263)>0) THEN
   JVS(2263) = 0.88*B(1125)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2264)>0) THEN
   JVS(2264) = B(1139)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2265)>0) THEN
   JVS(2265) = B(77)+0.44*B(244)+B(287)+B(289)+B(369)+2*B(387)-B(390)+B(393)+B(395)+B(397)+B(399)+B(401)+B(403)+B(405)&
                 &+B(407)+B(409)+B(411)+B(413)+B(415)+B(441)+B(445)+B(447)+0.5*B(944)+0.5*B(968)+B(986)+0.5*B(988)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2266)>0) THEN
   JVS(2266) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2267)>0) THEN
   JVS(2267) = -B(9)-B(24)-B(26)-2*B(28)-2*B(29)-B(136)-B(146)-B(176)-B(178)-B(204)-0.91*B(208)-B(210)-B(212)-B(214)&
                 &-B(216)-B(219)-B(221)-B(223)-B(225)-B(227)-B(229)-B(231)-B(307)-B(309)-B(311)-B(313)-B(373)-B(391)-B(449)&
                 &-B(614)-B(700)-B(942)-B(966)-B(982)-B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2268)>0) THEN
   JVS(2268) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2269)>0) THEN
   JVS(2269) = -B(10)+0.28*B(253)+0.051*B(295)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2270)>0) THEN
   JVS(2270) = -B(25)+B(78)+0.19*B(94)+0.5*B(170)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2271)>0) THEN
   JVS(2271) = -B(27)+0.44*B(245)+0.39*B(249)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2272)>0) THEN
   JVS(2272) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2273)>0) THEN
   JVS(2273) = B(649)-B(701)+B(703)+B(713)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2274)>0) THEN
   JVS(2274) = B(461)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2275)>0) THEN
   JVS(2275) = -B(450)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2276)>0) THEN
   JVS(2276) = B(521)+B(583)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2277)>0) THEN
   JVS(2277) = B(886)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2278)>0) THEN
   JVS(2278) = B(23)+B(31)+B(155)+0.5*B(285)+B(457)+B(459)+B(779)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2279)>0) THEN
   JVS(2279) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2280)>0) THEN
   JVS(2280) = -B(615)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2281)>0) THEN
   JVS(2281) = B(540)+B(1220)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2282)>0) THEN
   JVS(2282) = B(694)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2283)>0) THEN
   JVS(2283) = B(696)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2284)>0) THEN
   JVS(2284) = B(692)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2285)>0) THEN
   JVS(2285) = 0.55*B(1013)+1.89*B(1227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2286)>0) THEN
   JVS(2286) = B(1023)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2287)>0) THEN
   JVS(2287) = 0.5*B(1011)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2288)>0) THEN
   JVS(2288) = 0.67*B(1153)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2289)>0) THEN
   JVS(2289) = 1.5*B(813)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2290)>0) THEN
   JVS(2290) = 0.5*B(1156)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2291)>0) THEN
   JVS(2291) = B(1225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2292)>0) THEN
   JVS(2292) = 0.14*B(947)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2293)>0) THEN
   JVS(2293) = 0.14*B(949)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2294)>0) THEN
   JVS(2294) = B(254)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2295)>0) THEN
   JVS(2295) = 0.14*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2296)>0) THEN
   JVS(2296) = 0.03*B(256)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2297)>0) THEN
   JVS(2297) = 0.21*B(452)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2298)>0) THEN
   JVS(2298) = -B(857)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2299)>0) THEN
   JVS(2299) = -B(901)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2300)>0) THEN
   JVS(2300) = -B(889)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2301)>0) THEN
   JVS(2301) = -B(867)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2302)>0) THEN
   JVS(2302) = 0.6*B(352)+0.678*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2303)>0) THEN
   JVS(2303) = 2*B(268)+2*B(272)+2*B(1133)+2*B(1134)+B(1135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2304)>0) THEN
   JVS(2304) = -B(877)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2305)>0) THEN
   JVS(2305) = B(1217)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2306)>0) THEN
   JVS(2306) = 0.5*B(111)+0.075*B(193)+0.375*B(224)+0.5*B(410)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2307)>0) THEN
   JVS(2307) = B(121)+B(123)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2308)>0) THEN
   JVS(2308) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2309)>0) THEN
   JVS(2309) = -B(845)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2310)>0) THEN
   JVS(2310) = 0.5*B(1160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2311)>0) THEN
   JVS(2311) = 0.495*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2312)>0) THEN
   JVS(2312) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2313)>0) THEN
   JVS(2313) = 0.33*B(218)+0.09*B(400)+0.09*B(782)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2314)>0) THEN
   JVS(2314) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2315)>0) THEN
   JVS(2315) = 0.505*B(262)+B(264)+B(1132)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2316)>0) THEN
   JVS(2316) = 0.5*B(169)+0.39*B(248)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2317)>0) THEN
   JVS(2317) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2318)>0) THEN
   JVS(2318) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2319)>0) THEN
   JVS(2319) = B(270)+B(274)+B(1136)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2320)>0) THEN
   JVS(2320) = B(1130)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2321)>0) THEN
   JVS(2321) = 0.89*B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2322)>0) THEN
   JVS(2322) = 0.29*B(217)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2323)>0) THEN
   JVS(2323) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2324)>0) THEN
   JVS(2324) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2325)>0) THEN
   JVS(2325) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2326)>0) THEN
   JVS(2326) = 0.5*B(284)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2327)>0) THEN
   JVS(2327) = 0.728*B(108)+B(110)+0.595*B(222)+0.857*B(404)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2328)>0) THEN
   JVS(2328) = 0.56*B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2329)>0) THEN
   JVS(2329) = B(1128)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2330)>0) THEN
   JVS(2330) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2331)>0) THEN
   JVS(2331) = 0.625*B(298)+0.5*B(304)+B(1140)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2332)>0) THEN
   JVS(2332) = B(38)+B(68)+B(488)+B(572)+B(650)+B(1116)+B(1117)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2333)>0) THEN
   JVS(2333) = 0.05*B(70)+0.88*B(1125)+B(1126)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2334)>0) THEN
   JVS(2334) = 0.56*B(296)+B(1137)+B(1138)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2335)>0) THEN
   JVS(2335) = 0.09*B(401)+0.857*B(405)+0.5*B(411)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2336)>0) THEN
   JVS(2336) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2337)>0) THEN
   JVS(2337) = 0.33*B(219)+0.595*B(223)+0.375*B(225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2338)>0) THEN
   JVS(2338) = -B(20)-B(846)-B(858)-B(868)-B(878)-B(890)-B(902)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2339)>0) THEN
   JVS(2339) = 0.56*B(253)+0.495*B(295)+0.56*B(297)+0.625*B(299)+0.89*B(386)+0.21*B(453)+0.14*B(948)+0.14*B(950)+0.14&
                 &*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2340)>0) THEN
   JVS(2340) = 0.728*B(109)+0.5*B(112)+B(124)+0.5*B(170)+0.678*B(355)+0.09*B(783)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2341)>0) THEN
   JVS(2341) = 0.075*B(194)+0.39*B(249)+0.6*B(353)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2342)>0) THEN
   JVS(2342) = B(489)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2343)>0) THEN
   JVS(2343) = B(651)+B(693)+B(695)+B(697)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2344)>0) THEN
   JVS(2344) = B(69)+B(122)+2*B(273)+B(275)+0.5*B(305)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2345)>0) THEN
   JVS(2345) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2346)>0) THEN
   JVS(2346) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2347)>0) THEN
   JVS(2347) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2348)>0) THEN
   JVS(2348) = -B(21)+B(39)+0.05*B(71)+B(255)+0.03*B(257)+0.505*B(263)+B(265)+2*B(269)+B(271)+0.5*B(285)+1.5*B(814)+0.5&
                 &*B(1012)+0.55*B(1014)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2349)>0) THEN
   JVS(2349) = B(541)+B(573)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2350)>0) THEN
   JVS(2350) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2351)>0) THEN
   JVS(2351) = -B(829)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2352)>0) THEN
   JVS(2352) = -B(1068)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2353)>0) THEN
   JVS(2353) = -B(1066)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2354)>0) THEN
   JVS(2354) = -B(947)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2355)>0) THEN
   JVS(2355) = -B(949)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2356)>0) THEN
   JVS(2356) = -B(258)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2357)>0) THEN
   JVS(2357) = -B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2358)>0) THEN
   JVS(2358) = -B(556)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2359)>0) THEN
   JVS(2359) = -B(452)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2360)>0) THEN
   JVS(2360) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2361)>0) THEN
   JVS(2361) = -B(1001)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2362)>0) THEN
   JVS(2362) = 0.25*B(127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2363)>0) THEN
   JVS(2363) = -B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2364)>0) THEN
   JVS(2364) = -B(760)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2365)>0) THEN
   JVS(2365) = 0.15*B(246)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2366)>0) THEN
   JVS(2366) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2367)>0) THEN
   JVS(2367) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2368)>0) THEN
   JVS(2368) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2369)>0) THEN
   JVS(2369) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2370)>0) THEN
   JVS(2370) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2371)>0) THEN
   JVS(2371) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2372)>0) THEN
   JVS(2372) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2373)>0) THEN
   JVS(2373) = -B(454)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2374)>0) THEN
   JVS(2374) = 0.15*B(248)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2375)>0) THEN
   JVS(2375) = -B(137)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2376)>0) THEN
   JVS(2376) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2377)>0) THEN
   JVS(2377) = -B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2378)>0) THEN
   JVS(2378) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2379)>0) THEN
   JVS(2379) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2380)>0) THEN
   JVS(2380) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2381)>0) THEN
   JVS(2381) = -B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2382)>0) THEN
   JVS(2382) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2383)>0) THEN
   JVS(2383) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2384)>0) THEN
   JVS(2384) = -B(298)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2385)>0) THEN
   JVS(2385) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2386)>0) THEN
   JVS(2386) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2387)>0) THEN
   JVS(2387) = -B(296)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2388)>0) THEN
   JVS(2388) = 0.15*B(244)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2389)>0) THEN
   JVS(2389) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2390)>0) THEN
   JVS(2390) = -B(9)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2391)>0) THEN
   JVS(2391) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2392)>0) THEN
   JVS(2392) = -B(1)-B(3)-B(5)-B(7)-B(10)-B(138)-B(253)-B(259)-B(295)-B(297)-B(299)-B(386)-B(453)-B(455)-B(464)-B(528)&
                 &-B(536)-B(538)-B(557)-B(652)-B(761)-B(830)-B(948)-B(950)-B(958)-B(1002)-B(1064)-B(1067)-B(1069)-B(1110)&
                 &-B(1111)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2393)>0) THEN
   JVS(2393) = -B(2)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2394)>0) THEN
   JVS(2394) = -B(6)+0.25*B(128)+0.15*B(245)+0.15*B(247)+0.15*B(249)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2395)>0) THEN
   JVS(2395) = -B(465)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2396)>0) THEN
   JVS(2396) = -B(653)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2397)>0) THEN
   JVS(2397) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2398)>0) THEN
   JVS(2398) = -B(1065)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2399)>0) THEN
   JVS(2399) = -B(8)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2400)>0) THEN
   JVS(2400) = -B(537)-B(539)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2401)>0) THEN
   JVS(2401) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2402)>0) THEN
   JVS(2402) = -B(4)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2403)>0) THEN
   JVS(2403) = B(526)-B(529)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2404)>0) THEN
   JVS(2404) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2405)>0) THEN
   JVS(2405) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2406)>0) THEN
   JVS(2406) = 2*B(730)+B(1202)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2407)>0) THEN
   JVS(2407) = 2*B(518)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2408)>0) THEN
   JVS(2408) = -B(927)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2409)>0) THEN
   JVS(2409) = -B(923)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2410)>0) THEN
   JVS(2410) = B(564)-B(566)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2411)>0) THEN
   JVS(2411) = -B(931)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2412)>0) THEN
   JVS(2412) = -B(752)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2413)>0) THEN
   JVS(2413) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2414)>0) THEN
   JVS(2414) = B(1119)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2415)>0) THEN
   JVS(2415) = -B(1015)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2416)>0) THEN
   JVS(2416) = -B(1017)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2417)>0) THEN
   JVS(2417) = -B(141)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2418)>0) THEN
   JVS(2418) = -B(823)-B(825)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2419)>0) THEN
   JVS(2419) = -B(815)-B(817)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2420)>0) THEN
   JVS(2420) = -B(131)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2421)>0) THEN
   JVS(2421) = -B(806)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2422)>0) THEN
   JVS(2422) = -B(859)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2423)>0) THEN
   JVS(2423) = -B(903)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2424)>0) THEN
   JVS(2424) = -B(891)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2425)>0) THEN
   JVS(2425) = -B(869)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2426)>0) THEN
   JVS(2426) = -B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2427)>0) THEN
   JVS(2427) = -B(148)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2428)>0) THEN
   JVS(2428) = -B(879)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2429)>0) THEN
   JVS(2429) = -B(87)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2430)>0) THEN
   JVS(2430) = -B(835)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2431)>0) THEN
   JVS(2431) = -B(111)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2432)>0) THEN
   JVS(2432) = -B(123)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2433)>0) THEN
   JVS(2433) = -B(89)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2434)>0) THEN
   JVS(2434) = -B(792)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2435)>0) THEN
   JVS(2435) = -B(113)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2436)>0) THEN
   JVS(2436) = -B(847)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2437)>0) THEN
   JVS(2437) = -B(97)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2438)>0) THEN
   JVS(2438) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2439)>0) THEN
   JVS(2439) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2440)>0) THEN
   JVS(2440) = -B(377)-B(379)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2441)>0) THEN
   JVS(2441) = -B(99)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2442)>0) THEN
   JVS(2442) = -B(728)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2443)>0) THEN
   JVS(2443) = -B(167)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2444)>0) THEN
   JVS(2444) = -B(975)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2445)>0) THEN
   JVS(2445) = -B(973)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2446)>0) THEN
   JVS(2446) = -B(772)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2447)>0) THEN
   JVS(2447) = -B(961)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2448)>0) THEN
   JVS(2448) = -B(101)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2449)>0) THEN
   JVS(2449) = -B(796)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2450)>0) THEN
   JVS(2450) = -B(937)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2451)>0) THEN
   JVS(2451) = -B(782)-B(784)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2452)>0) THEN
   JVS(2452) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2453)>0) THEN
   JVS(2453) = -B(169)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2454)>0) THEN
   JVS(2454) = -B(106)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2455)>0) THEN
   JVS(2455) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2456)>0) THEN
   JVS(2456) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2457)>0) THEN
   JVS(2457) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2458)>0) THEN
   JVS(2458) = -B(103)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2459)>0) THEN
   JVS(2459) = -B(81)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2460)>0) THEN
   JVS(2460) = -B(115)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2461)>0) THEN
   JVS(2461) = -B(93)-B(95)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2462)>0) THEN
   JVS(2462) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2463)>0) THEN
   JVS(2463) = -B(108)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2464)>0) THEN
   JVS(2464) = -B(474)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2465)>0) THEN
   JVS(2465) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2466)>0) THEN
   JVS(2466) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2467)>0) THEN
   JVS(2467) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2468)>0) THEN
   JVS(2468) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2469)>0) THEN
   JVS(2469) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2470)>0) THEN
   JVS(2470) = -B(77)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2471)>0) THEN
   JVS(2471) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2472)>0) THEN
   JVS(2472) = -B(24)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2473)>0) THEN
   JVS(2473) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2474)>0) THEN
   JVS(2474) = -B(1)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2475)>0) THEN
   JVS(2475) = -B(2)-B(17)-B(25)-B(44)-B(55)-B(78)-B(82)-B(88)-B(90)-B(94)-B(96)-B(98)-B(100)-B(102)-B(104)-B(107)-B(109)&
                 &-B(112)-B(114)-B(116)-B(124)-B(132)-B(142)-B(149)-B(168)-B(170)-B(355)-B(378)-B(380)-B(475)-B(548)-B(567)&
                 &-B(666)-B(729)-B(753)-B(773)-B(783)-B(785)-B(793)-B(797)-B(807)-B(816)-B(818)-B(824)-B(826)-B(836)-B(848)&
                 &-B(860)-B(870)-B(880)-B(892)-B(904)-B(924)-B(928)-B(932)-B(938)-B(962)-B(974)-B(976)-B(1016)-B(1018)&
                 &-B(1222)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2476)>0) THEN
   JVS(2476) = -B(18)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2477)>0) THEN
   JVS(2477) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2478)>0) THEN
   JVS(2478) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2479)>0) THEN
   JVS(2479) = -B(56)+B(66)+B(1123)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2480)>0) THEN
   JVS(2480) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2481)>0) THEN
   JVS(2481) = B(67)+B(544)+B(1113)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2482)>0) THEN
   JVS(2482) = 2*B(519)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2483)>0) THEN
   JVS(2483) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2484)>0) THEN
   JVS(2484) = -B(45)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2485)>0) THEN
   JVS(2485) = B(545)-B(549)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2486)>0) THEN
   JVS(2486) = -B(667)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2487)>0) THEN
   JVS(2487) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2488)>0) THEN
   JVS(2488) = -B(925)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2489)>0) THEN
   JVS(2489) = -B(921)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2490)>0) THEN
   JVS(2490) = -B(929)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2491)>0) THEN
   JVS(2491) = B(634)+B(694)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2492)>0) THEN
   JVS(2492) = B(636)+B(696)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2493)>0) THEN
   JVS(2493) = B(1214)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2494)>0) THEN
   JVS(2494) = B(1144)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2495)>0) THEN
   JVS(2495) = B(1145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2496)>0) THEN
   JVS(2496) = B(1146)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2497)>0) THEN
   JVS(2497) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2498)>0) THEN
   JVS(2498) = B(632)+B(692)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2499)>0) THEN
   JVS(2499) = B(506)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2500)>0) THEN
   JVS(2500) = B(50)+B(1121)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2501)>0) THEN
   JVS(2501) = B(1149)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2502)>0) THEN
   JVS(2502) = B(1148)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2503)>0) THEN
   JVS(2503) = B(1143)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2504)>0) THEN
   JVS(2504) = B(1223)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2505)>0) THEN
   JVS(2505) = B(1147)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2506)>0) THEN
   JVS(2506) = 0.89*B(1227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2507)>0) THEN
   JVS(2507) = -B(1019)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2508)>0) THEN
   JVS(2508) = 0.5*B(1011)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2509)>0) THEN
   JVS(2509) = B(1153)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2510)>0) THEN
   JVS(2510) = 0.3*B(1155)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2511)>0) THEN
   JVS(2511) = -B(1021)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2512)>0) THEN
   JVS(2512) = B(829)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2513)>0) THEN
   JVS(2513) = B(813)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2514)>0) THEN
   JVS(2514) = 0.985*B(1151)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2515)>0) THEN
   JVS(2515) = B(1115)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2516)>0) THEN
   JVS(2516) = B(1154)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2517)>0) THEN
   JVS(2517) = B(1156)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2518)>0) THEN
   JVS(2518) = 0.985*B(1150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2519)>0) THEN
   JVS(2519) = 0.985*B(1152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2520)>0) THEN
   JVS(2520) = B(1225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2521)>0) THEN
   JVS(2521) = B(232)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2522)>0) THEN
   JVS(2522) = 0.934*B(141)-B(143)+1.2*B(145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2523)>0) THEN
   JVS(2523) = 0.1*B(947)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2524)>0) THEN
   JVS(2524) = 0.1*B(949)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2525)>0) THEN
   JVS(2525) = B(823)-0.5*B(827)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2526)>0) THEN
   JVS(2526) = B(815)-0.85*B(819)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2527)>0) THEN
   JVS(2527) = 0.1*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2528)>0) THEN
   JVS(2528) = 0.19*B(256)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2529)>0) THEN
   JVS(2529) = -B(133)+0.5*B(135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2530)>0) THEN
   JVS(2530) = B(1142)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2531)>0) THEN
   JVS(2531) = B(554)-B(558)-B(560)-B(562)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2532)>0) THEN
   JVS(2532) = -B(808)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2533)>0) THEN
   JVS(2533) = B(234)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2534)>0) THEN
   JVS(2534) = 0.05*B(452)+B(1162)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2535)>0) THEN
   JVS(2535) = B(524)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2536)>0) THEN
   JVS(2536) = -0.175*B(352)+0.825*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2537)>0) THEN
   JVS(2537) = B(268)+B(272)+2*B(1133)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2538)>0) THEN
   JVS(2538) = -B(199)+0.5*B(230)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2539)>0) THEN
   JVS(2539) = B(87)+B(175)-B(240)+B(286)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2540)>0) THEN
   JVS(2540) = -0.925*B(193)+0.375*B(224)+0.5*B(410)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2541)>0) THEN
   JVS(2541) = B(121)+B(123)-B(127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2542)>0) THEN
   JVS(2542) = B(89)+B(177)-B(242)+B(288)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2543)>0) THEN
   JVS(2543) = 0.61*B(792)-0.5*B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2544)>0) THEN
   JVS(2544) = B(113)-B(195)+B(226)+B(406)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2545)>0) THEN
   JVS(2545) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2546)>0) THEN
   JVS(2546) = B(15)+B(552)+B(656)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2547)>0) THEN
   JVS(2547) = -B(181)+0.5*B(209)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2548)>0) THEN
   JVS(2548) = B(1160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2549)>0) THEN
   JVS(2549) = 0.237*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2550)>0) THEN
   JVS(2550) = 0.7*B(372)-B(375)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2551)>0) THEN
   JVS(2551) = -B(183)+0.3*B(211)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2552)>0) THEN
   JVS(2552) = B(62)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2553)>0) THEN
   JVS(2553) = -B(762)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2554)>0) THEN
   JVS(2554) = -B(246)+B(306)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2555)>0) THEN
   JVS(2555) = -B(979)+0.5*B(983)+0.5*B(994)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2556)>0) THEN
   JVS(2556) = B(973)-B(977)+2*B(981)+B(985)+B(989)+B(993)+0.5*B(995)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2557)>0) THEN
   JVS(2557) = -B(770)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2558)>0) THEN
   JVS(2558) = 0.686*B(961)-B(963)+B(965)+0.5*B(967)+B(969)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2559)>0) THEN
   JVS(2559) = -B(185)+0.5*B(213)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2560)>0) THEN
   JVS(2560) = 0.69*B(796)-0.56*B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2561)>0) THEN
   JVS(2561) = 0.82*B(937)-B(939)+B(941)+0.5*B(943)+B(945)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2562)>0) THEN
   JVS(2562) = B(218)+B(400)+B(782)-0.1*B(786)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2563)>0) THEN
   JVS(2563) = B(1216)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2564)>0) THEN
   JVS(2564) = 0.773*B(262)+1.73*B(1132)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2565)>0) THEN
   JVS(2565) = -B(248)+B(308)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2566)>0) THEN
   JVS(2566) = 0.35*B(106)-0.898*B(189)+0.64*B(220)+0.4*B(402)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2567)>0) THEN
   JVS(2567) = 0.5*B(137)+B(1228)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2568)>0) THEN
   JVS(2568) = B(1136)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2569)>0) THEN
   JVS(2569) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2570)>0) THEN
   JVS(2570) = 0.445*B(385)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2571)>0) THEN
   JVS(2571) = 0.82*B(103)-0.937*B(187)+1.1*B(215)+0.91*B(217)+0.887*B(398)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2572)>0) THEN
   JVS(2572) = B(81)+B(203)+2*B(236)-B(238)+B(440)+B(706)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2573)>0) THEN
   JVS(2573) = 0.8*B(115)+0.8*B(117)+0.8*B(147)-B(197)+0.9*B(228)+0.8*B(412)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2574)>0) THEN
   JVS(2574) = 0.27*B(93)-B(179)+0.64*B(207)+0.27*B(392)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2575)>0) THEN
   JVS(2575) = 0.27*B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2576)>0) THEN
   JVS(2576) = B(282)+B(1141)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2577)>0) THEN
   JVS(2577) = 0.85*B(108)-B(191)+1.7*B(222)+0.85*B(404)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2578)>0) THEN
   JVS(2578) = -B(466)+B(484)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2579)>0) THEN
   JVS(2579) = 0.28*B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2580)>0) THEN
   JVS(2580) = B(1128)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2581)>0) THEN
   JVS(2581) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2582)>0) THEN
   JVS(2582) = 0.141*B(298)+0.5*B(304)+B(1140)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2583)>0) THEN
   JVS(2583) = B(38)+B(68)+B(488)+B(572)+B(650)+B(1116)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2584)>0) THEN
   JVS(2584) = 0.05*B(70)+B(1125)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2585)>0) THEN
   JVS(2585) = 0.28*B(296)+B(1138)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2586)>0) THEN
   JVS(2586) = -B(244)+B(287)+B(289)+B(388)+0.27*B(393)+0.887*B(399)+B(401)+0.4*B(403)+0.85*B(405)+B(407)+0.5*B(411)+0.8&
                 &*B(413)+B(441)+0.5*B(944)+0.5*B(968)+B(986)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2587)>0) THEN
   JVS(2587) = B(462)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2588)>0) THEN
   JVS(2588) = B(9)+B(24)-B(26)+2*B(29)+0.5*B(136)+1.2*B(146)+B(176)+B(178)+B(204)+0.64*B(208)+0.5*B(210)+0.3*B(212)+0.5&
                 &*B(214)+1.1*B(216)+B(219)+0.64*B(221)+1.7*B(223)+0.375*B(225)+B(227)+0.9*B(229)+0.5*B(231)+B(307)+B(309)&
                 &+0.7*B(373)+B(389)+B(614)+B(700)+B(942)+B(966)+2*B(982)+0.5*B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2589)>0) THEN
   JVS(2589) = B(20)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2590)>0) THEN
   JVS(2590) = B(3)-B(5)+B(10)+0.5*B(138)+0.28*B(253)+0.237*B(295)+0.28*B(297)+0.141*B(299)+0.445*B(386)+0.05*B(453)&
                 &+B(830)+0.1*B(948)+0.1*B(950)+0.1*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2591)>0) THEN
   JVS(2591) = -B(17)+B(25)+B(82)+B(88)+B(90)+0.27*B(94)+0.82*B(104)+0.35*B(107)+0.85*B(109)+B(114)+0.8*B(116)+B(124)&
                 &+0.934*B(142)+0.825*B(355)+B(783)+0.61*B(793)+0.69*B(797)+B(816)+B(824)+0.82*B(938)+0.686*B(962)+B(974)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2592)>0) THEN
   JVS(2592) = -B(6)-B(13)-B(18)-2*B(19)-B(27)-B(48)-B(53)-B(128)-B(134)-B(144)-B(180)-B(182)-B(184)-B(186)-0.937*B(188)&
                 &-0.898*B(190)-B(192)-0.925*B(194)-B(196)-B(198)-B(200)-B(239)-B(241)-B(243)-B(245)-B(247)-B(249)-0.175&
                 &*B(353)-B(376)-B(467)-B(468)-B(534)-B(559)-B(561)-B(563)-B(658)-B(660)-B(664)-B(763)-B(771)-0.1*B(787)-0.5&
                 &*B(795)-0.56*B(799)-B(809)-0.85*B(820)-0.5*B(828)-B(922)-B(926)-B(930)-B(940)-B(964)-B(978)-B(980)-B(1020)&
                 &-B(1022)-B(1025)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2593)>0) THEN
   JVS(2593) = -B(469)+B(489)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2594)>0) THEN
   JVS(2594) = B(651)+B(657)-B(659)-B(661)+B(693)+B(695)+B(697)+B(701)+B(707)+B(708)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2595)>0) THEN
   JVS(2595) = -B(54)+B(57)+B(69)+0.8*B(118)+B(122)+B(273)+0.5*B(305)+B(946)+B(970)+B(990)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2596)>0) THEN
   JVS(2596) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2597)>0) THEN
   JVS(2597) = -B(49)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2598)>0) THEN
   JVS(2598) = B(525)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2599)>0) THEN
   JVS(2599) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2600)>0) THEN
   JVS(2600) = B(4)-B(14)+B(16)+B(21)+B(39)+B(58)+B(63)+B(64)+0.05*B(71)+B(233)+B(235)+0.19*B(257)+0.773*B(263)+B(269)&
                 &+B(283)+B(463)+B(485)+B(507)+B(616)+B(633)+B(635)+B(637)+B(814)+0.5*B(1012)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2601)>0) THEN
   JVS(2601) = -B(535)+B(553)+B(573)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2602)>0) THEN
   JVS(2602) = B(615)+B(617)-B(665)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2603)>0) THEN
   JVS(2603) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2604)>0) THEN
   JVS(2604) = B(1209)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2605)>0) THEN
   JVS(2605) = B(1194)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2606)>0) THEN
   JVS(2606) = 0.75*B(610)+2*B(1196)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2607)>0) THEN
   JVS(2607) = B(1168)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2608)>0) THEN
   JVS(2608) = 0.33*B(594)+B(1195)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2609)>0) THEN
   JVS(2609) = B(1212)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2610)>0) THEN
   JVS(2610) = 3*B(502)+1.36*B(586)+3*B(1169)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2611)>0) THEN
   JVS(2611) = 2*B(504)+0.95*B(584)+2*B(1170)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2612)>0) THEN
   JVS(2612) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2613)>0) THEN
   JVS(2613) = B(506)+0.56*B(582)+B(1171)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2614)>0) THEN
   JVS(2614) = B(1174)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2615)>0) THEN
   JVS(2615) = -B(496)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2616)>0) THEN
   JVS(2616) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2617)>0) THEN
   JVS(2617) = B(478)+2*B(1163)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2618)>0) THEN
   JVS(2618) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2619)>0) THEN
   JVS(2619) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2620)>0) THEN
   JVS(2620) = -B(494)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2621)>0) THEN
   JVS(2621) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2622)>0) THEN
   JVS(2622) = -B(476)+B(1166)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2623)>0) THEN
   JVS(2623) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2624)>0) THEN
   JVS(2624) = B(742)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2625)>0) THEN
   JVS(2625) = B(744)+B(746)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2626)>0) THEN
   JVS(2626) = B(1165)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2627)>0) THEN
   JVS(2627) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2628)>0) THEN
   JVS(2628) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2629)>0) THEN
   JVS(2629) = -B(492)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2630)>0) THEN
   JVS(2630) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2631)>0) THEN
   JVS(2631) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2632)>0) THEN
   JVS(2632) = 2*B(472)+B(474)+B(484)+B(570)+B(682)+B(684)+B(743)+B(745)+B(747)+B(1164)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2633)>0) THEN
   JVS(2633) = -B(726)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2634)>0) THEN
   JVS(2634) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2635)>0) THEN
   JVS(2635) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2636)>0) THEN
   JVS(2636) = -B(488)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2637)>0) THEN
   JVS(2637) = -B(490)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2638)>0) THEN
   JVS(2638) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2639)>0) THEN
   JVS(2639) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2640)>0) THEN
   JVS(2640) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2641)>0) THEN
   JVS(2641) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2642)>0) THEN
   JVS(2642) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2643)>0) THEN
   JVS(2643) = -B(464)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2644)>0) THEN
   JVS(2644) = B(475)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2645)>0) THEN
   JVS(2645) = -B(468)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2646)>0) THEN
   JVS(2646) = -B(465)-B(469)-B(477)-B(486)-B(489)-B(491)-B(493)-B(495)-B(497)-B(498)-B(727)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2647)>0) THEN
   JVS(2647) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2648)>0) THEN
   JVS(2648) = -B(487)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2649)>0) THEN
   JVS(2649) = B(470)+B(482)+0.65*B(576)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2650)>0) THEN
   JVS(2650) = -B(499)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2651)>0) THEN
   JVS(2651) = 0.65*B(577)+0.56*B(583)+0.95*B(585)+1.36*B(587)+0.33*B(595)+0.75*B(611)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2652)>0) THEN
   JVS(2652) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2653)>0) THEN
   JVS(2653) = B(471)+B(479)+B(485)+3*B(503)+2*B(505)+B(507)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2654)>0) THEN
   JVS(2654) = B(483)+B(571)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2655)>0) THEN
   JVS(2655) = B(683)+B(685)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2656)>0) THEN
   JVS(2656) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2657)>0) THEN
   JVS(2657) = B(1208)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2658)>0) THEN
   JVS(2658) = 3*B(638)+3*B(1183)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2659)>0) THEN
   JVS(2659) = 2.58*B(580)+4*B(1184)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2660)>0) THEN
   JVS(2660) = 1.76*B(590)+3*B(1185)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2661)>0) THEN
   JVS(2661) = 1.72*B(592)+2*B(1186)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2662)>0) THEN
   JVS(2662) = 1.5*B(604)+3*B(1187)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2663)>0) THEN
   JVS(2663) = 0.75*B(606)+2*B(1188)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2664)>0) THEN
   JVS(2664) = B(1189)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2665)>0) THEN
   JVS(2665) = 0.31*B(594)+B(1195)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2666)>0) THEN
   JVS(2666) = B(1213)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2667)>0) THEN
   JVS(2667) = B(1178)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2668)>0) THEN
   JVS(2668) = 2*B(634)+B(694)+2*B(1173)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2669)>0) THEN
   JVS(2669) = 3*B(636)+2*B(696)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2670)>0) THEN
   JVS(2670) = 0.79*B(602)+2*B(646)+2*B(1190)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2671)>0) THEN
   JVS(2671) = 0.69*B(598)+2*B(642)+2*B(1191)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2672)>0) THEN
   JVS(2672) = B(644)+2*B(1192)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2673)>0) THEN
   JVS(2673) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2674)>0) THEN
   JVS(2674) = B(1179)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2675)>0) THEN
   JVS(2675) = 0.17*B(588)+B(640)+2*B(1193)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2676)>0) THEN
   JVS(2676) = B(632)-B(692)+B(1172)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2677)>0) THEN
   JVS(2677) = B(675)-B(678)-B(680)+B(1197)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2678)>0) THEN
   JVS(2678) = -B(722)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2679)>0) THEN
   JVS(2679) = B(1174)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2680)>0) THEN
   JVS(2680) = -B(714)-B(716)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2681)>0) THEN
   JVS(2681) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2682)>0) THEN
   JVS(2682) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2683)>0) THEN
   JVS(2683) = -B(702)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2684)>0) THEN
   JVS(2684) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2685)>0) THEN
   JVS(2685) = -B(710)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2686)>0) THEN
   JVS(2686) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2687)>0) THEN
   JVS(2687) = -B(704)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2688)>0) THEN
   JVS(2688) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2689)>0) THEN
   JVS(2689) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2690)>0) THEN
   JVS(2690) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2691)>0) THEN
   JVS(2691) = 0.75*B(578)+B(612)+2*B(1175)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2692)>0) THEN
   JVS(2692) = -B(648)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2693)>0) THEN
   JVS(2693) = -B(656)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2694)>0) THEN
   JVS(2694) = -B(720)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2695)>0) THEN
   JVS(2695) = -B(698)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2696)>0) THEN
   JVS(2696) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2697)>0) THEN
   JVS(2697) = B(756)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2698)>0) THEN
   JVS(2698) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2699)>0) THEN
   JVS(2699) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2700)>0) THEN
   JVS(2700) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2701)>0) THEN
   JVS(2701) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2702)>0) THEN
   JVS(2702) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2703)>0) THEN
   JVS(2703) = -B(712)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2704)>0) THEN
   JVS(2704) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2705)>0) THEN
   JVS(2705) = B(1182)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2706)>0) THEN
   JVS(2706) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2707)>0) THEN
   JVS(2707) = -B(690)+B(1180)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2708)>0) THEN
   JVS(2708) = -B(718)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2709)>0) THEN
   JVS(2709) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2710)>0) THEN
   JVS(2710) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2711)>0) THEN
   JVS(2711) = -B(706)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2712)>0) THEN
   JVS(2712) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2713)>0) THEN
   JVS(2713) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2714)>0) THEN
   JVS(2714) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2715)>0) THEN
   JVS(2715) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2716)>0) THEN
   JVS(2716) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2717)>0) THEN
   JVS(2717) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2718)>0) THEN
   JVS(2718) = -B(724)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2719)>0) THEN
   JVS(2719) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2720)>0) THEN
   JVS(2720) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2721)>0) THEN
   JVS(2721) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2722)>0) THEN
   JVS(2722) = -B(650)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2723)>0) THEN
   JVS(2723) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2724)>0) THEN
   JVS(2724) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2725)>0) THEN
   JVS(2725) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2726)>0) THEN
   JVS(2726) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2727)>0) THEN
   JVS(2727) = -B(700)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2728)>0) THEN
   JVS(2728) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2729)>0) THEN
   JVS(2729) = -B(652)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2730)>0) THEN
   JVS(2730) = B(666)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2731)>0) THEN
   JVS(2731) = -B(658)-B(660)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2732)>0) THEN
   JVS(2732) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2733)>0) THEN
   JVS(2733) = -B(649)-B(651)-B(653)-B(654)-B(657)-B(659)-B(661)-B(673)-B(679)-B(681)-B(691)-B(693)+B(695)+2*B(697)&
                 &-B(699)-B(701)-B(703)-B(705)-B(707)-B(708)-B(711)-B(713)-B(715)-B(717)-B(719)-B(721)-B(723)-B(725)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2734)>0) THEN
   JVS(2734) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2735)>0) THEN
   JVS(2735) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2736)>0) THEN
   JVS(2736) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2737)>0) THEN
   JVS(2737) = 0.67*B(574)+0.75*B(579)+2.58*B(581)+0.17*B(589)+1.76*B(591)+1.72*B(593)+0.31*B(595)+0.69*B(599)+0.79&
                 &*B(603)+1.5*B(605)+0.75*B(607)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2738)>0) THEN
   JVS(2738) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2739)>0) THEN
   JVS(2739) = B(613)+B(616)+B(624)+B(633)+2*B(635)+3*B(637)+3*B(639)+B(641)+2*B(643)+B(645)+2*B(647)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2740)>0) THEN
   JVS(2740) = B(662)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2741)>0) THEN
   JVS(2741) = B(617)+B(663)+B(667)+B(671)+B(672)+B(757)+B(1176)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2742)>0) THEN
   JVS(2742) = 0.67*B(575)+B(625)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2743)>0) THEN
   JVS(2743) = B(1214)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2744)>0) THEN
   JVS(2744) = -B(919)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2745)>0) THEN
   JVS(2745) = -B(460)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2746)>0) THEN
   JVS(2746) = B(1120)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2747)>0) THEN
   JVS(2747) = 0.3*B(1127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2748)>0) THEN
   JVS(2748) = -B(150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2749)>0) THEN
   JVS(2749) = B(1009)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2750)>0) THEN
   JVS(2750) = B(61)+B(1124)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2751)>0) THEN
   JVS(2751) = -B(951)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2752)>0) THEN
   JVS(2752) = -B(953)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2753)>0) THEN
   JVS(2753) = B(258)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2754)>0) THEN
   JVS(2754) = -B(383)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2755)>0) THEN
   JVS(2755) = B(740)+B(1204)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2756)>0) THEN
   JVS(2756) = -B(959)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2757)>0) THEN
   JVS(2757) = 0.81*B(256)+0.4*B(1224)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2758)>0) THEN
   JVS(2758) = -B(129)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2759)>0) THEN
   JVS(2759) = B(476)+B(1166)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2760)>0) THEN
   JVS(2760) = 0.15*B(806)+0.15*B(808)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2761)>0) THEN
   JVS(2761) = -B(735)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2762)>0) THEN
   JVS(2762) = -B(1005)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2763)>0) THEN
   JVS(2763) = B(861)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2764)>0) THEN
   JVS(2764) = B(905)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2765)>0) THEN
   JVS(2765) = B(893)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2766)>0) THEN
   JVS(2766) = B(871)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2767)>0) THEN
   JVS(2767) = -B(272)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2768)>0) THEN
   JVS(2768) = B(802)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2769)>0) THEN
   JVS(2769) = B(881)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2770)>0) THEN
   JVS(2770) = -B(1003)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2771)>0) THEN
   JVS(2771) = B(837)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2772)>0) THEN
   JVS(2772) = -B(121)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2773)>0) THEN
   JVS(2773) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2774)>0) THEN
   JVS(2774) = B(849)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2775)>0) THEN
   JVS(2775) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2776)>0) THEN
   JVS(2776) = -B(300)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2777)>0) THEN
   JVS(2777) = B(741)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2778)>0) THEN
   JVS(2778) = -B(991)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2779)>0) THEN
   JVS(2779) = -B(989)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2780)>0) THEN
   JVS(2780) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2781)>0) THEN
   JVS(2781) = -B(969)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2782)>0) THEN
   JVS(2782) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2783)>0) THEN
   JVS(2783) = -B(945)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2784)>0) THEN
   JVS(2784) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2785)>0) THEN
   JVS(2785) = B(42)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2786)>0) THEN
   JVS(2786) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2787)>0) THEN
   JVS(2787) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2788)>0) THEN
   JVS(2788) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2789)>0) THEN
   JVS(2789) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2790)>0) THEN
   JVS(2790) = -B(119)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2791)>0) THEN
   JVS(2791) = B(630)+B(688)+B(690)+B(1180)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2792)>0) THEN
   JVS(2792) = -B(274)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2793)>0) THEN
   JVS(2793) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2794)>0) THEN
   JVS(2794) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2795)>0) THEN
   JVS(2795) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2796)>0) THEN
   JVS(2796) = -B(117)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2797)>0) THEN
   JVS(2797) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2798)>0) THEN
   JVS(2798) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2799)>0) THEN
   JVS(2799) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2800)>0) THEN
   JVS(2800) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2801)>0) THEN
   JVS(2801) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2802)>0) THEN
   JVS(2802) = -B(266)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2803)>0) THEN
   JVS(2803) = -B(171)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2804)>0) THEN
   JVS(2804) = -B(205)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2805)>0) THEN
   JVS(2805) = -B(302)-B(304)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2806)>0) THEN
   JVS(2806) = -B(68)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2807)>0) THEN
   JVS(2807) = -B(72)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2808)>0) THEN
   JVS(2808) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2809)>0) THEN
   JVS(2809) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2810)>0) THEN
   JVS(2810) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2811)>0) THEN
   JVS(2811) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2812)>0) THEN
   JVS(2812) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2813)>0) THEN
   JVS(2813) = B(7)+B(259)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2814)>0) THEN
   JVS(2814) = -B(55)+0.15*B(807)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2815)>0) THEN
   JVS(2815) = -B(53)+0.15*B(809)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2816)>0) THEN
   JVS(2816) = B(477)-B(486)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2817)>0) THEN
   JVS(2817) = B(691)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2818)>0) THEN
   JVS(2818) = -B(54)-B(56)-B(57)-B(59)-B(66)-B(69)-B(73)-B(118)-B(120)-B(122)-B(130)-B(151)-B(172)-B(206)-B(267)-B(273)&
                 &-B(275)-B(301)-B(303)-B(305)-B(384)-2*B(448)-B(461)-B(487)-B(546)-B(736)-B(920)-B(946)-B(952)-B(954)-B(960)&
                 &-B(970)-B(990)-B(992)-B(1004)-B(1006)-B(1027)-B(1122)-B(1123)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2819)>0) THEN
   JVS(2819) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2820)>0) THEN
   JVS(2820) = B(8)-B(60)-B(67)+B(550)+B(838)+B(850)+B(862)+B(872)+B(882)+B(894)+B(906)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2821)>0) THEN
   JVS(2821) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2822)>0) THEN
   JVS(2822) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2823)>0) THEN
   JVS(2823) = B(43)-B(58)+0.81*B(257)+B(631)+B(803)+B(1010)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2824)>0) THEN
   JVS(2824) = -B(547)+B(551)+B(689)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2825)>0) THEN
   JVS(2825) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2826)>0) THEN
   JVS(2826) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2827)>0) THEN
   JVS(2827) = B(496)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2828)>0) THEN
   JVS(2828) = B(494)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2829)>0) THEN
   JVS(2829) = -B(1051)+B(1060)+B(1061)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2830)>0) THEN
   JVS(2830) = -B(1049)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2831)>0) THEN
   JVS(2831) = -B(1041)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2832)>0) THEN
   JVS(2832) = B(492)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2833)>0) THEN
   JVS(2833) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2834)>0) THEN
   JVS(2834) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2835)>0) THEN
   JVS(2835) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2836)>0) THEN
   JVS(2836) = B(726)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2837)>0) THEN
   JVS(2837) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2838)>0) THEN
   JVS(2838) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2839)>0) THEN
   JVS(2839) = B(488)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2840)>0) THEN
   JVS(2840) = B(490)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2841)>0) THEN
   JVS(2841) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2842)>0) THEN
   JVS(2842) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2843)>0) THEN
   JVS(2843) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2844)>0) THEN
   JVS(2844) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2845)>0) THEN
   JVS(2845) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2846)>0) THEN
   JVS(2846) = -B(1064)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2847)>0) THEN
   JVS(2847) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2848)>0) THEN
   JVS(2848) = B(468)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2849)>0) THEN
   JVS(2849) = B(469)+B(489)+B(491)+B(493)+B(495)+B(497)+B(727)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2850)>0) THEN
   JVS(2850) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2851)>0) THEN
   JVS(2851) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2852)>0) THEN
   JVS(2852) = -B(470)-B(482)-0.8*B(576)-B(1042)-B(1050)-B(1052)-B(1065)-B(1070)-B(1071)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2853)>0) THEN
   JVS(2853) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2854)>0) THEN
   JVS(2854) = -0.8*B(577)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2855)>0) THEN
   JVS(2855) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2856)>0) THEN
   JVS(2856) = -B(471)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2857)>0) THEN
   JVS(2857) = -B(483)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2858)>0) THEN
   JVS(2858) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2859)>0) THEN
   JVS(2859) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2860)>0) THEN
   JVS(2860) = B(812)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2861)>0) THEN
   JVS(2861) = B(160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2862)>0) THEN
   JVS(2862) = B(1168)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2863)>0) THEN
   JVS(2863) = -B(568)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2864)>0) THEN
   JVS(2864) = -B(161)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2865)>0) THEN
   JVS(2865) = B(451)+B(1215)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2866)>0) THEN
   JVS(2866) = B(733)+2*B(734)+B(1203)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2867)>0) THEN
   JVS(2867) = B(628)+B(1179)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2868)>0) THEN
   JVS(2868) = B(752)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2869)>0) THEN
   JVS(2869) = B(50)+B(51)+B(1121)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2870)>0) THEN
   JVS(2870) = B(46)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2871)>0) THEN
   JVS(2871) = B(76)+0.7*B(1127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2872)>0) THEN
   JVS(2872) = B(1143)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2873)>0) THEN
   JVS(2873) = B(1015)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2874)>0) THEN
   JVS(2874) = B(1017)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2875)>0) THEN
   JVS(2875) = B(1231)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2876)>0) THEN
   JVS(2876) = B(1154)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2877)>0) THEN
   JVS(2877) = B(831)+B(1225)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2878)>0) THEN
   JVS(2878) = B(61)+B(1124)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2879)>0) THEN
   JVS(2879) = B(166)+B(254)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2880)>0) THEN
   JVS(2880) = B(739)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2881)>0) THEN
   JVS(2881) = B(823)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2882)>0) THEN
   JVS(2882) = B(815)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2883)>0) THEN
   JVS(2883) = B(165)+0.6*B(1224)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2884)>0) THEN
   JVS(2884) = 2*B(129)+1.88*B(131)+0.7*B(135)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2885)>0) THEN
   JVS(2885) = B(314)+B(1142)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2886)>0) THEN
   JVS(2886) = B(1167)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2887)>0) THEN
   JVS(2887) = 1.85*B(806)+0.85*B(808)-B(810)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2888)>0) THEN
   JVS(2888) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2889)>0) THEN
   JVS(2889) = B(1229)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2890)>0) THEN
   JVS(2890) = 0.1*B(790)+B(1162)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2891)>0) THEN
   JVS(2891) = B(859)-B(861)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2892)>0) THEN
   JVS(2892) = B(903)-B(905)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2893)>0) THEN
   JVS(2893) = B(891)-B(893)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2894)>0) THEN
   JVS(2894) = B(869)-B(871)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2895)>0) THEN
   JVS(2895) = B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2896)>0) THEN
   JVS(2896) = B(1161)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2897)>0) THEN
   JVS(2897) = 2*B(148)+B(230)+B(414)+B(436)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2898)>0) THEN
   JVS(2898) = B(879)-B(881)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2899)>0) THEN
   JVS(2899) = B(1230)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2900)>0) THEN
   JVS(2900) = B(87)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2901)>0) THEN
   JVS(2901) = B(835)-B(837)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2902)>0) THEN
   JVS(2902) = B(833)+B(1217)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2903)>0) THEN
   JVS(2903) = 1.5*B(111)+0.925*B(193)+0.375*B(224)+0.5*B(410)+B(432)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2904)>0) THEN
   JVS(2904) = B(121)+B(123)-B(125)+0.96*B(127)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2905)>0) THEN
   JVS(2905) = B(89)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2906)>0) THEN
   JVS(2906) = 0.79*B(792)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2907)>0) THEN
   JVS(2907) = B(113)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2908)>0) THEN
   JVS(2908) = B(847)-B(849)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2909)>0) THEN
   JVS(2909) = 2*B(97)+B(209)+B(408)+B(430)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2910)>0) THEN
   JVS(2910) = B(1160)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2911)>0) THEN
   JVS(2911) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2912)>0) THEN
   JVS(2912) = B(377)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2913)>0) THEN
   JVS(2913) = B(99)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2914)>0) THEN
   JVS(2914) = -B(731)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2915)>0) THEN
   JVS(2915) = -B(158)+B(167)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2916)>0) THEN
   JVS(2916) = 2*B(975)+0.5*B(983)+B(987)+2*B(991)+0.5*B(994)+B(996)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2917)>0) THEN
   JVS(2917) = B(973)+B(989)+0.5*B(995)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2918)>0) THEN
   JVS(2918) = -B(737)+B(772)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2919)>0) THEN
   JVS(2919) = 0.78*B(961)+B(969)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2920)>0) THEN
   JVS(2920) = 0.93*B(101)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2921)>0) THEN
   JVS(2921) = 0.88*B(796)+0.06*B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2922)>0) THEN
   JVS(2922) = 0.82*B(937)+B(945)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2923)>0) THEN
   JVS(2923) = B(782)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2924)>0) THEN
   JVS(2924) = B(1118)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2925)>0) THEN
   JVS(2925) = 0.06*B(454)+0.1*B(788)+B(1216)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2926)>0) THEN
   JVS(2926) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2927)>0) THEN
   JVS(2927) = -B(163)+B(169)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2928)>0) THEN
   JVS(2928) = 0.88*B(106)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2929)>0) THEN
   JVS(2929) = 0.7*B(137)+B(1228)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2930)>0) THEN
   JVS(2930) = B(1181)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2931)>0) THEN
   JVS(2931) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2932)>0) THEN
   JVS(2932) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2933)>0) THEN
   JVS(2933) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2934)>0) THEN
   JVS(2934) = 0.91*B(103)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2935)>0) THEN
   JVS(2935) = B(81)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2936)>0) THEN
   JVS(2936) = 1.3*B(115)+1.3*B(117)+0.3*B(147)+0.15*B(228)+0.3*B(412)+B(434)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2937)>0) THEN
   JVS(2937) = B(93)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2938)>0) THEN
   JVS(2938) = B(1158)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2939)>0) THEN
   JVS(2939) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2940)>0) THEN
   JVS(2940) = 0.85*B(108)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2941)>0) THEN
   JVS(2941) = B(474)-B(500)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2942)>0) THEN
   JVS(2942) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2943)>0) THEN
   JVS(2943) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2944)>0) THEN
   JVS(2944) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2945)>0) THEN
   JVS(2945) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2946)>0) THEN
   JVS(2946) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2947)>0) THEN
   JVS(2947) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2948)>0) THEN
   JVS(2948) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2949)>0) THEN
   JVS(2949) = -B(74)+B(77)+B(409)+0.5*B(411)+0.3*B(413)+B(415)+B(431)+B(433)+B(435)+B(437)+B(988)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2950)>0) THEN
   JVS(2950) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2951)>0) THEN
   JVS(2951) = B(24)+0.7*B(136)+B(210)+0.375*B(225)+0.15*B(229)+B(231)-B(449)+0.5*B(984)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2952)>0) THEN
   JVS(2952) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2953)>0) THEN
   JVS(2953) = B(1)-B(7)+0.7*B(138)+0.06*B(455)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2954)>0) THEN
   JVS(2954) = B(2)+B(17)+B(25)+2*B(55)+B(78)+B(82)+B(88)+B(90)+B(94)+2*B(98)+B(100)+0.93*B(102)+0.91*B(104)+0.88*B(107)&
                 &+0.85*B(109)+1.5*B(112)+B(114)+1.3*B(116)+B(124)+1.88*B(132)+2*B(149)+B(168)+B(170)+B(355)+B(378)+B(475)&
                 &+B(548)+B(666)+B(753)+B(773)+B(783)+0.79*B(793)+0.88*B(797)+1.85*B(807)+B(816)+B(824)+B(836)+B(848)+B(860)&
                 &+B(870)+B(880)+B(892)+B(904)+0.82*B(938)+0.78*B(962)+B(974)+2*B(976)+B(1016)+B(1018)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2955)>0) THEN
   JVS(2955) = B(18)-B(48)+B(53)+0.96*B(128)+0.925*B(194)+0.06*B(799)+0.85*B(809)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2956)>0) THEN
   JVS(2956) = B(486)-B(498)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2957)>0) THEN
   JVS(2957) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2958)>0) THEN
   JVS(2958) = B(54)+2*B(56)+B(57)-B(59)+1.3*B(118)+B(122)+2*B(130)+2*B(448)+B(487)+B(546)+B(946)+B(970)+B(990)+2*B(992)&
                 &+B(1122)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2959)>0) THEN
   JVS(2959) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2960)>0) THEN
   JVS(2960) = -B(8)-B(40)-B(49)-B(60)-B(75)-B(126)-B(159)-B(162)-B(164)-B(450)-B(499)-B(501)-B(544)-B(550)-B(569)-B(668)&
                 &-B(732)-B(738)-B(811)-B(838)-B(850)-B(862)-B(872)-B(882)-B(894)-B(906)-B(1026)-B(1113)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2961)>0) THEN
   JVS(2961) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2962)>0) THEN
   JVS(2962) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2963)>0) THEN
   JVS(2963) = -B(41)+B(47)+B(52)+B(58)+B(255)+B(315)+B(629)+0.1*B(789)+0.1*B(791)+B(832)+B(834)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2964)>0) THEN
   JVS(2964) = -B(545)+B(547)+B(549)-B(551)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2965)>0) THEN
   JVS(2965) = B(667)-B(669)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2966)>0) THEN
   JVS(2966) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2967)>0) THEN
   JVS(2967) = -B(596)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2968)>0) THEN
   JVS(2968) = -B(610)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2969)>0) THEN
   JVS(2969) = -B(580)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2970)>0) THEN
   JVS(2970) = -B(590)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2971)>0) THEN
   JVS(2971) = -B(592)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2972)>0) THEN
   JVS(2972) = -B(604)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2973)>0) THEN
   JVS(2973) = -B(606)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2974)>0) THEN
   JVS(2974) = -B(608)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2975)>0) THEN
   JVS(2975) = -B(594)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2976)>0) THEN
   JVS(2976) = -B(516)-B(518)+B(1219)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2977)>0) THEN
   JVS(2977) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2978)>0) THEN
   JVS(2978) = -B(586)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2979)>0) THEN
   JVS(2979) = -B(584)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2980)>0) THEN
   JVS(2980) = -B(602)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2981)>0) THEN
   JVS(2981) = -B(598)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2982)>0) THEN
   JVS(2982) = -B(600)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2983)>0) THEN
   JVS(2983) = -B(588)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2984)>0) THEN
   JVS(2984) = -B(582)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2985)>0) THEN
   JVS(2985) = -B(578)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2986)>0) THEN
   JVS(2986) = -B(520)-B(522)-B(524)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2987)>0) THEN
   JVS(2987) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2988)>0) THEN
   JVS(2988) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2989)>0) THEN
   JVS(2989) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2990)>0) THEN
   JVS(2990) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2991)>0) THEN
   JVS(2991) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2992)>0) THEN
   JVS(2992) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2993)>0) THEN
   JVS(2993) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2994)>0) THEN
   JVS(2994) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2995)>0) THEN
   JVS(2995) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2996)>0) THEN
   JVS(2996) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2997)>0) THEN
   JVS(2997) = -B(536)-B(538)+B(1111)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2998)>0) THEN
   JVS(2998) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(2999)>0) THEN
   JVS(2999) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3000)>0) THEN
   JVS(3000) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3001)>0) THEN
   JVS(3001) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3002)>0) THEN
   JVS(3002) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3003)>0) THEN
   JVS(3003) = -B(576)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3004)>0) THEN
   JVS(3004) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3005)>0) THEN
   JVS(3005) = -B(508)-B(510)-B(512)-B(514)-B(517)-B(519)-B(521)-B(523)-B(525)-B(537)-B(539)-B(574)-B(577)-B(579)-B(581)&
                 &-B(583)-B(585)-B(587)-B(589)-B(591)-B(593)-B(595)-B(597)-B(599)-B(601)-B(603)-B(605)-B(607)-B(609)-B(611)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3006)>0) THEN
   JVS(3006) = -B(509)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3007)>0) THEN
   JVS(3007) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3008)>0) THEN
   JVS(3008) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3009)>0) THEN
   JVS(3009) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3010)>0) THEN
   JVS(3010) = -B(575)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3011)>0) THEN
   JVS(3011) = B(638)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3012)>0) THEN
   JVS(3012) = B(778)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3013)>0) THEN
   JVS(3013) = B(766)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3014)>0) THEN
   JVS(3014) = B(646)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3015)>0) THEN
   JVS(3015) = B(642)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3016)>0) THEN
   JVS(3016) = B(644)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3017)>0) THEN
   JVS(3017) = B(640)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3018)>0) THEN
   JVS(3018) = B(632)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3019)>0) THEN
   JVS(3019) = B(506)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3020)>0) THEN
   JVS(3020) = B(51)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3021)>0) THEN
   JVS(3021) = B(46)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3022)>0) THEN
   JVS(3022) = B(768)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3023)>0) THEN
   JVS(3023) = B(34)+B(36)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3024)>0) THEN
   JVS(3024) = 0.26*B(334)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3025)>0) THEN
   JVS(3025) = B(30)+B(32)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3026)>0) THEN
   JVS(3026) = 0.125*B(332)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3027)>0) THEN
   JVS(3027) = 0.375*B(336)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3028)>0) THEN
   JVS(3028) = -B(1028)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3029)>0) THEN
   JVS(3029) = B(79)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3030)>0) THEN
   JVS(3030) = B(560)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3031)>0) THEN
   JVS(3031) = -B(1033)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3032)>0) THEN
   JVS(3032) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3033)>0) THEN
   JVS(3033) = B(22)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3034)>0) THEN
   JVS(3034) = -B(865)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3035)>0) THEN
   JVS(3035) = -B(909)-B(911)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3036)>0) THEN
   JVS(3036) = -B(897)-B(899)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3037)>0) THEN
   JVS(3037) = -B(875)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3038)>0) THEN
   JVS(3038) = -B(885)-B(887)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3039)>0) THEN
   JVS(3039) = -B(841)-B(843)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3040)>0) THEN
   JVS(3040) = -B(853)-B(855)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3041)>0) THEN
   JVS(3041) = B(15)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3042)>0) THEN
   JVS(3042) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3043)>0) THEN
   JVS(3043) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3044)>0) THEN
   JVS(3044) = B(62)+B(698)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3045)>0) THEN
   JVS(3045) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3046)>0) THEN
   JVS(3046) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3047)>0) THEN
   JVS(3047) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3048)>0) THEN
   JVS(3048) = B(1051)+B(1053)+B(1055)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3049)>0) THEN
   JVS(3049) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3050)>0) THEN
   JVS(3050) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3051)>0) THEN
   JVS(3051) = B(42)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3052)>0) THEN
   JVS(3052) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3053)>0) THEN
   JVS(3053) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3054)>0) THEN
   JVS(3054) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3055)>0) THEN
   JVS(3055) = B(154)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3056)>0) THEN
   JVS(3056) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3057)>0) THEN
   JVS(3057) = B(626)+B(1047)+B(1049)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3058)>0) THEN
   JVS(3058) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3059)>0) THEN
   JVS(3059) = -B(1037)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3060)>0) THEN
   JVS(3060) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3061)>0) THEN
   JVS(3061) = B(173)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3062)>0) THEN
   JVS(3062) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3063)>0) THEN
   JVS(3063) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3064)>0) THEN
   JVS(3064) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3065)>0) THEN
   JVS(3065) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3066)>0) THEN
   JVS(3066) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3067)>0) THEN
   JVS(3067) = B(152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3068)>0) THEN
   JVS(3068) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3069)>0) THEN
   JVS(3069) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3070)>0) THEN
   JVS(3070) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3071)>0) THEN
   JVS(3071) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3072)>0) THEN
   JVS(3072) = B(156)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3073)>0) THEN
   JVS(3073) = B(201)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3074)>0) THEN
   JVS(3074) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3075)>0) THEN
   JVS(3075) = B(38)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3076)>0) THEN
   JVS(3076) = B(70)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3077)>0) THEN
   JVS(3077) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3078)>0) THEN
   JVS(3078) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3079)>0) THEN
   JVS(3079) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3080)>0) THEN
   JVS(3080) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3081)>0) THEN
   JVS(3081) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3082)>0) THEN
   JVS(3082) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3083)>0) THEN
   JVS(3083) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3084)>0) THEN
   JVS(3084) = B(13)+B(561)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3085)>0) THEN
   JVS(3085) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3086)>0) THEN
   JVS(3086) = B(699)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3087)>0) THEN
   JVS(3087) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3088)>0) THEN
   JVS(3088) = B(470)+B(1050)+B(1052)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3089)>0) THEN
   JVS(3089) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3090)>0) THEN
   JVS(3090) = -B(508)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3091)>0) THEN
   JVS(3091) = -B(509)-B(842)-B(844)-B(854)-B(856)-B(866)-B(876)-B(886)-B(888)-B(898)-B(900)-B(910)-B(912)-B(1029)&
                 &-B(1034)-B(1038)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3092)>0) THEN
   JVS(3092) = B(11)+B(14)+B(16)+B(23)+B(31)+B(33)+B(35)+B(37)+B(39)+B(43)+B(47)+B(52)+B(63)+B(71)+B(80)+B(153)+B(155)&
                 &+B(157)+B(174)+B(202)+0.125*B(333)+0.26*B(335)+0.375*B(337)+B(471)+B(507)+B(530)+B(624)+B(627)+B(633)&
                 &+B(639)+B(641)+B(643)+B(645)+B(647)+B(767)+B(769)+B(779)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3093)>0) THEN
   JVS(3093) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3094)>0) THEN
   JVS(3094) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3095)>0) THEN
   JVS(3095) = B(625)+B(1048)+B(1054)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3096)>0) THEN
   JVS(3096) = 2*B(1226)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3097)>0) THEN
   JVS(3097) = -B(638)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3098)>0) THEN
   JVS(3098) = -B(778)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3099)>0) THEN
   JVS(3099) = -B(350)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3100)>0) THEN
   JVS(3100) = -B(346)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3101)>0) THEN
   JVS(3101) = -B(348)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3102)>0) THEN
   JVS(3102) = -B(542)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3103)>0) THEN
   JVS(3103) = -B(766)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3104)>0) THEN
   JVS(3104) = -B(381)+B(1159)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3105)>0) THEN
   JVS(3105) = -B(502)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3106)>0) THEN
   JVS(3106) = -B(622)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3107)>0) THEN
   JVS(3107) = -B(634)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3108)>0) THEN
   JVS(3108) = -B(636)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3109)>0) THEN
   JVS(3109) = -B(504)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3110)>0) THEN
   JVS(3110) = -B(646)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3111)>0) THEN
   JVS(3111) = -0.36*B(320)+B(1144)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3112)>0) THEN
   JVS(3112) = -B(642)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3113)>0) THEN
   JVS(3113) = -B(644)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3114)>0) THEN
   JVS(3114) = -B(628)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3115)>0) THEN
   JVS(3115) = -B(640)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3116)>0) THEN
   JVS(3116) = -0.36*B(322)+B(1145)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3117)>0) THEN
   JVS(3117) = -0.209*B(324)+B(1146)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3118)>0) THEN
   JVS(3118) = -B(456)-B(458)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3119)>0) THEN
   JVS(3119) = -B(632)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3120)>0) THEN
   JVS(3120) = -B(506)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3121)>0) THEN
   JVS(3121) = -B(51)+B(1120)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3122)>0) THEN
   JVS(3122) = -B(46)+B(1119)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3123)>0) THEN
   JVS(3123) = -B(620)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3124)>0) THEN
   JVS(3124) = -B(328)+B(1149)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3125)>0) THEN
   JVS(3125) = -0.209*B(330)+B(1148)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3126)>0) THEN
   JVS(3126) = -0.209*B(318)+B(1143)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3127)>0) THEN
   JVS(3127) = 2*B(1221)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3128)>0) THEN
   JVS(3128) = -B(91)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3129)>0) THEN
   JVS(3129) = -0.51*B(971)+B(1223)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3130)>0) THEN
   JVS(3130) = -0.209*B(326)+B(1147)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3131)>0) THEN
   JVS(3131) = -0.365*B(1013)+2*B(1227)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3132)>0) THEN
   JVS(3132) = -B(83)-B(85)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3133)>0) THEN
   JVS(3133) = B(1015)+B(1023)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3134)>0) THEN
   JVS(3134) = -B(1011)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3135)>0) THEN
   JVS(3135) = -B(768)+B(1199)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3136)>0) THEN
   JVS(3136) = -0.346*B(356)+B(1153)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3137)>0) THEN
   JVS(3137) = -0.209*B(358)+B(1155)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3138)>0) THEN
   JVS(3138) = B(1017)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3139)>0) THEN
   JVS(3139) = -B(34)+B(1218)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3140)>0) THEN
   JVS(3140) = -B(478)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3141)>0) THEN
   JVS(3141) = -B(821)+B(829)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3142)>0) THEN
   JVS(3142) = -B(1009)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3143)>0) THEN
   JVS(3143) = -B(813)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3144)>0) THEN
   JVS(3144) = -0.74*B(334)+0.985*B(1151)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3145)>0) THEN
   JVS(3145) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3146)>0) THEN
   JVS(3146) = -B(30)+B(1115)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3147)>0) THEN
   JVS(3147) = -0.388*B(800)+B(1154)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3148)>0) THEN
   JVS(3148) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3149)>0) THEN
   JVS(3149) = -B(364)-B(366)+B(1157)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3150)>0) THEN
   JVS(3150) = -B(360)+B(1156)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3151)>0) THEN
   JVS(3151) = -0.875*B(332)-0.15*B(338)+0.985*B(1150)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3152)>0) THEN
   JVS(3152) = -0.625*B(336)-0.5*B(342)+0.985*B(1152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3153)>0) THEN
   JVS(3153) = -B(831)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3154)>0) THEN
   JVS(3154) = -B(232)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3155)>0) THEN
   JVS(3155) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3156)>0) THEN
   JVS(3156) = -B(933)+0.85*B(947)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3157)>0) THEN
   JVS(3157) = -B(935)+0.85*B(949)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3158)>0) THEN
   JVS(3158) = -B(254)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3159)>0) THEN
   JVS(3159) = -B(79)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3160)>0) THEN
   JVS(3160) = 0.5*B(827)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3161)>0) THEN
   JVS(3161) = 0.15*B(819)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3162)>0) THEN
   JVS(3162) = -B(955)+0.85*B(957)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3163)>0) THEN
   JVS(3163) = -B(256)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3164)>0) THEN
   JVS(3164) = -0.36*B(316)+B(1142)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3165)>0) THEN
   JVS(3165) = B(556)+2*B(558)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3166)>0) THEN
   JVS(3166) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3167)>0) THEN
   JVS(3167) = B(808)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3168)>0) THEN
   JVS(3168) = -B(234)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3169)>0) THEN
   JVS(3169) = -B(764)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3170)>0) THEN
   JVS(3170) = -B(997)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3171)>0) THEN
   JVS(3171) = -B(612)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3172)>0) THEN
   JVS(3172) = 0.05*B(452)-B(790)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3173)>0) THEN
   JVS(3173) = -B(22)+B(520)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3174)>0) THEN
   JVS(3174) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3175)>0) THEN
   JVS(3175) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3176)>0) THEN
   JVS(3176) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3177)>0) THEN
   JVS(3177) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3178)>0) THEN
   JVS(3178) = 1.125*B(352)+0.125*B(354)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3179)>0) THEN
   JVS(3179) = -B(268)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3180)>0) THEN
   JVS(3180) = -B(802)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3181)>0) THEN
   JVS(3181) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3182)>0) THEN
   JVS(3182) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3183)>0) THEN
   JVS(3183) = -B(999)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3184)>0) THEN
   JVS(3184) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3185)>0) THEN
   JVS(3185) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3186)>0) THEN
   JVS(3186) = -B(833)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3187)>0) THEN
   JVS(3187) = 0.5*B(111)+0.15*B(193)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3188)>0) THEN
   JVS(3188) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3189)>0) THEN
   JVS(3189) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3190)>0) THEN
   JVS(3190) = 0.5*B(794)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3191)>0) THEN
   JVS(3191) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3192)>0) THEN
   JVS(3192) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3193)>0) THEN
   JVS(3193) = -B(15)+B(552)+2*B(1114)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3194)>0) THEN
   JVS(3194) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3195)>0) THEN
   JVS(3195) = -B(804)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3196)>0) THEN
   JVS(3196) = -B(276)+0.243*B(294)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3197)>0) THEN
   JVS(3197) = B(368)+0.7*B(372)+2*B(374)+2*B(375)+B(377)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3198)>0) THEN
   JVS(3198) = 0.15*B(183)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3199)>0) THEN
   JVS(3199) = -B(62)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3200)>0) THEN
   JVS(3200) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3201)>0) THEN
   JVS(3201) = 0.44*B(246)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3202)>0) THEN
   JVS(3202) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3203)>0) THEN
   JVS(3203) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3204)>0) THEN
   JVS(3204) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3205)>0) THEN
   JVS(3205) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3206)>0) THEN
   JVS(3206) = 0.15*B(185)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3207)>0) THEN
   JVS(3207) = B(480)+B(1165)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3208)>0) THEN
   JVS(3208) = 0.5*B(798)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3209)>0) THEN
   JVS(3209) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3210)>0) THEN
   JVS(3210) = 0.9*B(786)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3211)>0) THEN
   JVS(3211) = -B(42)+B(1118)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3212)>0) THEN
   JVS(3212) = 0.37*B(454)-B(788)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3213)>0) THEN
   JVS(3213) = -0.773*B(262)+0.07*B(1132)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3214)>0) THEN
   JVS(3214) = 0.44*B(248)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3215)>0) THEN
   JVS(3215) = -B(154)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3216)>0) THEN
   JVS(3216) = 0.68*B(189)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3217)>0) THEN
   JVS(3217) = -B(626)+B(1182)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3218)>0) THEN
   JVS(3218) = -B(139)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3219)>0) THEN
   JVS(3219) = -B(630)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3220)>0) THEN
   JVS(3220) = -B(270)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3221)>0) THEN
   JVS(3221) = -B(173)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3222)>0) THEN
   JVS(3222) = 0.89*B(385)-B(780)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3223)>0) THEN
   JVS(3223) = 0.063*B(187)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3224)>0) THEN
   JVS(3224) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3225)>0) THEN
   JVS(3225) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3226)>0) THEN
   JVS(3226) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3227)>0) THEN
   JVS(3227) = -B(152)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3228)>0) THEN
   JVS(3228) = -B(282)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3229)>0) THEN
   JVS(3229) = B(110)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3230)>0) THEN
   JVS(3230) = -B(484)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3231)>0) THEN
   JVS(3231) = -B(250)+0.36*B(252)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3232)>0) THEN
   JVS(3232) = -B(156)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3233)>0) THEN
   JVS(3233) = -B(201)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3234)>0) THEN
   JVS(3234) = -B(280)+0.239*B(298)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3235)>0) THEN
   JVS(3235) = -B(38)+B(572)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3236)>0) THEN
   JVS(3236) = -B(70)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3237)>0) THEN
   JVS(3237) = -B(278)+0.36*B(296)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3238)>0) THEN
   JVS(3238) = 0.44*B(244)+B(369)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3239)>0) THEN
   JVS(3239) = -B(462)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3240)>0) THEN
   JVS(3240) = 0.7*B(373)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3241)>0) THEN
   JVS(3241) = -B(20)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3242)>0) THEN
   JVS(3242) = -B(3)+B(5)+0.36*B(253)+0.243*B(295)+0.36*B(297)+0.239*B(299)+0.89*B(386)+0.05*B(453)+0.37*B(455)+B(557)&
                 &+B(830)+0.85*B(948)+0.85*B(950)+0.85*B(958)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3243)>0) THEN
   JVS(3243) = B(17)-B(44)+0.5*B(112)+0.125*B(355)+B(378)+B(1016)+B(1018)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3244)>0) THEN
   JVS(3244) = B(6)-B(13)+B(18)+B(53)+0.15*B(184)+0.15*B(186)+0.063*B(188)+0.68*B(190)+0.15*B(194)+0.44*B(245)+0.44&
                 &*B(247)+0.44*B(249)+1.125*B(353)+2*B(376)+B(534)+2*B(559)+B(660)+0.9*B(787)+0.5*B(795)+0.5*B(799)+B(809)&
                 &+0.15*B(820)+0.5*B(828)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3245)>0) THEN
   JVS(3245) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3246)>0) THEN
   JVS(3246) = B(661)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3247)>0) THEN
   JVS(3247) = B(54)-B(57)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3248)>0) THEN
   JVS(3248) = -B(470)+B(482)+0.65*B(576)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3249)>0) THEN
   JVS(3249) = -B(40)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3250)>0) THEN
   JVS(3250) = 2*B(508)+B(514)+B(521)+0.67*B(574)+0.65*B(577)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3251)>0) THEN
   JVS(3251) = 2*B(509)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3252)>0) THEN
   JVS(3252) = -B(4)-2*B(11)-2*B(12)-B(14)-B(16)-B(21)-B(23)-B(31)-B(35)-B(39)-B(41)-B(43)-B(45)-B(47)-B(52)-B(58)-B(63)&
                 &-B(64)-B(71)-B(80)-B(84)-B(86)-B(92)-B(140)-B(153)-B(155)-B(157)-B(174)-B(202)-B(233)-B(235)-B(251)-B(255)&
                 &-B(257)-0.773*B(263)-B(269)-B(271)-B(277)-B(279)-B(281)-B(283)-0.36*B(317)-0.209*B(319)-0.36*B(321)-0.36&
@@ -11057,493 +11057,493 @@ SUBROUTINE Jac_SP_new ( V, F, RCT, JVS, ind )
                 &-B(781)-B(789)-B(791)-0.388*B(801)-B(803)-B(805)-B(814)-B(822)-B(832)-B(834)-B(934)-B(936)-B(956)-0.51&
                 &*B(972)-B(998)-B(1000)-B(1010)-B(1012)-0.365*B(1014)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3253)>0) THEN
   JVS(3253) = B(481)+B(483)-B(533)+B(535)+B(553)+B(573)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3254)>0) THEN
   JVS(3254) = -B(617)-B(619)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3255)>0) THEN
   JVS(3255) = 0.67*B(575)-B(625)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3256)>0) THEN
   JVS(3256) = 0.59*B(596)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3257)>0) THEN
   JVS(3257) = 0.25*B(610)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3258)>0) THEN
   JVS(3258) = 0.14*B(580)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3259)>0) THEN
   JVS(3259) = 0.12*B(590)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3260)>0) THEN
   JVS(3260) = 0.14*B(592)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3261)>0) THEN
   JVS(3261) = 0.25*B(604)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3262)>0) THEN
   JVS(3262) = 0.25*B(606)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3263)>0) THEN
   JVS(3263) = 0.7*B(608)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3264)>0) THEN
   JVS(3264) = 0.36*B(594)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3265)>0) THEN
   JVS(3265) = B(564)+B(566)+B(568)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3266)>0) THEN
   JVS(3266) = -B(540)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3267)>0) THEN
   JVS(3267) = 0.32*B(586)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3268)>0) THEN
   JVS(3268) = 0.05*B(584)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3269)>0) THEN
   JVS(3269) = 0.21*B(602)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3270)>0) THEN
   JVS(3270) = 0.31*B(598)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3271)>0) THEN
   JVS(3271) = 0.26*B(600)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3272)>0) THEN
   JVS(3272) = 0.28*B(588)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3273)>0) THEN
   JVS(3273) = B(1177)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3274)>0) THEN
   JVS(3274) = B(560)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3275)>0) THEN
   JVS(3275) = 0.25*B(578)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3276)>0) THEN
   JVS(3276) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3277)>0) THEN
   JVS(3277) = -B(552)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3278)>0) THEN
   JVS(3278) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3279)>0) THEN
   JVS(3279) = B(1200)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3280)>0) THEN
   JVS(3280) = -B(480)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3281)>0) THEN
   JVS(3281) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3282)>0) THEN
   JVS(3282) = -B(688)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3283)>0) THEN
   JVS(3283) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3284)>0) THEN
   JVS(3284) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3285)>0) THEN
   JVS(3285) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3286)>0) THEN
   JVS(3286) = -B(570)+B(1164)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3287)>0) THEN
   JVS(3287) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3288)>0) THEN
   JVS(3288) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3289)>0) THEN
   JVS(3289) = -B(572)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3290)>0) THEN
   JVS(3290) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3291)>0) THEN
   JVS(3291) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3292)>0) THEN
   JVS(3292) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3293)>0) THEN
   JVS(3293) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3294)>0) THEN
   JVS(3294) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3295)>0) THEN
   JVS(3295) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3296)>0) THEN
   JVS(3296) = -B(528)+2*B(538)+B(1110)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3297)>0) THEN
   JVS(3297) = -B(548)+B(567)+B(1222)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3298)>0) THEN
   JVS(3298) = -B(534)+B(561)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3299)>0) THEN
   JVS(3299) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3300)>0) THEN
   JVS(3300) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3301)>0) THEN
   JVS(3301) = -B(546)+B(1122)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3302)>0) THEN
   JVS(3302) = -B(482)+0.2*B(576)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3303)>0) THEN
   JVS(3303) = -B(544)-B(550)+B(569)+B(1113)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3304)>0) THEN
   JVS(3304) = B(510)+B(512)+2*B(539)+0.09*B(574)+0.2*B(577)+0.25*B(579)+0.14*B(581)+0.05*B(585)+0.32*B(587)+0.28*B(589)&
                 &+0.12*B(591)+0.14*B(593)+0.36*B(595)+0.59*B(597)+0.31*B(599)+0.26*B(601)+0.21*B(603)+0.25*B(605)+0.25&
                 &*B(607)+0.7*B(609)+0.25*B(611)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3305)>0) THEN
   JVS(3305) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3306)>0) THEN
   JVS(3306) = B(11)-B(532)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3307)>0) THEN
   JVS(3307) = -B(481)-B(483)-B(526)-B(529)-B(533)-B(535)-B(541)-B(545)-B(547)-B(549)-B(551)-B(553)-B(571)-B(573)-B(662)&
                 &-B(689)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3308)>0) THEN
   JVS(3308) = -B(663)+B(1176)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3309)>0) THEN
   JVS(3309) = 0.09*B(575)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3310)>0) THEN
   JVS(3310) = 0.86*B(580)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3311)>0) THEN
   JVS(3311) = 0.88*B(590)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3312)>0) THEN
   JVS(3312) = 0.86*B(592)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3313)>0) THEN
   JVS(3313) = 0.75*B(604)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3314)>0) THEN
   JVS(3314) = 0.75*B(606)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3315)>0) THEN
   JVS(3315) = 0.3*B(608)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3316)>0) THEN
   JVS(3316) = 0.33*B(594)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3317)>0) THEN
   JVS(3317) = 2*B(677)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3318)>0) THEN
   JVS(3318) = 0.79*B(602)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3319)>0) THEN
   JVS(3319) = 0.69*B(598)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3320)>0) THEN
   JVS(3320) = 0.74*B(600)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3321)>0) THEN
   JVS(3321) = 0.55*B(588)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3322)>0) THEN
   JVS(3322) = 2*B(680)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3323)>0) THEN
   JVS(3323) = B(1177)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3324)>0) THEN
   JVS(3324) = 0.75*B(578)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3325)>0) THEN
   JVS(3325) = -B(754)-B(756)-B(758)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3326)>0) THEN
   JVS(3326) = B(626)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3327)>0) THEN
   JVS(3327) = B(688)+B(1181)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3328)>0) THEN
   JVS(3328) = B(706)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3329)>0) THEN
   JVS(3329) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3330)>0) THEN
   JVS(3330) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3331)>0) THEN
   JVS(3331) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3332)>0) THEN
   JVS(3332) = -B(682)-B(684)-B(686)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3333)>0) THEN
   JVS(3333) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3334)>0) THEN
   JVS(3334) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3335)>0) THEN
   JVS(3335) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3336)>0) THEN
   JVS(3336) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3337)>0) THEN
   JVS(3337) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3338)>0) THEN
   JVS(3338) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3339)>0) THEN
   JVS(3339) = -B(614)+B(700)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3340)>0) THEN
   JVS(3340) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3341)>0) THEN
   JVS(3341) = B(652)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3342)>0) THEN
   JVS(3342) = -B(666)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3343)>0) THEN
   JVS(3343) = B(660)-B(664)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3344)>0) THEN
   JVS(3344) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3345)>0) THEN
   JVS(3345) = B(653)+B(661)+2*B(681)+B(701)+B(707)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3346)>0) THEN
   JVS(3346) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3347)>0) THEN
   JVS(3347) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3348)>0) THEN
   JVS(3348) = -B(668)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3349)>0) THEN
   JVS(3349) = 0.24*B(574)+0.75*B(579)+0.86*B(581)+0.55*B(589)+0.88*B(591)+0.86*B(593)+0.33*B(595)+0.69*B(599)+0.74&
                 &*B(601)+0.79*B(603)+0.75*B(605)+0.75*B(607)+0.3*B(609)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3350)>0) THEN
   JVS(3350) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3351)>0) THEN
   JVS(3351) = -B(616)-B(618)+B(627)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3352)>0) THEN
   JVS(3352) = -B(662)+B(689)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3353)>0) THEN
   JVS(3353) = -B(615)-B(617)-B(619)-B(663)-B(665)-B(667)-B(669)-2*B(670)-2*B(671)-2*B(672)-2*B(676)-B(683)-B(685)-B(687)&
                 &-B(755)-B(757)-B(759)-B(1176)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3354)>0) THEN
   JVS(3354) = 0.24*B(575)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3355)>0) THEN
   JVS(3355) = B(694)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3356)>0) THEN
   JVS(3356) = B(696)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3357)>0) THEN
   JVS(3357) = 2*B(692)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3358)>0) THEN
   JVS(3358) = B(722)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3359)>0) THEN
   JVS(3359) = B(714)+B(716)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3360)>0) THEN
   JVS(3360) = B(702)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3361)>0) THEN
   JVS(3361) = B(710)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3362)>0) THEN
   JVS(3362) = -B(1030)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3363)>0) THEN
   JVS(3363) = B(704)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3364)>0) THEN
   JVS(3364) = -B(1035)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3365)>0) THEN
   JVS(3365) = B(648)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3366)>0) THEN
   JVS(3366) = B(656)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3367)>0) THEN
   JVS(3367) = B(720)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3368)>0) THEN
   JVS(3368) = B(698)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3369)>0) THEN
   JVS(3369) = -B(1053)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3370)>0) THEN
   JVS(3370) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3371)>0) THEN
   JVS(3371) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3372)>0) THEN
   JVS(3372) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3373)>0) THEN
   JVS(3373) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3374)>0) THEN
   JVS(3374) = B(712)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3375)>0) THEN
   JVS(3375) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3376)>0) THEN
   JVS(3376) = -B(1047)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3377)>0) THEN
   JVS(3377) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3378)>0) THEN
   JVS(3378) = -B(1039)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3379)>0) THEN
   JVS(3379) = B(718)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3380)>0) THEN
   JVS(3380) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3381)>0) THEN
   JVS(3381) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3382)>0) THEN
   JVS(3382) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3383)>0) THEN
   JVS(3383) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3384)>0) THEN
   JVS(3384) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3385)>0) THEN
   JVS(3385) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3386)>0) THEN
   JVS(3386) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3387)>0) THEN
   JVS(3387) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3388)>0) THEN
   JVS(3388) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3389)>0) THEN
   JVS(3389) = B(724)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3390)>0) THEN
   JVS(3390) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3391)>0) THEN
   JVS(3391) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3392)>0) THEN
   JVS(3392) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3393)>0) THEN
   JVS(3393) = B(650)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3394)>0) THEN
   JVS(3394) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3395)>0) THEN
   JVS(3395) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3396)>0) THEN
   JVS(3396) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3397)>0) THEN
   JVS(3397) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3398)>0) THEN
   JVS(3398) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3399)>0) THEN
   JVS(3399) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3400)>0) THEN
   JVS(3400) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3401)>0) THEN
   JVS(3401) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3402)>0) THEN
   JVS(3402) = B(658)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3403)>0) THEN
   JVS(3403) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3404)>0) THEN
   JVS(3404) = B(649)+B(651)+B(654)+B(657)+B(659)+2*B(693)+B(695)+B(697)+B(699)+B(703)+B(705)+B(708)+B(711)+B(713)+B(715)&
                 &+B(717)+B(719)+B(721)+B(723)+B(725)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3405)>0) THEN
   JVS(3405) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3406)>0) THEN
   JVS(3406) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3407)>0) THEN
   JVS(3407) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3408)>0) THEN
   JVS(3408) = -0.91*B(574)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3409)>0) THEN
   JVS(3409) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3410)>0) THEN
   JVS(3410) = B(618)-B(624)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3411)>0) THEN
   JVS(3411) = 0
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3412)>0) THEN
   JVS(3412) = B(619)
   ENDIF
-  IF (1>0) THEN
+  IF (ind(3413)>0) THEN
   JVS(3413) = -0.91*B(575)-B(625)-B(1031)-B(1036)-B(1040)-B(1048)-B(1054)-B(1062)-B(1063)
   ENDIF
 END SUBROUTINE Jac_SP_new
