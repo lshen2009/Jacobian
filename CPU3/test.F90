@@ -12,6 +12,7 @@ PROGRAM test
   REAL(4) :: JVS(3413)
   REAL(4) :: TimeStart,TimeEnd
   LOGICAL :: ind(3413)
+  INTEGER :: I
   ! Initialize these vectors
   CALL initialize_1D(V)
   CALL initialize_1D(F)
