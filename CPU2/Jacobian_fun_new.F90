@@ -4336,6 +4336,6 @@ SUBROUTINE Jac_SP_new ( V, F, RCT, JVS )
      JVS(k)=JVS(k)+B(Jac_cols(I))*Jac_vals(I)
   END DO
 
-END SUBROUTINE Jac_SP
+END SUBROUTINE Jac_SP_new
 
 END MODULE Jacobian_fun_new
